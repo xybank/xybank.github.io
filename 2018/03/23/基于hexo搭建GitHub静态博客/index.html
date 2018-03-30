@@ -1,0 +1,89 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description"><title>基于hexo搭建GitHub静态博客 | 融易通兴业团队</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/normalize/8.0.0/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/1.0.0/pure-min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/1.0.0/grids-responsive-min.css"><link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">基于hexo搭建GitHub静态博客</h1><a id="logo" href="/.">融易通兴业团队</a><p class="description"></p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/atom.xml"><i class="fa fa-rss"> 订阅</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">基于hexo搭建GitHub静态博客</h1><div class="post-meta">Mar 23, 2018<span> | </span><span class="category"><a href="/categories/蔡向炜/">蔡向炜</a></span></div><div class="post-content"><h2 id="一-准备"><a href="#一-准备" class="headerlink" title="一.准备"></a>一.准备</h2><p><a href="https://github.com/hexojs/hexo" target="_blank" rel="noopener">hexo</a> 是一个工具，可以帮助我们自动生成博客网站的代码，我们只需要用 MarkDown 写好博客，再使用 hexo 生成网站代码，最后把网站代码部署到 GitHub 上即可。需要以下准备：</p>
+<ul>
+<li>1.<strong>GitHub</strong>。基于 Git 的代码托管网站，提供静态页面服务。首先要有一个GitHub账号，博客网站的代码是放在 GitHub 仓库上的。</li>
+<li>2.<strong>Git</strong>。需要安装 <a href="https://gitforwindows.org" target="_blank" rel="noopener">Git</a> 版本控制器，类似 SVN 的工具。</li>
+<li>3.<strong>Node.js</strong>。 需要安装 <a href="http://nodejs.cn" target="_blank" rel="noopener">Node.js</a>。 hexo 是基于 nodejs 的一套框架工具。</li>
+<li>4.<strong>MarkDown</strong>。程序员最爱的写文档工具，写博客需要用到。具体语法可以参考<a href="https://xybank.github.io/2018/03/23/CSDN%E7%9A%84MarkDown%E8%AF%AD%E6%B3%95%E6%A8%A1%E6%9D%BF/">CSDN的MarkDown语法模板</a>。</li>
+</ul>
+<h2 id="二-安装-hexo-环境。"><a href="#二-安装-hexo-环境。" class="headerlink" title="二.安装 hexo 环境。"></a>二.安装 hexo 环境。</h2><p>安装好 Nodejs 后，就可以安装 hexo 框架了。</p>
+<ul>
+<li><p>1.首先新建一个文件夹（涉及到代码的文件夹，请大家务必不要用中文），用于存放 hexo 框架，我这边以 D:\work\hexo 为例。</p>
+</li>
+<li><p>2.打开 CMD 命令窗口，cd 进入 hexo 文件夹，输入以下命令安装 hexo ：</p>
+</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
+<ul>
+<li>3.安装完成后，输入以下命令生成博客工程（文件夹），这边工程先命名为 blog ：</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init blog</span><br></pre></td></tr></table></figure>
+<ul>
+<li>4.进入工程 blog 文件夹：</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> blog</span><br></pre></td></tr></table></figure>
+<h2 id="三-写文章"><a href="#三-写文章" class="headerlink" title="三.写文章"></a>三.写文章</h2><p>安装完成后，可以看到 blog 目录下有一堆文件和文件夹，</p>
+<p><img src="/img/hexo/folder.jpg" alt="Folder"></p>
+<p>其中：</p>
+<p>source 用于放 MarkDown 写的文章文档；</p>
+<p>themes 是存放博客主题的文件夹；</p>
+<p>public 文件夹中存放自动生成的网站代码。</p>
+<p>知道这些就可以开始写博客了，可以看到 \source_posts 下有一个默认的文档，就是一篇默认的博客。</p>
+<ul>
+<li>1.新建一篇博客，在 D:\work\hexo\blog 目录下，输入以下命令会在 D:\work\hexo\blog\source_posts 中生成一个 .md 后缀的 MarkDown 文件：</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new <span class="string">"文章标题"</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>2.在生成的文件中写博客，一般的文本编辑器都可以编写 MarkDown 文档；</p>
+</li>
+<li><p>3.写完博客后，输入以下命令就可以在 public 目录下，自动生成静态的博客网站代码：</p>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo generate</span><br><span class="line">或</span><br><span class="line">hexo g</span><br></pre></td></tr></table></figure>
+<ul>
+<li>4.这时候启动本地服务，就可以预览网站（ <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a> ）效果了，启动服务命令：</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure>
+<h2 id="四-部署到-GitHub-上"><a href="#四-部署到-GitHub-上" class="headerlink" title="四.部署到 GitHub 上"></a>四.部署到 GitHub 上</h2><ul>
+<li>1.新建 GitHub 代码仓库，进入你的 <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a> 主页，点击右上角的加号，选择 New repository 新建项目。这里要注意，代码仓库格式必须是： XXX.github.io ，其中 <strong>XXX 必须是你 GitHub 的 ID</strong>。</li>
+</ul>
+<p><img src="/img/hexo/GitHub_1.jpg" alt="GitHub"></p>
+<p><img src="/img/hexo/GitHub_2.jpg" alt="GitHub"></p>
+<ul>
+<li>2.克隆 GitHub 代码仓库到本地，找个合适的文件夹放置网站代码：</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/XXX/XXX.github.io.git</span><br></pre></td></tr></table></figure>
+<p><a href="https://github.com/XXX/XXX.github.io.git" target="_blank" rel="noopener">https://github.com/XXX/XXX.github.io.git</a> 是代码仓库地址，获取方式如下：</p>
+<p><img src="/img/hexo/GitHub_3.jpg" alt="GitHub"></p>
+<ul>
+<li>3.上传博客网站代码。前面写完文章，运行命令生成的网站代码都在 public 文件夹中，复制 public 目录下的所有文件，粘贴到上一步的代码仓库（XXX.github.io文件夹）中。提交代码，即在代码仓库文件夹中，右键 Git Bash Here，依次执行以下命令：</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git add . // 添加修改</span><br><span class="line">git commit -m &quot;备注&quot; // 提交</span><br><span class="line">git push origin master // 上传到GitHub代码库</span><br></pre></td></tr></table></figure>
+<p>然后输入账号密码，等待上传完成后，过几分钟就可以看到网站效果。</p>
+<p>注意：如果你是首次使用 Git ，它会提示你设置一些配置，只需按提示输入配置命令即可。</p>
+<h3 id="以下是附加的，有兴趣可以尝试。"><a href="#以下是附加的，有兴趣可以尝试。" class="headerlink" title="以下是附加的，有兴趣可以尝试。"></a>以下是附加的，有兴趣可以尝试。</h3><h2 id="五-更换主题"><a href="#五-更换主题" class="headerlink" title="五.更换主题"></a>五.更换主题</h2><p>以上步骤完成后，你就有一个博客了，但是还是默认的主题 landscape。可以在这两个地方找自己喜欢的主题：<a href="https://hexo.io/themes/" target="_blank" rel="noopener">hexo官网</a>、<a href="http://www.zhihu.com/question/24422335" target="_blank" rel="noopener">有哪些好看的 Hexo 主题？</a>，也可以直接上网搜 hexo 主题。</p>
+<p>以 <a href="https://github.com/tufu9441/maupassant-hexo" target="_blank" rel="noopener">Maupassant</a> 主题为例：</p>
+<ul>
+<li>1.克隆主题到 themes 文件夹中：</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/tufu9441/maupassant-hexo.git themes/maupassant</span><br></pre></td></tr></table></figure>
+<ul>
+<li>2.按照文档要求，安装插件：</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-renderer-pug --save</span><br><span class="line">npm install hexo-renderer-sass --save</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>3.修改博客 hexo 目录下的 _config.yml 文件：将 theme 项的 landscape 改为 maupassant。这里提示下，_config.yml 中还有博客的其他配置，可以按需更改。</p>
+</li>
+<li><p>4.配置主题。主题文件夹中也有一个 _config.yml 文件，这个是主题里相关的配置，一般主题都会有配置文档可以参考。</p>
+</li>
+</ul>
+<h2 id="六-RSS订阅"><a href="#六-RSS订阅" class="headerlink" title="六.RSS订阅"></a>六.RSS订阅</h2><p>RSS就是提供接口出来，让别人可以订阅你的博客。hexo 有对应相关的<a href="https://github.com/hexojs/hexo-generator-feed" target="_blank" rel="noopener">插件</a>。输入以下命令安装插件：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="keyword">install</span> hexo-generator-feed <span class="comment">--save</span></span><br></pre></td></tr></table></figure>
+<p>在博客的配置文件 _config.yml 里添加如下配置，：</p>
+<figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">feed:</span></span><br><span class="line"><span class="symbol">  type:</span> atom</span><br><span class="line"><span class="symbol">  path:</span> atom.xml</span><br><span class="line"><span class="symbol">  limit:</span> <span class="number">20</span></span><br><span class="line"><span class="symbol">  hub:</span></span><br><span class="line"><span class="symbol">  content:</span></span><br><span class="line"><span class="symbol">  content_limit:</span> <span class="number">140</span></span><br><span class="line"><span class="symbol">  content_limit_delim:</span> <span class="string">' '</span></span><br></pre></td></tr></table></figure>
+<p>编译之后，public 根目录下会生成 atom.xml 文件，这就说明成功了。另外，一般主题都会默认配置好 RSS 文件的路径，如果没有，则在主题的配置文件里填上即可。</p>
+<h2 id="七-404网页"><a href="#七-404网页" class="headerlink" title="七.404网页"></a>七.404网页</h2><p>你还可以给自己自定义一个 404 网页，一旦访问你的网站的某个页面不存在时，就会跳到 404 网页。网上也有很多模板可以用，如：<a href="http://www.qq.com/404/" target="_blank" rel="noopener">腾讯的寻子公益404页面</a>。</p>
+<p>在 source 下新建一个 404.html 或 404.md 文件，把以下代码复制进去：</p>
+<pre><code class="html"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span> <span class="attr">src</span>=<span class="string">"http://www.qq.com/404/search_children.js"</span> <span class="attr">charset</span>=<span class="string">"utf-8"</span> <span class="attr">homePageUrl</span>=<span class="string">"/"</span> <span class="attr">homePageName</span>=<span class="string">"回到我的主页"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span>
+</code></pre>
+<p>两个参数”homePageUrl”、”homePageName”可以按需修改。</p>
+</div><div class="tags"><a href="/tags/hexo/">hexo</a></div><div class="post-nav"><a class="pre" href="/2018/03/28/Nodejs入门/">Nodejs入门</a><a class="next" href="/2018/03/23/CSDN的MarkDown语法模板/">CSDN的MarkDown语法模板</a></div></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><form class="search-form" action="//www.baidu.com/baidu" method="get" accept-charset="utf-8" target="_blank"><input type="search" name="word" maxlength="20" placeholder="Search"/><input type="hidden" name="si" value="https://xybank.github.io"/><input name="tn" type="hidden" value="bds"/><input name="cl" type="hidden" value="3"/><input name="ct" type="hidden" value="2097152"/><input name="s" type="hidden" value="on"/></form></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/余声赞/">余声赞</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/蔡向炜/">蔡向炜</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/hexo/" style="font-size: 15px;">hexo</a> <a href="/tags/MarkDown/" style="font-size: 15px;">MarkDown</a> <a href="/tags/Nodejs/" style="font-size: 15px;">Nodejs</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最近文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2018/03/28/Nodejs入门/">Nodejs入门</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/23/基于hexo搭建GitHub静态博客/">基于hexo搭建GitHub静态博客</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/23/CSDN的MarkDown语法模板/">CSDN的MarkDown语法模板</a></li></ul></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2018 <a href="/." rel="nofollow">融易通兴业团队.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//cdn.bootcss.com/fancybox/3.2.5/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/fancybox/3.2.5/jquery.fancybox.min.css"><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>

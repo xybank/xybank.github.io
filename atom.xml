@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>融易通兴业团队</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://xybank.github.io/"/>
+  <updated>2018-03-29T12:19:54.029Z</updated>
+  <id>https://xybank.github.io/</id>
+  
+  <author>
+    <name>xybank</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Nodejs入门</title>
+    <link href="https://xybank.github.io/2018/03/28/Nodejs%E5%85%A5%E9%97%A8/"/>
+    <id>https://xybank.github.io/2018/03/28/Nodejs入门/</id>
+    <published>2018-03-28T06:10:23.000Z</published>
+    <updated>2018-03-29T12:19:54.029Z</updated>
+    
+    <summary type="html">
+    
+      Nodejs简单入门
+    
+    </summary>
+    
+      <category term="余声赞" scheme="https://xybank.github.io/categories/%E4%BD%99%E5%A3%B0%E8%B5%9E/"/>
+    
+    
+      <category term="Nodejs" scheme="https://xybank.github.io/tags/Nodejs/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>基于hexo搭建GitHub静态博客</title>
+    <link href="https://xybank.github.io/2018/03/23/%E5%9F%BA%E4%BA%8Ehexo%E6%90%AD%E5%BB%BAGitHub%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/"/>
+    <id>https://xybank.github.io/2018/03/23/基于hexo搭建GitHub静态博客/</id>
+    <published>2018-03-23T11:05:00.000Z</published>
+    <updated>2018-03-29T01:42:39.669Z</updated>
+    
+    <summary type="html">
+    
+      搭建博客参考教程
+    
+    </summary>
+    
+      <category term="蔡向炜" scheme="https://xybank.github.io/categories/%E8%94%A1%E5%90%91%E7%82%9C/"/>
+    
+    
+      <category term="hexo" scheme="https://xybank.github.io/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CSDN的MarkDown语法模板</title>
+    <link href="https://xybank.github.io/2018/03/23/CSDN%E7%9A%84MarkDown%E8%AF%AD%E6%B3%95%E6%A8%A1%E6%9D%BF/"/>
+    <id>https://xybank.github.io/2018/03/23/CSDN的MarkDown语法模板/</id>
+    <published>2018-03-23T11:05:00.000Z</published>
+    <updated>2018-03-28T13:44:53.787Z</updated>
+    
+    <summary type="html">
+    
+      Markdown语法参考
+    
+    </summary>
+    
+    
+      <category term="MarkDown" scheme="https://xybank.github.io/tags/MarkDown/"/>
+    
+  </entry>
+  
+</feed>
