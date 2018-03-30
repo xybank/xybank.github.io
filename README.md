@@ -22,8 +22,15 @@ description: 搭建博客参考教程 // 显示在首页的文章描述部分
 ---
 ```
 
-2. 文件
+2. 正文
 
-图片文件放在 img 中对应主题的文件夹里，如 `img/hexo` ，在 md 中格式为： `![Folder](/img/hexo/folder.jpg)` 。
+文章正文部分请按照 MarkDown 格式认真编写，语法不清楚的可以参考：[下载](https://xybank.github.io/download/MarkDown.rar)
 
-如果有提供文件下载，统一放在根目录下的 download 文件夹中。不建议有下载，如果有源码请上传到自己的 GitHub 上，并给出对应的链接。
+#### 三、文件
+
+1. 图片文件放在 img 中对应主题的文件夹里，如 `img/hexo` ，在 md 中格式为： `![Folder](/img/hexo/folder.jpg)` 。  
+2. 如果有提供文件下载，统一放在根目录下的 download 文件夹中。不建议有下载，如果有源码请上传到自己的 GitHub 上，并给出对应的链接。  
+
+#### 四、团队博客效果预览
+
+xybank.github.io 的主题是用的 [Maupassant](https://github.com/tufu9441/maupassant-hexo) ，想预览效果可以按照文档，安装该主题，配置文件：[下载](https://xybank.github.io/download/blog_onfig.rar)
