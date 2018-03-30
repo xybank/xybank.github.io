@@ -28,7 +28,7 @@ description: 搭建博客参考教程 // 显示在首页的文章描述部分
 
 #### 三、文件
 
-1. 图片文件放在 img 中对应主题的文件夹里，如 `img/hexo` ，在 md 中格式为： `![Folder](/img/hexo/folder.jpg)` 。  
+1. 图片文件放在 img 中对应文件夹里，请新建文件夹以免和别人冲突，如 `img/hexo` ，在 md 中格式为： `![Folder](/img/hexo/folder.jpg)` 。  
 2. 如果有提供文件下载，统一放在根目录下的 download 文件夹中。不建议有下载，如果有源码请上传到自己的 GitHub 上，并给出对应的链接。  
 
 #### 四、团队博客效果预览
