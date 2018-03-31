@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://xybank.github.io/"/>
-  <updated>2018-03-30T08:59:33.585Z</updated>
+  <updated>2018-03-31T16:09:22.669Z</updated>
   <id>https://xybank.github.io/</id>
   
   <author>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>iOS App架构初研</title>
-    <link href="https://xybank.github.io/2018/03/30/iOS%20App%E6%9E%B6%E6%9E%84%E5%88%9D%E7%A0%94/"/>
-    <id>https://xybank.github.io/2018/03/30/iOS App架构初研/</id>
+    <link href="https://xybank.github.io/2018/03/30/iOS_App_structure/"/>
+    <id>https://xybank.github.io/2018/03/30/iOS_App_structure/</id>
     <published>2018-03-30T08:00:00.000Z</published>
-    <updated>2018-03-30T08:59:33.585Z</updated>
+    <updated>2018-03-31T16:09:22.669Z</updated>
     
     <summary type="html">
     
@@ -40,10 +40,10 @@
   
   <entry>
     <title>linux上面安装配置mysql</title>
-    <link href="https://xybank.github.io/2018/03/29/linux%E4%B8%8A%E9%9D%A2%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AEmysql/"/>
-    <id>https://xybank.github.io/2018/03/29/linux上面安装配置mysql/</id>
+    <link href="https://xybank.github.io/2018/03/29/linux_mysql/"/>
+    <id>https://xybank.github.io/2018/03/29/linux_mysql/</id>
     <published>2018-03-29T11:05:00.000Z</published>
-    <updated>2018-03-30T09:37:15.982Z</updated>
+    <updated>2018-03-31T16:09:22.669Z</updated>
     
     <summary type="html">
     
@@ -62,10 +62,10 @@
   
   <entry>
     <title>Html5基础（初识标签结构）</title>
-    <link href="https://xybank.github.io/2018/03/29/Html5%E5%9F%BA%E7%A1%80%EF%BC%88%E5%88%9D%E8%AF%86%E6%A0%87%E7%AD%BE%E7%BB%93%E6%9E%84%EF%BC%89/"/>
-    <id>https://xybank.github.io/2018/03/29/Html5基础（初识标签结构）/</id>
+    <link href="https://xybank.github.io/2018/03/29/html5_label_structure/"/>
+    <id>https://xybank.github.io/2018/03/29/html5_label_structure/</id>
     <published>2018-03-29T11:01:01.000Z</published>
-    <updated>2018-03-30T09:26:48.512Z</updated>
+    <updated>2018-03-31T16:09:22.669Z</updated>
     
     <summary type="html">
     
@@ -82,10 +82,10 @@
   
   <entry>
     <title>Nodejs入门</title>
-    <link href="https://xybank.github.io/2018/03/28/Nodejs%E5%85%A5%E9%97%A8/"/>
-    <id>https://xybank.github.io/2018/03/28/Nodejs入门/</id>
+    <link href="https://xybank.github.io/2018/03/28/Nodejs_start/"/>
+    <id>https://xybank.github.io/2018/03/28/Nodejs_start/</id>
     <published>2018-03-28T06:10:23.000Z</published>
-    <updated>2018-03-29T12:19:54.029Z</updated>
+    <updated>2018-03-31T16:09:22.669Z</updated>
     
     <summary type="html">
     
@@ -102,10 +102,10 @@
   
   <entry>
     <title>基于hexo搭建GitHub静态博客</title>
-    <link href="https://xybank.github.io/2018/03/23/%E5%9F%BA%E4%BA%8Ehexo%E6%90%AD%E5%BB%BAGitHub%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/"/>
-    <id>https://xybank.github.io/2018/03/23/基于hexo搭建GitHub静态博客/</id>
+    <link href="https://xybank.github.io/2018/03/23/blog_hexo_GitHub/"/>
+    <id>https://xybank.github.io/2018/03/23/blog_hexo_GitHub/</id>
     <published>2018-03-23T11:05:00.000Z</published>
-    <updated>2018-03-30T08:09:16.909Z</updated>
+    <updated>2018-03-31T16:09:22.669Z</updated>
     
     <summary type="html">
     
