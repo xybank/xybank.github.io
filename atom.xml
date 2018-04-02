@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://xybank.github.io/"/>
-  <updated>2018-04-02T04:27:34.668Z</updated>
+  <updated>2018-04-02T04:30:43.539Z</updated>
   <id>https://xybank.github.io/</id>
   
   <author>
@@ -17,27 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>测试</title>
-    <link href="https://xybank.github.io/2018/04/02/test_jenkins_autobuild/"/>
-    <id>https://xybank.github.io/2018/04/02/test_jenkins_autobuild/</id>
-    <published>2018-04-02T02:10:00.000Z</published>
-    <updated>2018-04-02T04:27:34.668Z</updated>
-    
-    <summary type="html">
-    
-      测试描述
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
     <title>iOS App架构初研</title>
     <link href="https://xybank.github.io/2018/03/30/iOS_App_structure/"/>
     <id>https://xybank.github.io/2018/03/30/iOS_App_structure/</id>
     <published>2018-03-30T08:00:00.000Z</published>
-    <updated>2018-04-02T04:27:34.668Z</updated>
+    <updated>2018-04-02T04:30:43.539Z</updated>
     
     <summary type="html">
     
@@ -59,7 +43,7 @@
     <link href="https://xybank.github.io/2018/03/29/linux_mysql/"/>
     <id>https://xybank.github.io/2018/03/29/linux_mysql/</id>
     <published>2018-03-29T11:05:00.000Z</published>
-    <updated>2018-04-02T04:27:34.668Z</updated>
+    <updated>2018-04-02T04:30:43.539Z</updated>
     
     <summary type="html">
     
@@ -81,7 +65,7 @@
     <link href="https://xybank.github.io/2018/03/29/html5_label_structure/"/>
     <id>https://xybank.github.io/2018/03/29/html5_label_structure/</id>
     <published>2018-03-29T11:01:01.000Z</published>
-    <updated>2018-04-02T04:27:34.668Z</updated>
+    <updated>2018-04-02T04:30:43.539Z</updated>
     
     <summary type="html">
     
@@ -101,7 +85,7 @@
     <link href="https://xybank.github.io/2018/03/28/Nodejs_start/"/>
     <id>https://xybank.github.io/2018/03/28/Nodejs_start/</id>
     <published>2018-03-28T06:10:23.000Z</published>
-    <updated>2018-04-02T04:27:34.668Z</updated>
+    <updated>2018-04-02T04:30:43.539Z</updated>
     
     <summary type="html">
     
@@ -121,7 +105,7 @@
     <link href="https://xybank.github.io/2018/03/23/blog_hexo_GitHub/"/>
     <id>https://xybank.github.io/2018/03/23/blog_hexo_GitHub/</id>
     <published>2018-03-23T11:05:00.000Z</published>
-    <updated>2018-04-02T04:27:34.668Z</updated>
+    <updated>2018-04-02T04:30:43.539Z</updated>
     
     <summary type="html">
     
