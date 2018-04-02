@@ -6,7 +6,7 @@
 
 #### 一、文件名
 
-文件名统一命名必须由 `大小写字母` 或 `_` 构成，否则 Linux 上可能会出现乱码。
+文件命名必须由 `大小写字母` 或 `_` 构成，否则 Linux 上可能会出现乱码。
 
 #### 二、内容头部
 
@@ -36,13 +36,13 @@ description: 搭建博客参考教程
 
 #### 四、图片
 
-图片是比较常用的内容格式之一，如果有图片，请在 source/img 下新建文件夹放置，为避免与他人冲突，请新建属于自己的文件夹。如：`img/hexo` ，在 md 中格式为： `![Folder](/img/hexo/folder.jpg)` 。  
+图片是比较常用的内容格式之一，如果有图片，请在 `source/img` 下新建文件夹放置，为避免与他人冲突，请新建属于自己的文件夹。如：`img/hexo` ，在 md 中格式为： `![Folder](/img/hexo/folder.jpg)` 。  
 
 #### 五、文件下载
 
-如果有提供文件下载，统一放在根目录下的 download 文件夹中。不建议有文件下载，如果有源码，可以上传到自己的 GitHub 上，并给出对应的链接。
+如果有提供文件下载，统一放在根目录下的 `download` 文件夹中。不建议有文件下载，如果有源码，可以上传到自己的 GitHub 上，并给出对应的链接。
 
 #### 六、团队博客效果预览
 
-xybank.github.io 的主题是用的 [Maupassant](https://github.com/tufu9441/maupassant-hexo) ，想预览效果可以按照文档，安装该主题，配置文件：[下载](https://xybank.github.io/download/blog_onfig.rar)
+此博客（`xybank.github.io`）的主题是用的 [Maupassant](https://github.com/tufu9441/maupassant-hexo) ，想预览效果可以按照文档，安装该主题。当前博客的配置文件可以下载参考：[配置文件下载](https://xybank.github.io/download/blog_onfig.rar)
 
