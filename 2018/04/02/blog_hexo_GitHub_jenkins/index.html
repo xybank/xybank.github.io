@@ -1,0 +1,47 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description"><title>用Jenkins自动部署hexo搭建的GitHub静态博客 | 融易通兴业团队</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/normalize/8.0.0/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/1.0.0/pure-min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/1.0.0/grids-responsive-min.css"><link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">用Jenkins自动部署hexo搭建的GitHub静态博客</h1><a id="logo" href="/.">融易通兴业团队</a><p class="description"></p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/atom.xml"><i class="fa fa-rss"> 订阅</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">用Jenkins自动部署hexo搭建的GitHub静态博客</h1><div class="post-meta">Apr 2, 2018<span> | </span><span class="category"><a href="/categories/蔡向炜/">蔡向炜</a></span></div><div class="post-content"><p>hexo 为我们提供了一套非常方便的静态博客搭建框架，我们只需要编写文章的 MarkDown 文件即可。但是即便方便，还是会有几个繁琐的步骤：每次写一篇博客都需要执行编译命令，再将新生成的网页代码提交到 GitHub；而且，如果博客是由团队成员共同贡献，很难做到协同维护。使用 Jenkins 可以帮我们一定程度上解决这两个问题。</p>
+<a id="more"></a>
+<h2 id="一、基本思路"><a href="#一、基本思路" class="headerlink" title="一、基本思路"></a>一、基本思路</h2><p>Jenkins 是一套非常常用且好用的自动化构建工具，也为我们提供了很多插件。这其中会用到 GitHub 提供的 WebHook 功能，GitHub 收到一个 Push 后，会向 Jenkins 服务器发起一条 Post 请求，告诉 Jenkins 现在可以去执行部署操作了。</p>
+<h2 id="二、安装-Jenkins"><a href="#二、安装-Jenkins" class="headerlink" title="二、安装 Jenkins"></a>二、安装 Jenkins</h2><p>Jenkins 的安装过程可以完全参考官网：<a href="https://wiki.jenkins.io/display/JENKINS/Installing+Jenkins" target="_blank" rel="noopener">Jenkins 官网</a>，不同系统有不同的安装方法，比如 CentOS：</p>
+<p><img src="/img/hexo/Jenkins_1.png" alt="Jenkins_1"></p>
+<p>只要按照步骤安装即可，基本上都会包含以下步骤：</p>
+<ol>
+<li>安装 Jenkins，一般安装稳定版会比较稳妥；</li>
+<li>安装 Java 环境，Jenkins 是需要 Java 环境的；</li>
+<li>启动 Jenkins 服务，设置开机自启动；</li>
+<li>关闭相应的防火墙；</li>
+</ol>
+<p>安装完成后，访问 <code>http://你的服务器ip:8080/</code> 即可，Jenkins 默认端口是8080，有些云服务器会限制端口的访问，这时候需要在控制台修改配置，比如阿里云是这样的：</p>
+<p><img src="/img/hexo/Jenkins_2.png" alt="Jenkins_2"></p>
+<p>安装好 Jenkins 后，第一次访问会让你输入密码，页面上会提示具体是哪个文件，用 vim 打开即可查看，比如 CentOS 默认是：<code>/var/lib/jenkins/secrets/initialAdminPassword</code>。</p>
+<p>进入后，可以创建新的用户，以后就可以使用这个用户访问 Jenkins 了。</p>
+<p>新建账号后，会提示安装插件，一般直接按推荐安装，如果有报错，最好点击重试，多试几次一般都会安装成功，如果实在装不上那就先跳过吧</p>
+<p><img src="/img/hexo/Jenkins_3.png" alt="Jenkins_3"></p>
+<h2 id="三、在服务器上安装-hexo"><a href="#三、在服务器上安装-hexo" class="headerlink" title="三、在服务器上安装 hexo"></a>三、在服务器上安装 hexo</h2><p>在服务器上安装 hexo，是为了可以让 Jenkins 自动部署。安装方法参考之前的文章：<a href="/2018/03/23/blog_hexo_GitHub/">基于hexo搭建GitHub静态博客</a>。Linux 肯定会不一样，请自行百度/谷歌解决。为了拉/上传代码，还需要安装 Git。</p>
+<p>安装好 hexo 后，后面构建生成静态网站、上传网页新代码等，都要在这里做了。所以你需要做的有：</p>
+<ol>
+<li>初始化一套和你原来博客一样的配置，包括配置和主题；</li>
+<li>从你的 Git 上拉一份你博客网页（xxx.github.io）项目的代码，用于提交新代码；</li>
+<li>新建一个只存放 hexo 的 source 文件夹的库，就是 hexo 中放 md、img 等源文件的文件夹，这里暂时称它为 <code>blog_source</code>；</li>
+</ol>
+<h2 id="四、配置-Jenkins-自动构建项目"><a href="#四、配置-Jenkins-自动构建项目" class="headerlink" title="四、配置 Jenkins 自动构建项目"></a>四、配置 Jenkins 自动构建项目</h2><p>自动构建是基于上一节中新建的 <code>blog_source</code> 项目进行的。</p>
+<p>新建任务，输入任务名，选择自由风格即可：</p>
+<p><img src="/img/hexo/Jenkins_4.png" alt="Jenkins_4"></p>
+<p>配置项目，设置 GitHub 项目地址：</p>
+<p><img src="/img/hexo/Jenkins_5.png" alt="Jenkins_5"></p>
+<p>源码管理，这里一定要注意，设置为你的 <code>blog_source</code> 的 GitHub 源码 Url，否则 Jenkins 收到 GitHub 的 Post 请求的时候，是不知道你到底要执行那个任务的：</p>
+<p><img src="/img/hexo/Jenkins_6.png" alt="Jenkins_6"></p>
+<p>构建触发器，选 GitHub hook：</p>
+<p><img src="/img/hexo/Jenkins_7.png" alt="Jenkins_7"></p>
+<p>构建，这里就是真正的构建步骤，可以按你的需求填。我这边全部用 shell 命令执行：</p>
+<p><img src="/img/hexo/Jenkins_8.png" alt="Jenkins_8"></p>
+<p>配置好后，点击应用即可。</p>
+<p>注意：如果构建的过程中提示没有权限之类的错误，请设置一下 Jenkins 用户。Jenkins 安装好后，会自动新建一个用户叫 jenkins，可以把它改为 root 用户。 CentOS 配置文件为 <code>/etc/sysconfig/jenkins</code> ，修改 JENKINS_USER 项为 root 即可：</p>
+<figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">JENKINS_USER</span>=<span class="string">"root"</span></span><br></pre></td></tr></table></figure>
+<p>另外，还需要配置 Jenkins 的 GitHub 插件的 hook url：</p>
+<p><img src="/img/hexo/Jenkins_9.png" alt="Jenkins_9"></p>
+<p><img src="/img/hexo/Jenkins_10.png" alt="Jenkins_10"></p>
+<p><img src="/img/hexo/Jenkins_11.png" alt="Jenkins_11"></p>
+<h2 id="五、-配置-Github-项目"><a href="#五、-配置-Github-项目" class="headerlink" title="五、 配置 Github 项目"></a>五、 配置 Github 项目</h2><p>配置 <code>blog_source</code> 项目的 Webhooks ，一定要以 <code>/</code> 结尾：</p>
+<p><img src="/img/hexo/Jenkins_12.png" alt="Jenkins_12"></p>
+<h2 id="六、配置结束"><a href="#六、配置结束" class="headerlink" title="六、配置结束"></a>六、配置结束</h2><p>完成以上配置后，就可以试试向 <code>blog_source</code> push 代码了，如果 Jenkins 在构建了，就说明配置成功了，等构建完成，就可以预览你的博客了。</p>
+</div><div class="tags"><a href="/tags/hexo/">hexo</a><a href="/tags/Jenkins/">Jenkins</a></div><div class="post-nav"><a class="next" href="/2018/03/30/iOS_App_structure/">iOS App架构初研</a></div></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><form class="search-form" action="//www.baidu.com/baidu" method="get" accept-charset="utf-8" target="_blank"><input type="search" name="word" maxlength="20" placeholder="Search"/><input type="hidden" name="si" value="https://xybank.github.io"/><input name="tn" type="hidden" value="bds"/><input name="cl" type="hidden" value="3"/><input name="ct" type="hidden" value="2097152"/><input name="s" type="hidden" value="on"/></form></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/余声赞/">余声赞</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/洪宇杰/">洪宇杰</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/甘明阳/">甘明阳</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/童长钱/">童长钱</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/蔡向炜/">蔡向炜</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/Nodejs/" style="font-size: 15px;">Nodejs</a> <a href="/tags/hexo/" style="font-size: 15px;">hexo</a> <a href="/tags/Jenkins/" style="font-size: 15px;">Jenkins</a> <a href="/tags/HTML5/" style="font-size: 15px;">HTML5</a> <a href="/tags/iOS/" style="font-size: 15px;">iOS</a> <a href="/tags/linux/" style="font-size: 15px;">linux</a> <a href="/tags/mysql/" style="font-size: 15px;">mysql</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最近文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2018/04/02/blog_hexo_GitHub_jenkins/">用Jenkins自动部署hexo搭建的GitHub静态博客</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/30/iOS_App_structure/">iOS App架构初研</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/29/linux_mysql/">linux上面安装配置mysql</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/29/html5_label_structure/">Html5基础（初识标签结构）</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/28/Nodejs_start/">Nodejs入门</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/23/blog_hexo_GitHub/">基于hexo搭建GitHub静态博客</a></li></ul></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2018 <a href="/." rel="nofollow">融易通兴业团队.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//cdn.bootcss.com/fancybox/3.2.5/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/fancybox/3.2.5/jquery.fancybox.min.css"><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>

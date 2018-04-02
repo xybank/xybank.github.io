@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://xybank.github.io/"/>
-  <updated>2018-04-02T04:30:43.539Z</updated>
+  <updated>2018-04-02T08:12:33.020Z</updated>
   <id>https://xybank.github.io/</id>
   
   <author>
@@ -17,11 +17,33 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>用Jenkins自动部署hexo搭建的GitHub静态博客</title>
+    <link href="https://xybank.github.io/2018/04/02/blog_hexo_GitHub_jenkins/"/>
+    <id>https://xybank.github.io/2018/04/02/blog_hexo_GitHub_jenkins/</id>
+    <published>2018-04-02T05:30:00.000Z</published>
+    <updated>2018-04-02T08:12:33.020Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;hexo 为我们提供了一套非常方便的静态博客搭建框架，我们只需要编写文章的 MarkDown 文件即可。但是即便方便，还是会有几个繁琐的步骤：每次写一篇博客都需要执行编译命令，再将新生成的网页代码提交到 GitHub；而且，如果博客是由团队成员共同贡献，很难做到协同维护。使用 Jenkins 可以帮我们一定程度上解决这两个问题。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="蔡向炜" scheme="https://xybank.github.io/categories/%E8%94%A1%E5%90%91%E7%82%9C/"/>
+    
+    
+      <category term="hexo" scheme="https://xybank.github.io/tags/hexo/"/>
+    
+      <category term="Jenkins" scheme="https://xybank.github.io/tags/Jenkins/"/>
+    
+  </entry>
+  
+  <entry>
     <title>iOS App架构初研</title>
     <link href="https://xybank.github.io/2018/03/30/iOS_App_structure/"/>
     <id>https://xybank.github.io/2018/03/30/iOS_App_structure/</id>
     <published>2018-03-30T08:00:00.000Z</published>
-    <updated>2018-04-02T04:30:43.539Z</updated>
+    <updated>2018-04-02T08:12:33.020Z</updated>
     
     <summary type="html">
     
@@ -43,7 +65,7 @@
     <link href="https://xybank.github.io/2018/03/29/linux_mysql/"/>
     <id>https://xybank.github.io/2018/03/29/linux_mysql/</id>
     <published>2018-03-29T11:05:00.000Z</published>
-    <updated>2018-04-02T04:30:43.539Z</updated>
+    <updated>2018-04-02T08:12:33.020Z</updated>
     
     <summary type="html">
     
@@ -65,7 +87,7 @@
     <link href="https://xybank.github.io/2018/03/29/html5_label_structure/"/>
     <id>https://xybank.github.io/2018/03/29/html5_label_structure/</id>
     <published>2018-03-29T11:01:01.000Z</published>
-    <updated>2018-04-02T04:30:43.539Z</updated>
+    <updated>2018-04-02T08:12:33.020Z</updated>
     
     <summary type="html">
     
@@ -85,7 +107,7 @@
     <link href="https://xybank.github.io/2018/03/28/Nodejs_start/"/>
     <id>https://xybank.github.io/2018/03/28/Nodejs_start/</id>
     <published>2018-03-28T06:10:23.000Z</published>
-    <updated>2018-04-02T04:30:43.539Z</updated>
+    <updated>2018-04-02T08:12:33.020Z</updated>
     
     <summary type="html">
     
@@ -105,7 +127,7 @@
     <link href="https://xybank.github.io/2018/03/23/blog_hexo_GitHub/"/>
     <id>https://xybank.github.io/2018/03/23/blog_hexo_GitHub/</id>
     <published>2018-03-23T11:05:00.000Z</published>
-    <updated>2018-04-02T04:30:43.539Z</updated>
+    <updated>2018-04-02T08:12:33.020Z</updated>
     
     <summary type="html">
     
