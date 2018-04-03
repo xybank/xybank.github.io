@@ -1,0 +1,60 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description"><title>Anroid开发—探究活动(Activity) | 融易通兴业团队</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/normalize/8.0.0/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/1.0.0/pure-min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/1.0.0/grids-responsive-min.css"><link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">Anroid开发—探究活动(Activity)</h1><a id="logo" href="/.">融易通兴业团队</a><p class="description"></p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/atom.xml"><i class="fa fa-rss"> 订阅</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">Anroid开发—探究活动(Activity)</h1><div class="post-meta">Mar 27, 2018<span> | </span><span class="category"><a href="/categories/张永枫/">张永枫</a></span></div><div class="post-content"><h2 id="1、写在前面"><a href="#1、写在前面" class="headerlink" title="1、写在前面"></a>1、写在前面</h2><p>本文是以Android Studio为开发工具，<br>&lt;&lt;第一行代码Anroid第2版&gt;&gt; 为学习指导书籍</p>
+<blockquote>
+<p><a href="https://pan.baidu.com/s/1GP4sv4NLIvTo8gECTkOxQg" target="_blank" rel="noopener">电子书pdf百度云下载地址:</a><br>密码:rx3g<br><a href="https://zhangyongfeng1.github.io/dowland/MyApplication1.zip" target="_blank" rel="noopener">Android Studio运行的测试代码下载地址:</a></p>
+</blockquote>
+<h2 id="2、介绍"><a href="#2、介绍" class="headerlink" title="2、介绍"></a>2、介绍</h2><p>Activity 是一种可以包括界面的组件，主要用于和用户的交互，<br>一个应用程序可以有0个或多个活动。</p>
+<h2 id="3、手动创建活动"><a href="#3、手动创建活动" class="headerlink" title="3、手动创建活动"></a>3、手动创建活动</h2><p>使项目在Project模式下面，</p>
+<ol>
+<li>选中在app/src/main/java/下面的包中右键点击；</li>
+<li>再选择New-&gt;Activity-&gt;Empty Activity 创建一个活动的对话框 会有以下选项：<br>Generate Layout File 表示会自动为创建的活动生成一个对应的layout布局文件（可不选）；<br>Launcher Activity 表示会自动将当前创建的活动设置为当前项目的主活动 （有主活动时不选）；<br>Backwards Compatibility 表示为项目启用向下兼容的模式（这个要选）；</li>
+<li>点击finish 之后会自动生成一个java文件（会自动继承AppCompatActivity这个类，并且重写 onCrate()方法）。</li>
+</ol>
+<h2 id="4、创建和加载布局"><a href="#4、创建和加载布局" class="headerlink" title="4、创建和加载布局"></a>4、创建和加载布局</h2><h3 id="4-1、-Android-设计原则："><a href="#4-1、-Android-设计原则：" class="headerlink" title="4.1、 Android 设计原则："></a>4.1、 Android 设计原则：</h3><p>逻辑和视图分离，最好一个活动都能对应一个布局；</p>
+<p>（Activity 是处理逻辑用javap实现，layout 负责显示内容用xmL实现）。</p>
+<h3 id="4-2、-创建一个布局"><a href="#4-2、-创建一个布局" class="headerlink" title="4.2、 创建一个布局"></a>4.2、 创建一个布局</h3><p>使项目在Project模式下面：</p>
+<ol>
+<li><p>选中在app/src/main/res/layout目录下面的包中右键点击，</p>
+</li>
+<li><p>再选择New-&gt;Layout resource file 创建一个布局文件</p>
+</li>
+<li><p>在弹出框有中两个选项：</p>
+</li>
+</ol>
+<p>Flie name : 这个自已命名就可以了</p>
+<p>Boot element: 根元素（先默认选择LinerLayout）</p>
+<ol start="4">
+<li>点击完成，会自动生成一个xml文件</li>
+</ol>
+<h3 id="4-3、-可视化布局编辑器"><a href="#4-3、-可视化布局编辑器" class="headerlink" title="4.3、 可视化布局编辑器"></a>4.3、 可视化布局编辑器</h3><p>屏幕中央区域显示预览的效果；</p>
+<p>最下方有两个切换的选项：</p>
+<ul>
+<li><p>Design:     显示当前的可视化布局</p>
+</li>
+<li><p>Text:    是显示xml文件的内容</p>
+</li>
+</ul>
+<h3 id="4-4、-在布局中添加一个按扭"><a href="#4-4、-在布局中添加一个按扭" class="headerlink" title="4.4、 在布局中添加一个按扭"></a>4.4、 在布局中添加一个按扭</h3><p>添加的button元素中中添加了几个属性</p>
+<ul>
+<li><p>android:id (定义一个唯一个标识符）；</p>
+</li>
+<li><p>android:layout_width(指定当前的宽度，使用match_parent表示和当前父元素一样宽）；</p>
+</li>
+<li><p>android:layout_height(指定当前的高度，使用wrap_content表示适应控件里的内容)；</p>
+</li>
+<li><p>android:text(指定元素中显示的内容)；</p>
+</li>
+</ul>
+<h3 id="4-5、-在一个活动（Activity）中加载一个布局-Layout"><a href="#4-5、-在一个活动（Activity）中加载一个布局-Layout" class="headerlink" title="4.5、 在一个活动（Activity）中加载一个布局(Layout)"></a>4.5、 在一个活动（Activity）中加载一个布局(Layout)</h3><p>在onCreate()方法中添加<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">setContentView</span>(<span class="selector-tag">R</span><span class="selector-class">.layout</span><span class="selector-class">.frist_layout</span>);</span><br></pre></td></tr></table></figure></p>
+<h3 id="4-6、-关于R文件"><a href="#4-6、-关于R文件" class="headerlink" title="4.6、 关于R文件"></a>4.6、 关于R文件</h3><p>项目中任何添加任何资源都会在R文件中生成一个相应的资源id</p>
+<p>(因此可以直接使用setContentView()方法加载R.layout.frist_layout)</p>
+<h3 id="4-7、-在AndroidManifest文件中注册"><a href="#4-7、-在AndroidManifest文件中注册" class="headerlink" title="4.7、 在AndroidManifest文件中注册"></a>4.7、 在AndroidManifest文件中注册</h3><p>所有的活动activity,要在AndroidMainifest.xml中进行注册才会生效；</p>
+<p>AndroidMainifest.xml文件在项目中的位app/src/main/AndroidManifest.xml；</p>
+<p><activity>标签中使用android:name来表示指定具体注册那个活动；</activity></p>
+<p>注：不过要是只有一个活动，而没有配置主活动的话，代码在android studio 中是跑不起来的，会抛弃出一串异常的代码<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">org<span class="selector-class">.gradle</span><span class="selector-class">.api</span><span class="selector-class">.tasks</span><span class="selector-class">.TaskExecutionException</span>: Execution failed <span class="keyword">for</span> task …</span><br></pre></td></tr></table></figure></p>
+<h3 id="4-8、-设置主活动的方法"><a href="#4-8、-设置主活动的方法" class="headerlink" title="4.8、 设置主活动的方法"></a>4.8、 设置主活动的方法</h3><p>在<activity>标签内部加入<intent-filter>标签，并在标签中添加</intent-filter></activity></p>
+<figure class="highlight fortran"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="keyword">action</span> android:<span class="keyword">name</span>=“android.<span class="keyword">intent</span>.<span class="keyword">action</span>.MAIN”/&gt;</span><br></pre></td></tr></table></figure>
+<p>和<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;category android:name=“android<span class="selector-class">.intent</span><span class="selector-class">.category</span><span class="selector-class">.LAUNCHER</span>”/&gt;</span><br></pre></td></tr></table></figure></p>
+<p>这两名声明即可。</p>
+<h3 id="4-9、-启动器的标题"><a href="#4-9、-启动器的标题" class="headerlink" title="4.9、 启动器的标题"></a>4.9、 启动器的标题</h3><p>除此之外如果给主活动指定一个label的话，你会发现标题栏中的内容也变成了启动器中的应用程序显示的名称。</p>
+<p>如果应用程序没有声明任何一个活动作为主活动，这个程序仍然可以正常安装，可是你无法在启动器中看到或者打开这个程序，这类程序一般都是作为第三方服务供其他应用内部调用，如支付宝快捷支付服务。</p>
+</div><div class="tags"><a href="/tags/Android/">Android</a><a href="/tags/Activity/">Activity</a></div><div class="post-nav"><a class="pre" href="/2018/03/28/Nodejs_start/">Nodejs入门</a><a class="next" href="/2018/03/23/blog_hexo_GitHub/">基于hexo搭建GitHub静态博客</a></div></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><form class="search-form" action="//www.baidu.com/baidu" method="get" accept-charset="utf-8" target="_blank"><input type="search" name="word" maxlength="20" placeholder="Search"/><input type="hidden" name="si" value="https://xybank.github.io"/><input name="tn" type="hidden" value="bds"/><input name="cl" type="hidden" value="3"/><input name="ct" type="hidden" value="2097152"/><input name="s" type="hidden" value="on"/></form></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/余声赞/">余声赞</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/张永枫/">张永枫</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/洪宇杰/">洪宇杰</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/甘明阳/">甘明阳</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/童长钱/">童长钱</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/蔡向炜/">蔡向炜</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/Nodejs/" style="font-size: 15px;">Nodejs</a> <a href="/tags/Android/" style="font-size: 15px;">Android</a> <a href="/tags/Activity/" style="font-size: 15px;">Activity</a> <a href="/tags/hexo/" style="font-size: 15px;">hexo</a> <a href="/tags/Jenkins/" style="font-size: 15px;">Jenkins</a> <a href="/tags/HTML5/" style="font-size: 15px;">HTML5</a> <a href="/tags/iOS/" style="font-size: 15px;">iOS</a> <a href="/tags/linux/" style="font-size: 15px;">linux</a> <a href="/tags/mysql/" style="font-size: 15px;">mysql</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最近文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2018/04/02/blog_hexo_GitHub_jenkins/">用Jenkins自动部署hexo搭建的GitHub静态博客</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/30/iOS_App_structure/">iOS App架构初研</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/29/linux_mysql/">linux上面安装配置mysql</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/29/html5_label_structure/">Html5基础（初识标签结构）</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/28/Nodejs_start/">Nodejs入门</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/27/android_activity/">Anroid开发—探究活动(Activity)</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/23/blog_hexo_GitHub/">基于hexo搭建GitHub静态博客</a></li></ul></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2018 <a href="/." rel="nofollow">融易通兴业团队.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//cdn.bootcss.com/fancybox/3.2.5/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/fancybox/3.2.5/jquery.fancybox.min.css"><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>
