@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://xybank.github.io/"/>
-  <updated>2018-04-11T07:52:42.733Z</updated>
+  <updated>2018-04-12T02:36:10.592Z</updated>
   <id>https://xybank.github.io/</id>
   
   <author>
@@ -21,13 +21,15 @@
     <link href="https://xybank.github.io/2018/04/11/blog_mvp_Github/"/>
     <id>https://xybank.github.io/2018/04/11/blog_mvp_Github/</id>
     <published>2018-04-11T07:05:00.000Z</published>
-    <updated>2018-04-11T07:52:42.733Z</updated>
+    <updated>2018-04-12T02:36:10.592Z</updated>
     
     <summary type="html">
     
       本文只研究MVP设计架构基础版，后续由各大神扩展的升级版以后研究
     
     </summary>
+    
+      <category term="黄涛" scheme="https://xybank.github.io/categories/%E9%BB%84%E6%B6%9B/"/>
     
     
       <category term="Android" scheme="https://xybank.github.io/tags/Android/"/>
@@ -43,7 +45,7 @@
     <link href="https://xybank.github.io/2018/04/09/React/"/>
     <id>https://xybank.github.io/2018/04/09/React/</id>
     <published>2018-04-09T03:30:00.000Z</published>
-    <updated>2018-04-11T07:52:42.733Z</updated>
+    <updated>2018-04-12T02:36:10.592Z</updated>
     
     <summary type="html">
     
@@ -63,7 +65,7 @@
     <link href="https://xybank.github.io/2018/04/04/html5_base_info/"/>
     <id>https://xybank.github.io/2018/04/04/html5_base_info/</id>
     <published>2018-04-03T16:00:00.000Z</published>
-    <updated>2018-04-11T07:52:42.733Z</updated>
+    <updated>2018-04-12T02:36:10.592Z</updated>
     
     <summary type="html">
     
@@ -83,7 +85,7 @@
     <link href="https://xybank.github.io/2018/04/02/html5-form%E8%A1%A8%E5%8D%95/"/>
     <id>https://xybank.github.io/2018/04/02/html5-form表单/</id>
     <published>2018-04-02T13:14:06.000Z</published>
-    <updated>2018-04-11T07:52:42.733Z</updated>
+    <updated>2018-04-12T02:36:10.592Z</updated>
     
     <summary type="html">
     
@@ -103,7 +105,7 @@
     <link href="https://xybank.github.io/2018/04/02/blog_hexo_GitHub_jenkins/"/>
     <id>https://xybank.github.io/2018/04/02/blog_hexo_GitHub_jenkins/</id>
     <published>2018-04-02T05:30:00.000Z</published>
-    <updated>2018-04-11T07:52:42.733Z</updated>
+    <updated>2018-04-12T02:36:10.592Z</updated>
     
     <summary type="html">
     
@@ -125,7 +127,7 @@
     <link href="https://xybank.github.io/2018/03/30/iOS_App_structure/"/>
     <id>https://xybank.github.io/2018/03/30/iOS_App_structure/</id>
     <published>2018-03-30T08:00:00.000Z</published>
-    <updated>2018-04-11T07:52:42.733Z</updated>
+    <updated>2018-04-12T02:36:10.592Z</updated>
     
     <summary type="html">
     
@@ -147,7 +149,7 @@
     <link href="https://xybank.github.io/2018/03/29/linux_mysql/"/>
     <id>https://xybank.github.io/2018/03/29/linux_mysql/</id>
     <published>2018-03-29T11:05:00.000Z</published>
-    <updated>2018-04-11T07:52:42.733Z</updated>
+    <updated>2018-04-12T02:36:10.592Z</updated>
     
     <summary type="html">
     
@@ -169,7 +171,7 @@
     <link href="https://xybank.github.io/2018/03/29/html5_label_structure/"/>
     <id>https://xybank.github.io/2018/03/29/html5_label_structure/</id>
     <published>2018-03-29T11:01:01.000Z</published>
-    <updated>2018-04-11T07:52:42.733Z</updated>
+    <updated>2018-04-12T02:36:10.592Z</updated>
     
     <summary type="html">
     
@@ -189,7 +191,7 @@
     <link href="https://xybank.github.io/2018/03/28/Nodejs_start/"/>
     <id>https://xybank.github.io/2018/03/28/Nodejs_start/</id>
     <published>2018-03-28T06:10:23.000Z</published>
-    <updated>2018-04-11T07:52:42.733Z</updated>
+    <updated>2018-04-12T02:36:10.592Z</updated>
     
     <summary type="html">
     
@@ -209,7 +211,7 @@
     <link href="https://xybank.github.io/2018/03/28/H5/"/>
     <id>https://xybank.github.io/2018/03/28/H5/</id>
     <published>2018-03-28T06:10:23.000Z</published>
-    <updated>2018-04-11T07:52:42.733Z</updated>
+    <updated>2018-04-12T02:36:10.592Z</updated>
     
     <summary type="html">
     
@@ -229,7 +231,7 @@
     <link href="https://xybank.github.io/2018/03/27/android_activity/"/>
     <id>https://xybank.github.io/2018/03/27/android_activity/</id>
     <published>2018-03-27T08:25:25.000Z</published>
-    <updated>2018-04-11T07:52:42.733Z</updated>
+    <updated>2018-04-12T02:36:10.592Z</updated>
     
     <summary type="html">
     
@@ -251,7 +253,7 @@
     <link href="https://xybank.github.io/2018/03/23/blog_hexo_GitHub/"/>
     <id>https://xybank.github.io/2018/03/23/blog_hexo_GitHub/</id>
     <published>2018-03-23T11:05:00.000Z</published>
-    <updated>2018-04-11T07:52:42.733Z</updated>
+    <updated>2018-04-12T02:36:10.592Z</updated>
     
     <summary type="html">
     
