@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://xybank.github.io/"/>
-  <updated>2018-04-13T15:18:14.409Z</updated>
+  <updated>2018-04-13T15:53:43.448Z</updated>
   <id>https://xybank.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://xybank.github.io/2018/04/13/css3-flexbox/"/>
     <id>https://xybank.github.io/2018/04/13/css3-flexbox/</id>
     <published>2018-04-13T13:14:06.000Z</published>
-    <updated>2018-04-13T15:18:14.409Z</updated>
+    <updated>2018-04-13T15:53:43.448Z</updated>
     
     <summary type="html">
     
@@ -41,7 +41,7 @@
     <link href="https://xybank.github.io/2018/04/11/blog_mvp_Github/"/>
     <id>https://xybank.github.io/2018/04/11/blog_mvp_Github/</id>
     <published>2018-04-11T07:05:00.000Z</published>
-    <updated>2018-04-13T15:18:14.317Z</updated>
+    <updated>2018-04-13T15:53:43.278Z</updated>
     
     <summary type="html">
     
@@ -65,7 +65,7 @@
     <link href="https://xybank.github.io/2018/04/09/React/"/>
     <id>https://xybank.github.io/2018/04/09/React/</id>
     <published>2018-04-09T03:30:00.000Z</published>
-    <updated>2018-04-13T15:18:14.316Z</updated>
+    <updated>2018-04-13T15:53:43.260Z</updated>
     
     <summary type="html">
     
@@ -85,7 +85,7 @@
     <link href="https://xybank.github.io/2018/04/04/html5_base_info/"/>
     <id>https://xybank.github.io/2018/04/04/html5_base_info/</id>
     <published>2018-04-03T16:00:00.000Z</published>
-    <updated>2018-04-13T15:18:14.319Z</updated>
+    <updated>2018-04-13T15:53:43.403Z</updated>
     
     <summary type="html">
     
@@ -105,7 +105,7 @@
     <link href="https://xybank.github.io/2018/04/02/html5_form/"/>
     <id>https://xybank.github.io/2018/04/02/html5_form/</id>
     <published>2018-04-02T13:14:06.000Z</published>
-    <updated>2018-04-13T15:18:14.308Z</updated>
+    <updated>2018-04-13T15:53:43.245Z</updated>
     
     <summary type="html">
     
@@ -125,7 +125,7 @@
     <link href="https://xybank.github.io/2018/04/02/blog_hexo_GitHub_jenkins/"/>
     <id>https://xybank.github.io/2018/04/02/blog_hexo_GitHub_jenkins/</id>
     <published>2018-04-02T05:30:00.000Z</published>
-    <updated>2018-04-13T15:18:14.321Z</updated>
+    <updated>2018-04-13T15:53:43.426Z</updated>
     
     <summary type="html">
     
@@ -147,7 +147,7 @@
     <link href="https://xybank.github.io/2018/03/30/iOS_App_structure/"/>
     <id>https://xybank.github.io/2018/03/30/iOS_App_structure/</id>
     <published>2018-03-30T08:00:00.000Z</published>
-    <updated>2018-04-13T15:18:14.322Z</updated>
+    <updated>2018-04-13T15:53:43.437Z</updated>
     
     <summary type="html">
     
@@ -169,7 +169,7 @@
     <link href="https://xybank.github.io/2018/03/29/linux_mysql/"/>
     <id>https://xybank.github.io/2018/03/29/linux_mysql/</id>
     <published>2018-03-29T11:05:00.000Z</published>
-    <updated>2018-04-13T15:18:14.320Z</updated>
+    <updated>2018-04-13T15:53:43.415Z</updated>
     
     <summary type="html">
     
@@ -191,7 +191,7 @@
     <link href="https://xybank.github.io/2018/03/29/html5_label_structure/"/>
     <id>https://xybank.github.io/2018/03/29/html5_label_structure/</id>
     <published>2018-03-29T11:01:01.000Z</published>
-    <updated>2018-04-13T15:18:14.453Z</updated>
+    <updated>2018-04-13T15:53:44.048Z</updated>
     
     <summary type="html">
     
@@ -207,31 +207,11 @@
   </entry>
   
   <entry>
-    <title>Nodejs入门</title>
-    <link href="https://xybank.github.io/2018/03/28/Nodejs_start/"/>
-    <id>https://xybank.github.io/2018/03/28/Nodejs_start/</id>
-    <published>2018-03-28T06:10:23.000Z</published>
-    <updated>2018-04-13T15:18:14.442Z</updated>
-    
-    <summary type="html">
-    
-      Nodejs简单入门
-    
-    </summary>
-    
-      <category term="余声赞" scheme="https://xybank.github.io/categories/%E4%BD%99%E5%A3%B0%E8%B5%9E/"/>
-    
-    
-      <category term="Nodejs" scheme="https://xybank.github.io/tags/Nodejs/"/>
-    
-  </entry>
-  
-  <entry>
     <title>HTML5入门</title>
     <link href="https://xybank.github.io/2018/03/28/H5/"/>
     <id>https://xybank.github.io/2018/03/28/H5/</id>
     <published>2018-03-28T06:10:23.000Z</published>
-    <updated>2018-04-13T15:18:14.431Z</updated>
+    <updated>2018-04-13T15:53:43.459Z</updated>
     
     <summary type="html">
     
@@ -247,11 +227,31 @@
   </entry>
   
   <entry>
+    <title>Nodejs入门</title>
+    <link href="https://xybank.github.io/2018/03/28/Nodejs_start/"/>
+    <id>https://xybank.github.io/2018/03/28/Nodejs_start/</id>
+    <published>2018-03-28T06:10:23.000Z</published>
+    <updated>2018-04-13T15:53:44.044Z</updated>
+    
+    <summary type="html">
+    
+      Nodejs简单入门
+    
+    </summary>
+    
+      <category term="余声赞" scheme="https://xybank.github.io/categories/%E4%BD%99%E5%A3%B0%E8%B5%9E/"/>
+    
+    
+      <category term="Nodejs" scheme="https://xybank.github.io/tags/Nodejs/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Anroid开发—探究活动(Activity)</title>
     <link href="https://xybank.github.io/2018/03/27/android_activity/"/>
     <id>https://xybank.github.io/2018/03/27/android_activity/</id>
     <published>2018-03-27T08:25:25.000Z</published>
-    <updated>2018-04-13T15:18:14.318Z</updated>
+    <updated>2018-04-13T15:53:43.401Z</updated>
     
     <summary type="html">
     
@@ -273,7 +273,7 @@
     <link href="https://xybank.github.io/2018/03/23/blog_hexo_GitHub/"/>
     <id>https://xybank.github.io/2018/03/23/blog_hexo_GitHub/</id>
     <published>2018-03-23T11:05:00.000Z</published>
-    <updated>2018-04-13T15:18:14.316Z</updated>
+    <updated>2018-04-13T15:53:43.271Z</updated>
     
     <summary type="html">
     
