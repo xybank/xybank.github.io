@@ -1,0 +1,103 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description"><title>HTML5_web存储和应用缓存 | 融易通兴业团队</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/normalize/8.0.0/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/1.0.0/pure-min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/1.0.0/grids-responsive-min.css"><link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">HTML5_web存储和应用缓存</h1><a id="logo" href="/.">融易通兴业团队</a><p class="description"></p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/atom.xml"><i class="fa fa-rss"> 订阅</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">HTML5_web存储和应用缓存</h1><div class="post-meta">Apr 17, 2018<span> | </span><span class="category"><a href="/categories/匡利金/">匡利金</a></span></div><div class="post-content"><h2 id="一-在客户端存储数据"><a href="#一-在客户端存储数据" class="headerlink" title="一. 在客户端存储数据"></a>一. 在客户端存储数据</h2><h3 id="1-HTML5-提供了两种在客户端存储数据的新方法："><a href="#1-HTML5-提供了两种在客户端存储数据的新方法：" class="headerlink" title="1. HTML5 提供了两种在客户端存储数据的新方法："></a>1. HTML5 提供了两种在客户端存储数据的新方法：</h3><p><strong>localStorage</strong> - 没有时间限制的数据存储<br><strong>sessionStorage</strong> - 针对一个 session 的数据存储<br><em>之前，这些都是由 cookie 完成的。但是 cookie 不适合大量数据的存储，因为它们由每个对服务器的请求来传递，这使得 cookie 速度很慢而且效率也不高。</em> </p>
+<p><em>在 HTML5 中，数据不是由每个服务器请求传递的，而是只有在请求时使用数据。它使在不影响网站性能的情况下存储大量数据成为可能。</em>  </p>
+<p><em>对于不同的网站，数据存储于不同的区域，并且一个网站只能访问其自身的数据。</em></p>
+<p><em>HTML5 使用 JavaScript 来存储和访问数据</em></p>
+<h3 id="2-localStorage-方法"><a href="#2-localStorage-方法" class="headerlink" title="2. localStorage 方法"></a>2. localStorage 方法</h3><p><strong>localStorage 方法存储的数据没有时间限制。第二天、第二周或下一年之后，数据依然可用。</strong></p>
+<p>如何创建和访问 localStorage：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">localStorage.lastname=&quot;Smith&quot;;</span><br><span class="line">document.write(localStorage.lastname);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure></p>
+<h4 id="案例：统计这个浏览器访问的次数"><a href="#案例：统计这个浏览器访问的次数" class="headerlink" title="案例：统计这个浏览器访问的次数"></a>案例：统计这个浏览器访问的次数</h4><pre><code class="html5">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;title&gt;domo&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;div id=&quot;result&quot;&gt;&lt;/div&gt;
+&lt;script&gt;
+if(typeof(Storage)!==&quot;undefined&quot;)
+{
+  localStorage.sitename=&quot;www.baidu.com&quot;;
+  document.getElementById(&quot;result&quot;).innerHTML=&quot;网站名：&quot; + localStorage.sitename;
+}
+else
+{
+  document.getElementById(&quot;result&quot;).innerHTML=&quot;对不起，您的浏览器不支持 web 存储。&quot;;
+}
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<h3 id="3-sessionStorage-方法"><a href="#3-sessionStorage-方法" class="headerlink" title="3. sessionStorage 方法"></a>3. sessionStorage 方法</h3><p><strong>sessionStorage 方法针对一个 session进行数据存储。当用户关闭浏览器窗口后，数据会被删除</strong>。</p>
+<p>如何创建并访问一个 sessionStorage：</p>
+<pre><code class="html5">&lt;script type=&quot;text/javascript&quot;&gt;
+sessionStorage.lastname=&quot;Smith&quot;;
+document.write(sessionStorage.lastname);
+&lt;/script&gt;
+</code></pre>
+<h4 id="localStorage和sessionStorage使用时使用相同的API："><a href="#localStorage和sessionStorage使用时使用相同的API：" class="headerlink" title="localStorage和sessionStorage使用时使用相同的API："></a><em>localStorage</em>和<em>sessionStorage</em>使用时使用相同的API：</h4><ol>
+<li><strong>localStorage.setItem(“key”,”value”);//以“key”为名称存储一个值“value”</strong></li>
+<li><strong>localStorage.getItem(“key”);//获取名称为“key”的值</strong></li>
+<li><p><strong>localStorage.removeItem(“key”);//删除名称为“key”的信息。</strong></p>
+</li>
+<li><p><strong>localStorage.clear();//清空localStorage中所有信息</strong>  </p>
+</li>
+</ol>
+<h4 id="案例：统计这个浏览器访问的次数-1"><a href="#案例：统计这个浏览器访问的次数-1" class="headerlink" title="案例：统计这个浏览器访问的次数"></a>案例：统计这个浏览器访问的次数</h4><pre><code class="html5">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;title&gt;demo&lt;/title&gt;    
+&lt;script&gt;
+function clickCounter()
+{
+    if(typeof(Storage)!==&quot;undefined&quot;)
+    {
+        if (localStorage.clickcount)
+        {
+            localStorage.clickcount=Number(localStorage.clickcount)+1;
+        }
+        else
+        {
+            localStorage.clickcount=1;
+        }
+        document.getElementById(&quot;result&quot;).innerHTML=&quot; 你已经点击了按钮 &quot; + localStorage.clickcount + &quot; 次 !&quot;;
+    }
+    else
+    {
+        document.getElementById(&quot;result&quot;).innerHTML=&quot;对不起，您的浏览器不支持 web 存储。&quot;;
+    }
+}
+&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p&gt;&lt;button onclick=&quot;clickCounter()&quot; type=&quot;button&quot;&gt;点我！&lt;/button&gt;&lt;/p&gt;
+&lt;div id=&quot;result&quot;&gt;&lt;/div&gt;
+&lt;p&gt;点击该按钮查看计数器的增加。&lt;/p&gt;
+&lt;p&gt;关闭浏览器选项卡(或窗口),重新打开此页面,计数器将继续计数(不是重置)。&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>localStorage</th>
+<th>sessionStorage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>相同点</td>
+<td>使用一样的API</td>
+<td>使用一样的API</td>
+</tr>
+<tr>
+<td>不同点</td>
+<td>除非数据被清除，否则一直存在</td>
+<td>页面会话期间可用  </td>
+</tr>
+</tbody>
+</table>
+<p>参考资料：<br><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Web_Storage_API" target="_blank" rel="noopener">Web Storage API</a></p>
+</div><div class="tags"><a href="/tags/HTML5/">HTML5</a></div><div class="post-nav"><a class="next" href="/2018/04/17/HexoForNext/">处理hexo使用next主题遇到的问题</a></div></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><form class="search-form" action="//www.baidu.com/baidu" method="get" accept-charset="utf-8" target="_blank"><input type="search" name="word" maxlength="20" placeholder="Search"/><input type="hidden" name="si" value="https://xybank.github.io"/><input name="tn" type="hidden" value="bds"/><input name="cl" type="hidden" value="3"/><input name="ct" type="hidden" value="2097152"/><input name="s" type="hidden" value="on"/></form></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/余声赞/">余声赞</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/匡利金/">匡利金</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/卢文才/">卢文才</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/张永枫/">张永枫</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/方振养/">方振养</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/李志丹/">李志丹</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/杨新才/">杨新才</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/洪宇杰/">洪宇杰</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/甘明阳/">甘明阳</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/童长钱/">童长钱</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/蔡向炜/">蔡向炜</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/薛玉博/">薛玉博</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/黄涛/">黄涛</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/设计架构/" style="font-size: 15px;">设计架构</a> <a href="/tags/hexo/" style="font-size: 15px;">hexo</a> <a href="/tags/Nodejs/" style="font-size: 15px;">Nodejs</a> <a href="/tags/Android/" style="font-size: 15px;">Android</a> <a href="/tags/Activity/" style="font-size: 15px;">Activity</a> <a href="/tags/react/" style="font-size: 15px;">react</a> <a href="/tags/MVP/" style="font-size: 15px;">MVP</a> <a href="/tags/HTML5/" style="font-size: 15px;">HTML5</a> <a href="/tags/css3，flexbox/" style="font-size: 15px;">css3，flexbox</a> <a href="/tags/form表单，html5/" style="font-size: 15px;">form表单，html5</a> <a href="/tags/Jenkins/" style="font-size: 15px;">Jenkins</a> <a href="/tags/iOS/" style="font-size: 15px;">iOS</a> <a href="/tags/vi的编辑/" style="font-size: 15px;">vi的编辑</a> <a href="/tags/linux/" style="font-size: 15px;">linux</a> <a href="/tags/mysql/" style="font-size: 15px;">mysql</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最近文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2018/04/17/HTML5_web_storage_and_application_cache/">HTML5_web存储和应用缓存</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/04/17/HexoForNext/">处理hexo使用next主题遇到的问题</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/04/13/linux_vi_edit/">linux下vi编辑</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/04/13/css3-flexbox/">css3-flexbox（弹性盒子）</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/04/11/blog_mvp_Github/">Android MVP设计架构学习</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/04/09/React/">React 简单介绍</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/04/04/html5_base_info/">Html5-1</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/04/02/html5_form/">html5-form表单</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/04/02/blog_hexo_GitHub_jenkins/">用Jenkins自动部署hexo搭建的GitHub静态博客</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/30/iOS_App_structure/">iOS App架构初研</a></li></ul></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2018 <a href="/." rel="nofollow">融易通兴业团队.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//cdn.bootcss.com/fancybox/3.2.5/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/fancybox/3.2.5/jquery.fancybox.min.css"><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>
