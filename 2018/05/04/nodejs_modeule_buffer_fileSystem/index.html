@@ -3,7 +3,7 @@
 <h4 id="1-4、require的隐患"><a href="#1-4、require的隐患" class="headerlink" title="1.4、require的隐患"></a>1.4、require的隐患</h4><p>当调用require加载一个模块时，模块内部的代码会被调用，有时候会带来隐藏的bug。例如下面的代码：  </p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">//module.js</span><br><span class="line">function test()&#123;</span><br><span class="line">    setInterval(function ()&#123;</span><br><span class="line">        console.log(&quot;test&quot;);</span><br><span class="line">    &#125;),100</span><br><span class="line">&#125;</span><br><span class="line">test();</span><br><span class="line">module.expoets =test;</span><br><span class="line">//run.js</span><br><span class="line">var test require(&quot;./module.js&quot;);</span><br></pre></td></tr></table></figure>
 <p>run.js除了加载一个模块之外没有进行任何操作，试着运行一下，就会发现每隔一秒钟就会输出一个 “test”字符串，同时run.js的进程不会退出。因为：加载一个模块相当于执行模块内部代码，在module.js中由于设置了一个不间断的定时器，导致run.js也会一直运行。 </p>
-<h4 id="1-5、模块化下的作用域"><a href="#1-5、模块化下的作用域" class="headerlink" title="1.5、模块化下的作用域"></a>1.5、模块化下的作用域</h4><p>主要关注点在<strong>this</strong>上。<br>Node和javaScript中的this指向上有一些区别，其中Node控制台和脚本文件的策略不尽相同。对于浏览器中的javaScript来说，无论是在脚本还是在浏览器控制台中，其this的指向是一致的，然Node并非这样。</p>
+<h4 id="1-5、模块化下的作用域"><a href="#1-5、模块化下的作用域" class="headerlink" title="1.5、模块化下的作用域"></a>1.5、模块化下的作用域</h4><p>主要关注点在<strong>this</strong>上。<br>Node和javaScript中的this指向上有一些区别，其中Node控制台和脚本文件的策略不尽相同。<br>对于浏览器中的javaScript来说，无论是在脚本还是在浏览器控制台中，其this的指向是一致的，然Node并非这样。</p>
 <ol>
 <li>控制台中的this</li>
 </ol>
@@ -30,14 +30,61 @@
 </ol>
 <h2 id="二、Buffer"><a href="#二、Buffer" class="headerlink" title="二、Buffer"></a>二、Buffer</h2><h4 id="Buffer？"><a href="#Buffer？" class="headerlink" title="Buffer？"></a>Buffer？</h4><p><strong>Buffer</strong>是Node特有的一种数据类型，主要用来处理二进制数据。  </p>
 <p><strong>Buffer</strong>属于固有（built）类型无需使用require引入。  </p>
-<p>例如下面例子：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br></pre></td><td class="code"><pre><span class="line">var fs = require(&quot;fs&quot;);</span><br><span class="line">fs.readFile(&quot;foo.text&quot;,function (err,results)&#123;</span><br><span class="line">    console.log(results);</span><br><span class="line">&#125;);</span><br><span class="line">//结果：&lt;Buffer 48 65 6c 6f 20 57 6f 72 6c 64 &gt;(hellow node)  </span><br><span class="line">```    </span><br><span class="line">上面的代码中，最后打印出的是十六进制的数据，由于纯二进制格式太长而且难以阅读，Buffer通常表现为十六进制的字符串。  </span><br><span class="line"></span><br><span class="line"></span><br><span class="line">#### Buffer的构建以转换  </span><br><span class="line"></span><br><span class="line">buffer类初始化一个buffer对象，参数可以是二进制数据组成的数组：    </span><br><span class="line">``` node.js</span><br><span class="line">var buffer = Buffer([0x48,0x65,0x6c,0x6c,0x6c,0x6f,0x20,0x4e,0x64f,0x64,0x65]);  </span><br><span class="line">//结果：hellow node  </span><br><span class="line">```  </span><br><span class="line">如果想有一个字符串来得到一个Buffer，同样可以实现，例如：  </span><br><span class="line">``` node.js</span><br><span class="line">var buffer = new Buffer(&quot;Hellow Node&quot;);</span><br><span class="line">console.log(buffer);</span><br><span class="line">//结果：&lt;Buffer 48 65 6c 6f 20 4e 6f 64 65&gt;</span><br><span class="line">```  </span><br><span class="line">**注意**：在最新的Node API中，Buffer()方法被标记为Depecated(“不赞同”的意思)，表示不推荐使用;目前推荐使用Buffer.from方法来初始化一个对象，上面的代码可以改写成为提下形式：   </span><br><span class="line">``` node.js</span><br><span class="line">var buffer = Buffer.from([0x48,0x65,0x6c,0x6c,0x6c,0x6f,0x20,0x4e,0x64f,0x64,0x65]);//&quot;Hellow Node&quot;</span><br><span class="line">var buffer = new Buffer.from(&quot;Hellow Node&quot;);</span><br><span class="line">console.log(buffer);</span><br><span class="line">//结果：&lt;Buffer 48 65 6c 6f 20 4e 6f 64 65&gt;</span><br><span class="line">```   </span><br><span class="line">如果想把一个Buffer对象转换成字符串的形式，需要用到toString()方法，调用格式为：  </span><br><span class="line">``` node.js</span><br><span class="line">buffer。toString([encoding],[start],[end]);</span><br><span class="line">encoding:目标编码格式</span><br><span class="line">start:起始位置</span><br><span class="line">end:结束位置</span><br><span class="line">```   </span><br><span class="line">Bufer支持的编码格式有限，只有以下六种：</span><br><span class="line">1. ASCⅡ</span><br><span class="line">2. Base64</span><br><span class="line">3. Binary</span><br><span class="line">4. hex</span><br><span class="line">5. UTF-8</span><br><span class="line">6. UTF-16LE/UCS-2  </span><br><span class="line"></span><br><span class="line">buffer还提供了isEncoding方法来判断是否支持转换为目标编码格式。   </span><br><span class="line"></span><br><span class="line">例如：把“Hellow Node”的Buffer对象转换为字符串，可以这样调用：    </span><br><span class="line">``` node.js</span><br><span class="line">//制转换前五个字符 输出“hello”</span><br><span class="line">console.log(buffer.tiString(&quot;utf-8&quot;,0,5));</span><br><span class="line">```   </span><br><span class="line">#### Buffer 的拼接</span><br><span class="line"></span><br><span class="line">Buffer一个常见的场景是用来处理HTTP的post请求，例如下面代码: </span><br><span class="line"></span><br><span class="line">``` node.js</span><br><span class="line">var body = &apos;&apos;;</span><br><span class="line">req.setEncoding(&quot;utf-8&quot;);</span><br><span class="line">req.on(&quot;data&quot;,function(chunk)&#123;</span><br><span class="line">    body += chunk;</span><br><span class="line">&#125;);</span><br><span class="line">req.on(&quot;end&quot;,fiunction()&#123;</span><br><span class="line">&#125;);</span><br><span class="line">```</span><br></pre></td></tr></table></figure></p>
-<p>上面代码使用+=来拼接上传的数据流，这个过程包含了一个隐式的编码转换。<br>body += chunk 相当于 body+=chunk。toString()，当上传的字符全是英文字符的时候固然没有问题，但如果包含中文或者其他语言，由于toString方法默认使用UTF-8编码，这个时候就可能出现乱码。</p>
-<pre><code>
-举个例子：首先构造一个中文字符串，并保存为test.txt      
-八百标兵奔北坡，北坡炮兵并排跑。炮兵排把标兵碰，标兵怕碰炮兵炮。
-
-``` node.js
-var rs =require(&quot;fs&quot;).createReadStream(&quot;test.txt&quot;,{highWaterMark :10});
+<p>例如下面例子：    </p>
+<pre><code class="node.js">var fs = require(&quot;fs&quot;);
+fs.readFile(&quot;foo.text&quot;,function (err,results){
+    console.log(results);
+});
+//结果：&lt;Buffer 48 65 6c 6f 20 57 6f 72 6c 64 &gt;(hellow node)  
+</code></pre>
+<p>上面的代码中，最后打印出的是十六进制的数据，由于纯二进制格式太长而且难以阅读，Buffer通常表现为十六进制的字符串。  </p>
+<h4 id="Buffer的构建以转换"><a href="#Buffer的构建以转换" class="headerlink" title="Buffer的构建以转换"></a>Buffer的构建以转换</h4><p>buffer类初始化一个buffer对象，参数可以是二进制数据组成的数组：    </p>
+<pre><code class="node.js">var buffer = Buffer([0x48,0x65,0x6c,0x6c,0x6c,0x6f,0x20,0x4e,0x64f,0x64,0x65]);  
+//结果：hellow node  
+</code></pre>
+<p>如果想有一个字符串来得到一个Buffer，同样可以实现，例如：  </p>
+<pre><code class="node.js">var buffer = new Buffer(&quot;Hellow Node&quot;);
+console.log(buffer);
+//结果：&lt;Buffer 48 65 6c 6f 20 4e 6f 64 65&gt;
+</code></pre>
+<p><strong>注意</strong>：在最新的Node API中，Buffer()方法被标记为Depecated(“不赞同”的意思)，表示不推荐使用;目前推荐使用Buffer.from方法来初始化一个对象，上面的代码可以改写成为提下形式：   </p>
+<pre><code class="node.js">var buffer = Buffer.from([0x48,0x65,0x6c,0x6c,0x6c,0x6f,0x20,0x4e,0x64f,0x64,0x65]);//&quot;Hellow Node&quot;
+var buffer = new Buffer.from(&quot;Hellow Node&quot;);
+console.log(buffer);
+//结果：&lt;Buffer 48 65 6c 6f 20 4e 6f 64 65&gt;
+</code></pre>
+<p>如果想把一个Buffer对象转换成字符串的形式，需要用到toString()方法，调用格式为：  </p>
+<pre><code class="node.js">buffer。toString([encoding],[start],[end]);
+encoding:目标编码格式
+start:起始位置
+end:结束位置
+</code></pre>
+<p>Bufer支持的编码格式有限，只有以下六种：</p>
+<ol>
+<li>ASCⅡ</li>
+<li>Base64</li>
+<li>Binary</li>
+<li>hex</li>
+<li>UTF-8</li>
+<li>UTF-16LE/UCS-2  </li>
+</ol>
+<p>buffer还提供了isEncoding方法来判断是否支持转换为目标编码格式。   </p>
+<p>例如：把“Hellow Node”的Buffer对象转换为字符串，可以这样调用：    </p>
+<pre><code class="node.js">//制转换前五个字符 输出“hello”
+console.log(buffer.tiString(&quot;utf-8&quot;,0,5));
+</code></pre>
+<h4 id="Buffer-的拼接"><a href="#Buffer-的拼接" class="headerlink" title="Buffer 的拼接"></a>Buffer 的拼接</h4><p>Buffer一个常见的场景是用来处理HTTP的post请求，例如下面代码: </p>
+<pre><code class="node.js">var body = &apos;&apos;;
+req.setEncoding(&quot;utf-8&quot;);
+req.on(&quot;data&quot;,function(chunk){
+    body += chunk;
+});
+req.on(&quot;end&quot;,fiunction(){
+});
+</code></pre>
+<p><em>上面代码使用+=来拼接上传的数据流，这个过程包含了一个隐式的编码转换。<br>body += chunk 相当于 body+=chunk。toString()，当上传的字符全是英文字符的时候固然没有问题，  但如果包含中文或者其他语言，由于toString方法默认使用UTF-8编码，这个时候就可能出现乱码。</em></p>
+<p><strong>举个例子</strong>：首先构造一个中文字符串，并保存为test.txt<br><em>八百标兵奔北坡，北坡炮兵并排跑。炮兵排把标兵碰，标兵怕碰炮兵炮。</em></p>
+<pre><code class="node.js">var rs =require(&quot;fs&quot;).createReadStream(&quot;test.txt&quot;,{highWaterMark :10});
 var data = &quot;&quot;;
 rs.on(&quot;data&quot;,function (chunk){
     data += chunk;
@@ -45,7 +92,8 @@ rs.on(&quot;data&quot;,function (chunk){
 rs.on(&quot;end&quot;,function(){
     console.log(data);
 });
-</code></pre><p><strong>highWaterMark</strong><br>字面的意思最高水位线,它表示内部缓冲区最多能容纳的字节数，如果超过这个大小，就停止读取资源文件，默认大小64KB。<br>假设文件的大小超过默认值64KB就会触发data事件：chunk的大小就等于<em>highWaterMark</em>大小;直到文件读取完成时，触发end事件。<br>由于UTF-8中一个汉字占三个字节，那么highWaterMark设置为10，每三个子之后就有一个字会被截段，因此在调用tostring方法的时候出现乱码。<br>目前上面的代码已经被舍弃，官方推荐使用push方法来拼接Buffer，如下面代码所示：   </p>
+</code></pre>
+<p><strong>highWaterMark</strong><br>字面的意思最高水位线,它表示内部缓冲区最多能容纳的字节数，如果超过这个大小，就停止读取资源文件，默认大小64KB。<br>假设文件的大小超过默认值64KB就会触发data事件：chunk的大小就等于<em>highWaterMark</em>大小;直到文件读取完成时，触发end事件。<br>由于UTF-8中一个汉字占三个字节，那么highWaterMark设置为10，每三个子之后就有一个字会被截段，因此在调用tostring方法的时候出现乱码。<br>目前上面的代码已经被舍弃，官方推荐使用push方法来拼接Buffer，如下面代码所示：   </p>
 <pre><code class="node.js">var rs =require(&quot;fs&quot;).createReadStream(&quot;test.txt&quot;,{highWaterMark :10});
 var data = [];
 rs.on(&quot;data&quot;,function (chunk){
@@ -107,7 +155,7 @@ fs.writeFile(&quot;foo.txt&quot;, &quot;你好&quot;, { flag: &quot;a&quot;, enc
 });
 </code></pre>
 <ol start="3">
-<li><strong>fs.stat(path,callback)</strong><br>stat方法通常用来获取3文件状态。<br>通常开发者可以再调用opne(),read(),或者write方法之前调用fs.stat方法，用来判断文件是否存在。  </li>
+<li><strong>fs.stat(path,callback)</strong><br>stat方法通常用来获取3文件状态。<br>通常开发者可以再调用opne(),read(),或者write方法之前调用fs.stat方法，用来判断文件是否存在。</li>
 </ol>
 <pre><code class="node.js">var fs = require(&quot;fs&quot;);
 fs.stat(&quot;test.txt&quot;,function(err,result){
