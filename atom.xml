@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>融易通兴业团队</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://xybank.github.io/"/>
+  <updated>2018-05-08T01:20:15.203Z</updated>
+  <id>https://xybank.github.io/</id>
+  
+  <author>
+    <name>xybank</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>关于ps的一些经验</title>
+    <link href="https://xybank.github.io/2018/05/06/photoshop_start/"/>
+    <id>https://xybank.github.io/2018/05/06/photoshop_start/</id>
+    <published>2018-05-06T05:42:00.000Z</published>
+    <updated>2018-05-08T01:20:15.203Z</updated>
+    
+    <summary type="html">
+    
+      记录ps的一些实用功能，比如说证件照的制作、侧面视角正面化等等
+    
+    </summary>
+    
+      <category term="甘明阳" scheme="https://xybank.github.io/categories/%E7%94%98%E6%98%8E%E9%98%B3/"/>
+    
+    
+      <category term="photoshop" scheme="https://xybank.github.io/tags/photoshop/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>nodejs-module-buffer-fileSystem</title>
+    <link href="https://xybank.github.io/2018/05/04/nodejs_modeule_buffer_fileSystem/"/>
+    <id>https://xybank.github.io/2018/05/04/nodejs_modeule_buffer_fileSystem/</id>
+    <published>2018-05-03T16:00:00.000Z</published>
+    <updated>2018-05-08T01:20:15.203Z</updated>
+    
+    <summary type="html">
+    
+      module、buffer、fileSystem相关知识
+    
+    </summary>
+    
+      <category term="童长钱" scheme="https://xybank.github.io/categories/%E7%AB%A5%E9%95%BF%E9%92%B1/"/>
+    
+    
+      <category term="nodejs" scheme="https://xybank.github.io/tags/nodejs/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>iOS App启动广告思路</title>
+    <link href="https://xybank.github.io/2018/05/03/iOS_App_StartLaunchAD/"/>
+    <id>https://xybank.github.io/2018/05/03/iOS_App_StartLaunchAD/</id>
+    <published>2018-05-03T08:00:00.000Z</published>
+    <updated>2018-05-08T01:20:15.203Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;很多app(如淘宝、美团等)在启动图加载完毕后，还会显示几秒的广告，一般都有个跳过按钮可以跳过这个广告，有的app在点击广告页之后还会进入一个广告页面，点击返回进入首页。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="洪宇杰" scheme="https://xybank.github.io/categories/%E6%B4%AA%E5%AE%87%E6%9D%B0/"/>
+    
+    
+      <category term="iOS" scheme="https://xybank.github.io/tags/iOS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>搭建基于yaws的erlang_web服务_1_环境搭建</title>
+    <link href="https://xybank.github.io/2018/04/26/yaws.web1/"/>
+    <id>https://xybank.github.io/2018/04/26/yaws.web1/</id>
+    <published>2018-04-26T04:51:25.000Z</published>
+    <updated>2018-05-08T01:20:15.203Z</updated>
+    
+    <summary type="html">
+    
+      搭建基于yaws的erlang_web服务
+    
+    </summary>
+    
+      <category term="张永枫" scheme="https://xybank.github.io/categories/%E5%BC%A0%E6%B0%B8%E6%9E%AB/"/>
+    
+    
+      <category term="yaws" scheme="https://xybank.github.io/tags/yaws/"/>
+    
+      <category term="erlang" scheme="https://xybank.github.io/tags/erlang/"/>
+    
+      <category term="web" scheme="https://xybank.github.io/tags/web/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>基于练手项目的网络框架搭建</title>
+    <link href="https://xybank.github.io/2018/04/25/blog_restful_GitHub/"/>
+    <id>https://xybank.github.io/2018/04/25/blog_restful_GitHub/</id>
+    <published>2018-04-25T08:00:00.000Z</published>
+    <updated>2018-05-08T01:20:15.203Z</updated>
+    
+    <summary type="html">
+    
+      基于Rxjava+okhttp+retrofit搭建的网络请求框架，封装了练手项目中的各个表对应的基本网络请求
+    
+    </summary>
+    
+      <category term="彭连" scheme="https://xybank.github.io/categories/%E5%BD%AD%E8%BF%9E/"/>
+    
+    
+      <category term="Android" scheme="https://xybank.github.io/tags/Android/"/>
+    
+      <category term="rxjava" scheme="https://xybank.github.io/tags/rxjava/"/>
+    
+      <category term="retrofit" scheme="https://xybank.github.io/tags/retrofit/"/>
+    
+      <category term="okhttp" scheme="https://xybank.github.io/tags/okhttp/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Github-Rss</title>
+    <link href="https://xybank.github.io/2018/04/25/Github-Rss/"/>
+    <id>https://xybank.github.io/2018/04/25/Github-Rss/</id>
+    <published>2018-04-25T02:38:13.000Z</published>
+    <updated>2018-05-08T01:20:15.203Z</updated>
+    
+    <summary type="html">
+    
+      rss
+    
+    </summary>
+    
+      <category term="薛玉博" scheme="https://xybank.github.io/categories/%E8%96%9B%E7%8E%89%E5%8D%9A/"/>
+    
+    
+      <category term="Rss" scheme="https://xybank.github.io/tags/Rss/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>lua数据结构table的键值存取过程源码分析</title>
+    <link href="https://xybank.github.io/2018/04/20/lua_table_accessor/"/>
+    <id>https://xybank.github.io/2018/04/20/lua_table_accessor/</id>
+    <published>2018-04-19T16:00:00.000Z</published>
+    <updated>2018-05-08T01:20:15.203Z</updated>
+    
+    <summary type="html">
+    
+      table的键值存取源码分析
+    
+    </summary>
+    
+      <category term="赖钧" scheme="https://xybank.github.io/categories/%E8%B5%96%E9%92%A7/"/>
+    
+    
+      <category term="lua" scheme="https://xybank.github.io/tags/lua/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>css响应式布局</title>
+    <link href="https://xybank.github.io/2018/04/18/css%20response%20type%20layout/"/>
+    <id>https://xybank.github.io/2018/04/18/css response type layout/</id>
+    <published>2018-04-18T13:14:06.000Z</published>
+    <updated>2018-05-08T01:20:15.203Z</updated>
+    
+    <summary type="html">
+    
+      css响应式布局
+    
+    </summary>
+    
+      <category term="余硕" scheme="https://xybank.github.io/categories/%E4%BD%99%E7%A1%95/"/>
+    
+    
+      <category term="css，布局" scheme="https://xybank.github.io/tags/css%EF%BC%8C%E5%B8%83%E5%B1%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>HTML5_web存储和应用缓存</title>
+    <link href="https://xybank.github.io/2018/04/17/HTML5_web_storage_and_application_cache/"/>
+    <id>https://xybank.github.io/2018/04/17/HTML5_web_storage_and_application_cache/</id>
+    <published>2018-04-17T05:14:15.000Z</published>
+    <updated>2018-05-08T01:20:15.203Z</updated>
+    
+    <summary type="html">
+    
+      HTML5_web存储和应用缓存
+    
+    </summary>
+    
+      <category term="匡利金" scheme="https://xybank.github.io/categories/%E5%8C%A1%E5%88%A9%E9%87%91/"/>
+    
+    
+      <category term="HTML5" scheme="https://xybank.github.io/tags/HTML5/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>处理hexo使用next主题遇到的问题</title>
+    <link href="https://xybank.github.io/2018/04/17/HexoForNext/"/>
+    <id>https://xybank.github.io/2018/04/17/HexoForNext/</id>
+    <published>2018-04-17T02:42:00.000Z</published>
+    <updated>2018-05-08T01:20:15.203Z</updated>
+    
+    <summary type="html">
+    
+      主要是记录要改动的配置信息
+    
+    </summary>
+    
+      <category term="甘明阳" scheme="https://xybank.github.io/categories/%E7%94%98%E6%98%8E%E9%98%B3/"/>
+    
+    
+      <category term="hexo" scheme="https://xybank.github.io/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>linux下vi编辑</title>
+    <link href="https://xybank.github.io/2018/04/13/linux_vi_edit/"/>
+    <id>https://xybank.github.io/2018/04/13/linux_vi_edit/</id>
+    <published>2018-04-13T13:46:55.000Z</published>
+    <updated>2018-05-08T01:20:15.203Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;​    简单介绍linux下vi的使用
+    
+    </summary>
+    
+      <category term="方振养" scheme="https://xybank.github.io/categories/%E6%96%B9%E6%8C%AF%E5%85%BB/"/>
+    
+    
+      <category term="vi的编辑" scheme="https://xybank.github.io/tags/vi%E7%9A%84%E7%BC%96%E8%BE%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>css3-flexbox（弹性盒子）</title>
+    <link href="https://xybank.github.io/2018/04/13/css3-flexbox/"/>
+    <id>https://xybank.github.io/2018/04/13/css3-flexbox/</id>
+    <published>2018-04-13T13:14:06.000Z</published>
+    <updated>2018-05-08T01:20:15.203Z</updated>
+    
+    <summary type="html">
+    
+      css3弹性盒子布局
+    
+    </summary>
+    
+      <category term="卢文才" scheme="https://xybank.github.io/categories/%E5%8D%A2%E6%96%87%E6%89%8D/"/>
+    
+    
+      <category term="css3，flexbox" scheme="https://xybank.github.io/tags/css3%EF%BC%8Cflexbox/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Android MVP设计架构学习</title>
+    <link href="https://xybank.github.io/2018/04/11/blog_mvp_Github/"/>
+    <id>https://xybank.github.io/2018/04/11/blog_mvp_Github/</id>
+    <published>2018-04-11T07:05:00.000Z</published>
+    <updated>2018-05-08T01:20:15.203Z</updated>
+    
+    <summary type="html">
+    
+      本文只研究MVP设计架构基础版，后续由各大神扩展的升级版以后研究
+    
+    </summary>
+    
+      <category term="黄涛" scheme="https://xybank.github.io/categories/%E9%BB%84%E6%B6%9B/"/>
+    
+    
+      <category term="Android" scheme="https://xybank.github.io/tags/Android/"/>
+    
+      <category term="MVP" scheme="https://xybank.github.io/tags/MVP/"/>
+    
+      <category term="设计架构" scheme="https://xybank.github.io/tags/%E8%AE%BE%E8%AE%A1%E6%9E%B6%E6%9E%84/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>React 简单介绍</title>
+    <link href="https://xybank.github.io/2018/04/09/React/"/>
+    <id>https://xybank.github.io/2018/04/09/React/</id>
+    <published>2018-04-09T03:30:00.000Z</published>
+    <updated>2018-05-08T01:20:15.203Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;React 是较早使用 JavaScript 构建大型、快速的 Web 应用程序的技术方案。它已经被广泛应用于 Facebook 和 Instagram。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="李志丹" scheme="https://xybank.github.io/categories/%E6%9D%8E%E5%BF%97%E4%B8%B9/"/>
+    
+    
+      <category term="react" scheme="https://xybank.github.io/tags/react/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Html5-1</title>
+    <link href="https://xybank.github.io/2018/04/04/html5_base_info/"/>
+    <id>https://xybank.github.io/2018/04/04/html5_base_info/</id>
+    <published>2018-04-03T16:00:00.000Z</published>
+    <updated>2018-05-08T01:20:15.203Z</updated>
+    
+    <summary type="html">
+    
+      Html5说明  （变化、差异、特性...）
+    
+    </summary>
+    
+      <category term="童长钱" scheme="https://xybank.github.io/categories/%E7%AB%A5%E9%95%BF%E9%92%B1/"/>
+    
+    
+      <category term="HTML5" scheme="https://xybank.github.io/tags/HTML5/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>html5-form表单</title>
+    <link href="https://xybank.github.io/2018/04/02/html5_form/"/>
+    <id>https://xybank.github.io/2018/04/02/html5_form/</id>
+    <published>2018-04-02T13:14:06.000Z</published>
+    <updated>2018-05-08T01:20:15.202Z</updated>
+    
+    <summary type="html">
+    
+      form表单的事件属性
+    
+    </summary>
+    
+      <category term="薛玉博" scheme="https://xybank.github.io/categories/%E8%96%9B%E7%8E%89%E5%8D%9A/"/>
+    
+    
+      <category term="form表单，html5" scheme="https://xybank.github.io/tags/form%E8%A1%A8%E5%8D%95%EF%BC%8Chtml5/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>用Jenkins自动部署hexo搭建的GitHub静态博客</title>
+    <link href="https://xybank.github.io/2018/04/02/blog_hexo_GitHub_jenkins/"/>
+    <id>https://xybank.github.io/2018/04/02/blog_hexo_GitHub_jenkins/</id>
+    <published>2018-04-02T05:30:00.000Z</published>
+    <updated>2018-05-08T01:20:15.203Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;hexo 为我们提供了一套非常方便的静态博客搭建框架，我们只需要编写文章的 MarkDown 文件即可。但是即便方便，还是会有几个繁琐的步骤：每次写一篇博客都需要执行编译命令，再将新生成的网页代码提交到 GitHub；而且，如果博客是由团队成员共同贡献，很难做到协同维护。使用 Jenkins 可以帮我们一定程度上解决这两个问题。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="蔡向炜" scheme="https://xybank.github.io/categories/%E8%94%A1%E5%90%91%E7%82%9C/"/>
+    
+    
+      <category term="hexo" scheme="https://xybank.github.io/tags/hexo/"/>
+    
+      <category term="Jenkins" scheme="https://xybank.github.io/tags/Jenkins/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>iOS App架构初研</title>
+    <link href="https://xybank.github.io/2018/03/30/iOS_App_structure/"/>
+    <id>https://xybank.github.io/2018/03/30/iOS_App_structure/</id>
+    <published>2018-03-30T08:00:00.000Z</published>
+    <updated>2018-05-08T01:20:15.203Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;目前市场上iOS平台的APP架构最流行的主要分两种：MVC和MVVM&lt;br&gt;本次就对这两种架构进行初步研究&lt;br&gt;参考资料:&lt;a href=&quot;https://www.jianshu.com/p/eedbc820d40a&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;杂谈: MVC/MVP/MVVM&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="洪宇杰" scheme="https://xybank.github.io/categories/%E6%B4%AA%E5%AE%87%E6%9D%B0/"/>
+    
+    
+      <category term="iOS" scheme="https://xybank.github.io/tags/iOS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>linux上面安装配置mysql</title>
+    <link href="https://xybank.github.io/2018/03/29/linux_mysql/"/>
+    <id>https://xybank.github.io/2018/03/29/linux_mysql/</id>
+    <published>2018-03-29T11:05:00.000Z</published>
+    <updated>2018-05-08T01:20:15.203Z</updated>
+    
+    <summary type="html">
+    
+      linux上搭建mysql流程
+    
+    </summary>
+    
+      <category term="甘明阳" scheme="https://xybank.github.io/categories/%E7%94%98%E6%98%8E%E9%98%B3/"/>
+    
+    
+      <category term="linux" scheme="https://xybank.github.io/tags/linux/"/>
+    
+      <category term="mysql" scheme="https://xybank.github.io/tags/mysql/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Html5基础（初识标签结构）</title>
+    <link href="https://xybank.github.io/2018/03/29/html5_label_structure/"/>
+    <id>https://xybank.github.io/2018/03/29/html5_label_structure/</id>
+    <published>2018-03-29T11:01:01.000Z</published>
+    <updated>2018-05-08T01:20:15.203Z</updated>
+    
+    <summary type="html">
+    
+      Html5 基础-初识标签和结构
+    
+    </summary>
+    
+      <category term="童长钱" scheme="https://xybank.github.io/categories/%E7%AB%A5%E9%95%BF%E9%92%B1/"/>
+    
+    
+      <category term="HTML5" scheme="https://xybank.github.io/tags/HTML5/"/>
+    
+  </entry>
+  
+</feed>
