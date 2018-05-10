@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://xybank.github.io/"/>
-  <updated>2018-05-10T05:56:56.071Z</updated>
+  <updated>2018-05-10T06:23:35.755Z</updated>
   <id>https://xybank.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://xybank.github.io/2018/05/10/Lua-string/"/>
     <id>https://xybank.github.io/2018/05/10/Lua-string/</id>
     <published>2018-05-10T08:27:00.000Z</published>
-    <updated>2018-05-10T05:56:56.071Z</updated>
+    <updated>2018-05-10T06:23:35.755Z</updated>
     
     <summary type="html">
     
@@ -41,7 +41,7 @@
     <link href="https://xybank.github.io/2018/05/07/three_location/"/>
     <id>https://xybank.github.io/2018/05/07/three_location/</id>
     <published>2018-05-07T08:05:48.000Z</published>
-    <updated>2018-05-10T05:56:56.071Z</updated>
+    <updated>2018-05-10T06:23:35.756Z</updated>
     
     <summary type="html">
     
@@ -61,7 +61,7 @@
     <link href="https://xybank.github.io/2018/05/06/photoshop_start/"/>
     <id>https://xybank.github.io/2018/05/06/photoshop_start/</id>
     <published>2018-05-06T05:42:00.000Z</published>
-    <updated>2018-05-10T05:56:56.071Z</updated>
+    <updated>2018-05-10T06:23:35.756Z</updated>
     
     <summary type="html">
     
@@ -81,7 +81,7 @@
     <link href="https://xybank.github.io/2018/05/04/nodejs_modeule_buffer_fileSystem/"/>
     <id>https://xybank.github.io/2018/05/04/nodejs_modeule_buffer_fileSystem/</id>
     <published>2018-05-03T16:00:00.000Z</published>
-    <updated>2018-05-10T05:56:56.070Z</updated>
+    <updated>2018-05-10T06:23:35.755Z</updated>
     
     <summary type="html">
     
@@ -101,7 +101,7 @@
     <link href="https://xybank.github.io/2018/05/03/iOS_App_StartLaunchAD/"/>
     <id>https://xybank.github.io/2018/05/03/iOS_App_StartLaunchAD/</id>
     <published>2018-05-03T08:00:00.000Z</published>
-    <updated>2018-05-10T05:56:56.071Z</updated>
+    <updated>2018-05-10T06:23:35.756Z</updated>
     
     <summary type="html">
     
@@ -119,11 +119,31 @@
   </entry>
   
   <entry>
+    <title>html5 弹性布局</title>
+    <link href="https://xybank.github.io/2018/04/30/html5%E5%B8%83%E5%B1%80/"/>
+    <id>https://xybank.github.io/2018/04/30/html5布局/</id>
+    <published>2018-04-30T07:10:23.000Z</published>
+    <updated>2018-05-10T06:23:35.755Z</updated>
+    
+    <summary type="html">
+    
+      html5 弹性布局
+    
+    </summary>
+    
+      <category term="杨新才" scheme="https://xybank.github.io/categories/%E6%9D%A8%E6%96%B0%E6%89%8D/"/>
+    
+    
+      <category term="HTML5" scheme="https://xybank.github.io/tags/HTML5/"/>
+    
+  </entry>
+  
+  <entry>
     <title>搭建基于yaws的erlang_web服务_1_环境搭建</title>
     <link href="https://xybank.github.io/2018/04/26/yaws.web1/"/>
     <id>https://xybank.github.io/2018/04/26/yaws.web1/</id>
     <published>2018-04-26T04:51:25.000Z</published>
-    <updated>2018-05-10T05:56:56.070Z</updated>
+    <updated>2018-05-10T06:23:35.755Z</updated>
     
     <summary type="html">
     
@@ -147,7 +167,7 @@
     <link href="https://xybank.github.io/2018/04/25/blog_restful_GitHub/"/>
     <id>https://xybank.github.io/2018/04/25/blog_restful_GitHub/</id>
     <published>2018-04-25T08:00:00.000Z</published>
-    <updated>2018-05-10T05:56:56.070Z</updated>
+    <updated>2018-05-10T06:23:35.755Z</updated>
     
     <summary type="html">
     
@@ -173,7 +193,7 @@
     <link href="https://xybank.github.io/2018/04/25/Github-Rss/"/>
     <id>https://xybank.github.io/2018/04/25/Github-Rss/</id>
     <published>2018-04-25T02:38:13.000Z</published>
-    <updated>2018-05-10T05:56:56.071Z</updated>
+    <updated>2018-05-10T06:23:35.756Z</updated>
     
     <summary type="html">
     
@@ -193,7 +213,7 @@
     <link href="https://xybank.github.io/2018/04/20/lua_table_accessor/"/>
     <id>https://xybank.github.io/2018/04/20/lua_table_accessor/</id>
     <published>2018-04-19T16:00:00.000Z</published>
-    <updated>2018-05-10T05:56:56.070Z</updated>
+    <updated>2018-05-10T06:23:35.755Z</updated>
     
     <summary type="html">
     
@@ -213,7 +233,7 @@
     <link href="https://xybank.github.io/2018/04/18/css%20response%20type%20layout/"/>
     <id>https://xybank.github.io/2018/04/18/css response type layout/</id>
     <published>2018-04-18T13:14:06.000Z</published>
-    <updated>2018-05-10T05:56:56.071Z</updated>
+    <updated>2018-05-10T06:23:35.756Z</updated>
     
     <summary type="html">
     
@@ -233,7 +253,7 @@
     <link href="https://xybank.github.io/2018/04/17/HTML5_web_storage_and_application_cache/"/>
     <id>https://xybank.github.io/2018/04/17/HTML5_web_storage_and_application_cache/</id>
     <published>2018-04-17T05:14:15.000Z</published>
-    <updated>2018-05-10T05:56:56.070Z</updated>
+    <updated>2018-05-10T06:23:35.755Z</updated>
     
     <summary type="html">
     
@@ -253,7 +273,7 @@
     <link href="https://xybank.github.io/2018/04/17/HexoForNext/"/>
     <id>https://xybank.github.io/2018/04/17/HexoForNext/</id>
     <published>2018-04-17T02:42:00.000Z</published>
-    <updated>2018-05-10T05:56:56.071Z</updated>
+    <updated>2018-05-10T06:23:35.756Z</updated>
     
     <summary type="html">
     
@@ -273,7 +293,7 @@
     <link href="https://xybank.github.io/2018/04/13/linux_vi_edit/"/>
     <id>https://xybank.github.io/2018/04/13/linux_vi_edit/</id>
     <published>2018-04-13T13:46:55.000Z</published>
-    <updated>2018-05-10T05:56:56.071Z</updated>
+    <updated>2018-05-10T06:23:35.756Z</updated>
     
     <summary type="html">
     
@@ -293,7 +313,7 @@
     <link href="https://xybank.github.io/2018/04/13/css3-flexbox/"/>
     <id>https://xybank.github.io/2018/04/13/css3-flexbox/</id>
     <published>2018-04-13T13:14:06.000Z</published>
-    <updated>2018-05-10T05:56:56.071Z</updated>
+    <updated>2018-05-10T06:23:35.756Z</updated>
     
     <summary type="html">
     
@@ -313,7 +333,7 @@
     <link href="https://xybank.github.io/2018/04/11/blog_mvp_Github/"/>
     <id>https://xybank.github.io/2018/04/11/blog_mvp_Github/</id>
     <published>2018-04-11T07:05:00.000Z</published>
-    <updated>2018-05-10T05:56:56.071Z</updated>
+    <updated>2018-05-10T06:23:35.755Z</updated>
     
     <summary type="html">
     
@@ -337,7 +357,7 @@
     <link href="https://xybank.github.io/2018/04/09/React/"/>
     <id>https://xybank.github.io/2018/04/09/React/</id>
     <published>2018-04-09T03:30:00.000Z</published>
-    <updated>2018-05-10T05:56:56.070Z</updated>
+    <updated>2018-05-10T06:23:35.755Z</updated>
     
     <summary type="html">
     
@@ -357,7 +377,7 @@
     <link href="https://xybank.github.io/2018/04/04/html5_base_info/"/>
     <id>https://xybank.github.io/2018/04/04/html5_base_info/</id>
     <published>2018-04-03T16:00:00.000Z</published>
-    <updated>2018-05-10T05:56:56.071Z</updated>
+    <updated>2018-05-10T06:23:35.756Z</updated>
     
     <summary type="html">
     
@@ -377,7 +397,7 @@
     <link href="https://xybank.github.io/2018/04/02/html5_form/"/>
     <id>https://xybank.github.io/2018/04/02/html5_form/</id>
     <published>2018-04-02T13:14:06.000Z</published>
-    <updated>2018-05-10T05:56:56.070Z</updated>
+    <updated>2018-05-10T06:23:35.755Z</updated>
     
     <summary type="html">
     
@@ -397,7 +417,7 @@
     <link href="https://xybank.github.io/2018/04/02/blog_hexo_GitHub_jenkins/"/>
     <id>https://xybank.github.io/2018/04/02/blog_hexo_GitHub_jenkins/</id>
     <published>2018-04-02T05:30:00.000Z</published>
-    <updated>2018-05-10T05:56:56.071Z</updated>
+    <updated>2018-05-10T06:23:35.756Z</updated>
     
     <summary type="html">
     
@@ -411,28 +431,6 @@
       <category term="hexo" scheme="https://xybank.github.io/tags/hexo/"/>
     
       <category term="Jenkins" scheme="https://xybank.github.io/tags/Jenkins/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>iOS App架构初研</title>
-    <link href="https://xybank.github.io/2018/03/30/iOS_App_structure/"/>
-    <id>https://xybank.github.io/2018/03/30/iOS_App_structure/</id>
-    <published>2018-03-30T08:00:00.000Z</published>
-    <updated>2018-05-10T05:56:56.071Z</updated>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;目前市场上iOS平台的APP架构最流行的主要分两种：MVC和MVVM&lt;br&gt;本次就对这两种架构进行初步研究&lt;br&gt;参考资料:&lt;a href=&quot;https://www.jianshu.com/p/eedbc820d40a&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;杂谈: MVC/MVP/MVVM&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-      <category term="洪宇杰" scheme="https://xybank.github.io/categories/%E6%B4%AA%E5%AE%87%E6%9D%B0/"/>
-    
-    
-      <category term="iOS" scheme="https://xybank.github.io/tags/iOS/"/>
     
   </entry>
   
