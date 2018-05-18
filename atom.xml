@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://xybank.github.io/"/>
-  <updated>2018-05-18T06:16:42.035Z</updated>
+  <updated>2018-05-18T06:50:46.333Z</updated>
   <id>https://xybank.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://xybank.github.io/2018/05/18/node-mysql/"/>
     <id>https://xybank.github.io/2018/05/18/node-mysql/</id>
     <published>2018-05-18T05:15:12.000Z</published>
-    <updated>2018-05-18T06:16:42.035Z</updated>
+    <updated>2018-05-18T06:50:46.333Z</updated>
     
     <summary type="html">
     
@@ -39,11 +39,31 @@
   </entry>
   
   <entry>
+    <title>抓包工具（Fiddler）的简单使用和实际的调试案例</title>
+    <link href="https://xybank.github.io/2018/05/17/Fiddler_start/"/>
+    <id>https://xybank.github.io/2018/05/17/Fiddler_start/</id>
+    <published>2018-05-17T15:10:23.000Z</published>
+    <updated>2018-05-18T06:50:46.333Z</updated>
+    
+    <summary type="html">
+    
+      抓包工具（Fiddler）的简单使用和实际的调试案例
+    
+    </summary>
+    
+      <category term="余声赞" scheme="https://xybank.github.io/categories/%E4%BD%99%E5%A3%B0%E8%B5%9E/"/>
+    
+    
+      <category term="Fiddler" scheme="https://xybank.github.io/tags/Fiddler/"/>
+    
+  </entry>
+  
+  <entry>
     <title>JS-timer</title>
     <link href="https://xybank.github.io/2018/05/17/JS-timer/"/>
     <id>https://xybank.github.io/2018/05/17/JS-timer/</id>
     <published>2018-05-17T07:12:04.000Z</published>
-    <updated>2018-05-18T06:16:42.034Z</updated>
+    <updated>2018-05-18T06:50:46.333Z</updated>
     
     <summary type="html">
     
@@ -63,7 +83,7 @@
     <link href="https://xybank.github.io/2018/05/15/iOS-runtime-weak-reference/"/>
     <id>https://xybank.github.io/2018/05/15/iOS-runtime-weak-reference/</id>
     <published>2018-05-15T08:31:12.000Z</published>
-    <updated>2018-05-18T06:16:42.034Z</updated>
+    <updated>2018-05-18T06:50:46.333Z</updated>
     
     <summary type="html">
     
@@ -83,7 +103,7 @@
     <link href="https://xybank.github.io/2018/05/10/Lua-string/"/>
     <id>https://xybank.github.io/2018/05/10/Lua-string/</id>
     <published>2018-05-10T08:27:00.000Z</published>
-    <updated>2018-05-18T06:16:42.034Z</updated>
+    <updated>2018-05-18T06:50:46.333Z</updated>
     
     <summary type="html">
     
@@ -103,7 +123,7 @@
     <link href="https://xybank.github.io/2018/05/09/Java_Reference/"/>
     <id>https://xybank.github.io/2018/05/09/Java_Reference/</id>
     <published>2018-05-09T02:00:00.000Z</published>
-    <updated>2018-05-18T06:16:42.035Z</updated>
+    <updated>2018-05-18T06:50:46.333Z</updated>
     
     <summary type="html">
     
@@ -123,7 +143,7 @@
     <link href="https://xybank.github.io/2018/05/08/Mybatis-Project/"/>
     <id>https://xybank.github.io/2018/05/08/Mybatis-Project/</id>
     <published>2018-05-08T04:00:00.000Z</published>
-    <updated>2018-05-18T06:16:42.035Z</updated>
+    <updated>2018-05-18T06:50:46.334Z</updated>
     
     <summary type="html">
     
@@ -143,7 +163,7 @@
     <link href="https://xybank.github.io/2018/05/07/three_location/"/>
     <id>https://xybank.github.io/2018/05/07/three_location/</id>
     <published>2018-05-07T08:05:48.000Z</published>
-    <updated>2018-05-18T06:16:42.035Z</updated>
+    <updated>2018-05-18T06:50:46.334Z</updated>
     
     <summary type="html">
     
@@ -163,7 +183,7 @@
     <link href="https://xybank.github.io/2018/05/06/photoshop_start/"/>
     <id>https://xybank.github.io/2018/05/06/photoshop_start/</id>
     <published>2018-05-06T05:42:00.000Z</published>
-    <updated>2018-05-18T06:16:42.035Z</updated>
+    <updated>2018-05-18T06:50:46.334Z</updated>
     
     <summary type="html">
     
@@ -183,7 +203,7 @@
     <link href="https://xybank.github.io/2018/05/04/nodejs_modeule_buffer_fileSystem/"/>
     <id>https://xybank.github.io/2018/05/04/nodejs_modeule_buffer_fileSystem/</id>
     <published>2018-05-03T16:00:00.000Z</published>
-    <updated>2018-05-18T06:16:42.034Z</updated>
+    <updated>2018-05-18T06:50:46.333Z</updated>
     
     <summary type="html">
     
@@ -203,7 +223,7 @@
     <link href="https://xybank.github.io/2018/05/03/iOS_App_StartLaunchAD/"/>
     <id>https://xybank.github.io/2018/05/03/iOS_App_StartLaunchAD/</id>
     <published>2018-05-03T08:00:00.000Z</published>
-    <updated>2018-05-18T06:16:42.035Z</updated>
+    <updated>2018-05-18T06:50:46.334Z</updated>
     
     <summary type="html">
     
@@ -225,7 +245,7 @@
     <link href="https://xybank.github.io/2018/04/30/html5%E5%B8%83%E5%B1%80/"/>
     <id>https://xybank.github.io/2018/04/30/html5布局/</id>
     <published>2018-04-30T07:10:23.000Z</published>
-    <updated>2018-05-18T06:16:42.034Z</updated>
+    <updated>2018-05-18T06:50:46.333Z</updated>
     
     <summary type="html">
     
@@ -245,7 +265,7 @@
     <link href="https://xybank.github.io/2018/04/26/yaws.web1/"/>
     <id>https://xybank.github.io/2018/04/26/yaws.web1/</id>
     <published>2018-04-26T04:51:25.000Z</published>
-    <updated>2018-05-18T06:16:42.034Z</updated>
+    <updated>2018-05-18T06:50:46.333Z</updated>
     
     <summary type="html">
     
@@ -269,7 +289,7 @@
     <link href="https://xybank.github.io/2018/04/25/blog_restful_GitHub/"/>
     <id>https://xybank.github.io/2018/04/25/blog_restful_GitHub/</id>
     <published>2018-04-25T08:00:00.000Z</published>
-    <updated>2018-05-18T06:16:42.034Z</updated>
+    <updated>2018-05-18T06:50:46.333Z</updated>
     
     <summary type="html">
     
@@ -295,7 +315,7 @@
     <link href="https://xybank.github.io/2018/04/25/Github-Rss/"/>
     <id>https://xybank.github.io/2018/04/25/Github-Rss/</id>
     <published>2018-04-25T02:38:13.000Z</published>
-    <updated>2018-05-18T06:16:42.034Z</updated>
+    <updated>2018-05-18T06:50:46.333Z</updated>
     
     <summary type="html">
     
@@ -315,7 +335,7 @@
     <link href="https://xybank.github.io/2018/04/20/lua_table_accessor/"/>
     <id>https://xybank.github.io/2018/04/20/lua_table_accessor/</id>
     <published>2018-04-19T16:00:00.000Z</published>
-    <updated>2018-05-18T06:16:42.034Z</updated>
+    <updated>2018-05-18T06:50:46.333Z</updated>
     
     <summary type="html">
     
@@ -335,7 +355,7 @@
     <link href="https://xybank.github.io/2018/04/18/css%20response%20type%20layout/"/>
     <id>https://xybank.github.io/2018/04/18/css response type layout/</id>
     <published>2018-04-18T13:14:06.000Z</published>
-    <updated>2018-05-18T06:16:42.034Z</updated>
+    <updated>2018-05-18T06:50:46.333Z</updated>
     
     <summary type="html">
     
@@ -355,7 +375,7 @@
     <link href="https://xybank.github.io/2018/04/17/HTML5_web_storage_and_application_cache/"/>
     <id>https://xybank.github.io/2018/04/17/HTML5_web_storage_and_application_cache/</id>
     <published>2018-04-17T05:14:15.000Z</published>
-    <updated>2018-05-18T06:16:42.034Z</updated>
+    <updated>2018-05-18T06:50:46.333Z</updated>
     
     <summary type="html">
     
@@ -375,7 +395,7 @@
     <link href="https://xybank.github.io/2018/04/17/HexoForNext/"/>
     <id>https://xybank.github.io/2018/04/17/HexoForNext/</id>
     <published>2018-04-17T02:42:00.000Z</published>
-    <updated>2018-05-18T06:16:42.035Z</updated>
+    <updated>2018-05-18T06:50:46.333Z</updated>
     
     <summary type="html">
     
@@ -395,7 +415,7 @@
     <link href="https://xybank.github.io/2018/04/13/linux_vi_edit/"/>
     <id>https://xybank.github.io/2018/04/13/linux_vi_edit/</id>
     <published>2018-04-13T13:46:55.000Z</published>
-    <updated>2018-05-18T06:16:42.035Z</updated>
+    <updated>2018-05-18T06:50:46.333Z</updated>
     
     <summary type="html">
     
@@ -407,26 +427,6 @@
     
     
       <category term="vi的编辑" scheme="https://xybank.github.io/tags/vi%E7%9A%84%E7%BC%96%E8%BE%91/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>css3-flexbox（弹性盒子）</title>
-    <link href="https://xybank.github.io/2018/04/13/css3-flexbox/"/>
-    <id>https://xybank.github.io/2018/04/13/css3-flexbox/</id>
-    <published>2018-04-13T13:14:06.000Z</published>
-    <updated>2018-05-18T06:16:42.035Z</updated>
-    
-    <summary type="html">
-    
-      css3弹性盒子布局
-    
-    </summary>
-    
-      <category term="卢文才" scheme="https://xybank.github.io/categories/%E5%8D%A2%E6%96%87%E6%89%8D/"/>
-    
-    
-      <category term="css3，flexbox" scheme="https://xybank.github.io/tags/css3%EF%BC%8Cflexbox/"/>
     
   </entry>
   
