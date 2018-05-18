@@ -1,0 +1,142 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description"><title>node连接MySql操作数据库 | 融易通兴业团队</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/normalize/8.0.0/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/1.0.0/pure-min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/1.0.0/grids-responsive-min.css"><link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">node连接MySql操作数据库</h1><a id="logo" href="/.">融易通兴业团队</a><p class="description"></p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/atom.xml"><i class="fa fa-rss"> 订阅</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">node连接MySql操作数据库</h1><div class="post-meta">May 18, 2018<span> | </span><span class="category"><a href="/categories/匡利金/">匡利金</a></span></div><div class="post-content"><p>nodejs的教程，大多以操作mongodb或者mysql。我打算用MySQL主要是因为懒，其次接触的比较多。</p>
+<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><p>1.安装mysql数据库</p>
+<ul>
+<li><p><strong>这里笔者也比较懒，使用的<em>xammp（Apache+MySQL+PHP+PERL）</em>套件，里面自带mysql数据库，默认账号root密码空，使用比较方便，不需要直接写在就好</strong>。</p>
+</li>
+<li><p>1.1 连接数据库<br>新建一个库（db_rytong）<br>新建一个员工表（employee ）</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>字段名称</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>emp_id</td>
+<td>主键ID</td>
+</tr>
+<tr>
+<td>emp_name</td>
+<td>名称</td>
+</tr>
+<tr>
+<td>emp_sex</td>
+<td>性别</td>
+</tr>
+<tr>
+<td>emp_age</td>
+<td>年龄</td>
+</tr>
+<tr>
+<td>emp_tel</td>
+<td>手机号码</td>
+</tr>
+<tr>
+<td>emp_job</td>
+<td>职位</td>
+</tr>
+<tr>
+<td>address</td>
+<td>住址</td>
+</tr>
+<tr>
+<td>email</td>
+<td>邮箱</td>
+</tr>
+</tbody>
+</table>
+<p>2.安装nodejs<a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">链接地址:https://nodejs.org/en/download/</a></p>
+<p><em>在cmd命令框里输入npm -v 查看<br>出现版本信息说明安装成功!</em></p>
+<p>3.新建文件目录</p>
+<ul>
+<li><p>例如在D盘目录node文件夹下新建mysql文件夹。<br>目录：D:\node\mysql\</p>
+</li>
+<li><p>执行 npm install mysqy 安装插件</p>
+</li>
+</ul>
+<p>到此准备工作基本就做完了</p>
+<h2 id="连接数据库"><a href="#连接数据库" class="headerlink" title="连接数据库"></a>连接数据库</h2><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">var mysql</span>      = require(<span class="string">'mysql'</span>);</span><br><span class="line"><span class="attribute">var connection</span> = mysql.createConnection(&#123;</span><br><span class="line">  host     : <span class="string">'localhost'</span>,</span><br><span class="line">  user     : <span class="string">'root'</span>,</span><br><span class="line">  password : <span class="string">''</span>,</span><br><span class="line">  database : <span class="string">'db_rytong'</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p>创建数据库连接。</p>
+<h2 id="操作数据-增删改查"><a href="#操作数据-增删改查" class="headerlink" title="操作数据(增删改查)"></a>操作数据(增删改查)</h2><p>1.查询数据</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> mysql  = <span class="built_in">require</span>(<span class="string">'mysql'</span>);  </span><br><span class="line"><span class="keyword">var</span> connection = mysql.createConnection(&#123;   <span class="attr">host</span>     : <span class="string">'localhost'</span>,</span><br><span class="line">  user     : <span class="string">'root'</span>,</span><br><span class="line">  password : <span class="string">''</span>,</span><br><span class="line">  database : <span class="string">'db_rytong'</span></span><br><span class="line">&#125;); </span><br><span class="line"></span><br><span class="line">connection.connect();</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span>  sql = <span class="string">'SELECT * FROM employee'</span>;</span><br><span class="line">connection.query(sql,<span class="function"><span class="keyword">function</span> (<span class="params">err, result</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(err)&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">'[SELECT ERROR] - '</span>,err.message);</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">console</span>.log(result);</span><br><span class="line">&#125;);</span><br><span class="line">connection.end();</span><br></pre></td></tr></table></figure>
+<p>查询结果如下：</p>
+<table>
+<thead>
+<tr>
+<th>emp_id</th>
+<th>emp_name</th>
+<th>emp_sex</th>
+<th>emp_age</th>
+<th>emp_tel</th>
+<th>emp_job</th>
+<th>email </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>小明</td>
+<td>男</td>
+<td>22</td>
+<td>1333333333</td>
+<td>java工程师</td>
+<td><a href="mailto:xiaoming@163.com" target="_blank" rel="noopener">xiaoming@163.com</a></td>
+</tr>
+<tr>
+<td>2</td>
+<td>小红</td>
+<td>nv</td>
+<td>18</td>
+<td>13333344444</td>
+<td>美工</td>
+<td><a href="mailto:xiaohong@163.com1" target="_blank" rel="noopener">xiaohong@163.com1</a></td>
+<td>小明</td>
+<td>男</td>
+<td>22</td>
+<td>1333333333</td>
+<td>java工程师</td>
+<td><a href="mailto:xiaohongmao@163.com" target="_blank" rel="noopener">xiaohongmao@163.com</a></td>
+</tr>
+<tr>
+<td>3</td>
+<td>小李</td>
+<td>男</td>
+<td>22</td>
+<td>1337777777</td>
+<td>销售</td>
+<td><a href="mailto:xiaolizi@163.com" target="_blank" rel="noopener">xiaolizi@163.com</a></td>
+</tr>
+<tr>
+<td>4</td>
+<td>小丽</td>
+<td>女</td>
+<td>23</td>
+<td>15555555555</td>
+<td>财务</td>
+<td><a href="mailto:xiaolil@163.com" target="_blank" rel="noopener">xiaolil@163.com</a></td>
+</tr>
+<tr>
+<td>5</td>
+<td>小h花</td>
+<td>nv</td>
+<td>32</td>
+<td>17788889999</td>
+<td>财务总监</td>
+<td><a href="mailto:xiaohhua@163.com" target="_blank" rel="noopener">xiaohhua@163.com</a></td>
+</tr>
+</tbody>
+</table>
+<p>2.插入数据</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> mysql  = <span class="built_in">require</span>(<span class="string">'mysql'</span>);  </span><br><span class="line"><span class="keyword">var</span> connection = mysql.createConnection(&#123;</span><br><span class="line">  host     : <span class="string">'localhost'</span>,</span><br><span class="line">  user     : <span class="string">'root'</span>,</span><br><span class="line">  password : <span class="string">''</span>,</span><br><span class="line">  database : <span class="string">'db_rytong'</span></span><br><span class="line">&#125;); </span><br><span class="line"></span><br><span class="line">connection.connect();</span><br><span class="line"> </span><br><span class="line"><span class="keyword">var</span>  addData= <span class="string">'INSERT INTO employee(emp_id ,emp_name ,emp_sex ,emp_age,emp_tel ,emp_job  ,email ) VALUES(0,?,?,?,?,?,?)'</span>;</span><br><span class="line"><span class="keyword">var</span>  addSqlParams = [<span class="string">'薛玉博'</span>, <span class="string">'男'</span>,<span class="number">19</span>,<span class="string">'13838383838'</span>,<span class="string">'实习生'</span>,<span class="string">'caidashen@qq.com'</span>];</span><br><span class="line"><span class="comment">//增</span></span><br><span class="line">connection.query(addData,addSqlParams,<span class="function"><span class="keyword">function</span> (<span class="params">err, result</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(err)&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">'[INSERT ERROR] - '</span>,err.message);</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">connection.end();</span><br></pre></td></tr></table></figure>
+<p>生成结果如下：<br>emp_id |emp_name | emp_sex | emp_age |emp_tel |emp_job | email<br>—|—|—|—|—|—|—|—<br>6 |薛玉博 |男|19|13838383838|实习生<a href="mailto:|caidashen@qq.com" target="_blank" rel="noopener">|caidashen@qq.com</a></p>
+<p>3.更新数据<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> mysql  = <span class="built_in">require</span>(<span class="string">'mysql'</span>);  </span><br><span class="line"><span class="keyword">var</span> connection = mysql.createConnection(&#123;</span><br><span class="line">  host     : <span class="string">'localhost'</span>,</span><br><span class="line">  user     : <span class="string">'root'</span>,</span><br><span class="line">  password : <span class="string">''</span>,</span><br><span class="line">  database : <span class="string">'db_rytong'</span>,</span><br><span class="line">&#125;); </span><br><span class="line"></span><br><span class="line">connection.connect();</span><br><span class="line"> </span><br><span class="line"><span class="keyword">var</span>  upData= <span class="string">'UPDATE employee SET emp_name =?,emp_sex =?,emp_age =?,emp_tel =?,emp_job =?,email=?  WHERE emp_id = ?'</span>;</span><br><span class="line"><span class="keyword">var</span> updataSqlParams = [<span class="string">'A薛玉博'</span>, <span class="string">'男'</span>,<span class="number">199</span>,<span class="string">'13838383838'</span>,<span class="string">'A实习生'</span>,<span class="string">'Acaidashen@qq.com'</span>,<span class="number">6</span>];</span><br><span class="line"><span class="comment">//改</span></span><br><span class="line">connection.query(upData,updataSqlParams,<span class="function"><span class="keyword">function</span> (<span class="params">err, result</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(err)&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">'[INSERT ERROR] - '</span>,err.message);</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">connection.end();</span><br></pre></td></tr></table></figure></p>
+<p>结果如下：<br>emp_id |emp_name | emp_sex | emp_age |emp_tel |emp_job | email<br>—|—|—|—|—|—|—|—<br>6 |A薛玉博 |男|199|13838383838|A实习生<a href="mailto:|AcaAidashen@qq.com" target="_blank" rel="noopener">|AcaAidashen@qq.com</a></p>
+<p>4.删除数据</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> mysql  = <span class="built_in">require</span>(<span class="string">'mysql'</span>);  </span><br><span class="line"><span class="keyword">var</span> connection = mysql.createConnection(&#123;</span><br><span class="line">  host     : <span class="string">'localhost'</span>,</span><br><span class="line">  user     : <span class="string">'root'</span>,</span><br><span class="line">  password : <span class="string">''</span>,</span><br><span class="line">  database : <span class="string">'db_rytong'</span>,</span><br><span class="line">&#125;); </span><br><span class="line"></span><br><span class="line">connection.connect();</span><br><span class="line"> </span><br><span class="line"><span class="keyword">var</span>  delData = <span class="string">'DELETE FROM employee where id=1'</span>;</span><br><span class="line">connection.query(delSql,<span class="function"><span class="keyword">function</span> (<span class="params">err, result</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(err)&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">'[DELETE ERROR] - '</span>,err.message);</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125; </span><br><span class="line">connection.end();</span><br></pre></td></tr></table></figure>
+<p>数据库结果如下：<br> emp_id |emp_name | emp_sex | emp_age |emp_tel |emp_job | email<br>—|—|—|—|—|—|—|—</p>
+<p>2|小红 |nv|18|13333344444|美工<a href="mailto:|xiaohong@163.com1" target="_blank" rel="noopener">|xiaohong@163.com1</a> |小明 |男|22|1333333333|java工程师<a href="mailto:|xiaohongmao@163.com" target="_blank" rel="noopener">|xiaohongmao@163.com</a><br>3 |小李 |男|22|1337777777|销售<a href="mailto:|xiaolizi@163.com" target="_blank" rel="noopener">|xiaolizi@163.com</a><br>4 |小丽 |女|23|15555555555|财务<a href="mailto:|xiaolil@163.com" target="_blank" rel="noopener">|xiaolil@163.com</a><br>5 |小h花 |nv|32|17788889999|财务总监<a href="mailto:|xiaohhua@163.com" target="_blank" rel="noopener">|xiaohhua@163.com</a></p>
+<p><strong>好了nodejs-mysql就到这里了，有兴趣的可以去尝试是以下</strong></p>
+</div><div class="tags"><a href="/tags/node/">node</a><a href="/tags/Mysql/">Mysql</a></div><div class="post-nav"><a class="next" href="/2018/05/17/JS-timer/">JS-timer</a></div></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><form class="search-form" action="//www.baidu.com/baidu" method="get" accept-charset="utf-8" target="_blank"><input type="search" name="word" maxlength="20" placeholder="Search"/><input type="hidden" name="si" value="https://xybank.github.io"/><input name="tn" type="hidden" value="bds"/><input name="cl" type="hidden" value="3"/><input name="ct" type="hidden" value="2097152"/><input name="s" type="hidden" value="on"/></form></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/余声赞/">余声赞</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/余硕/">余硕</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/匡利金/">匡利金</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/卢文才/">卢文才</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/张杨/">张杨</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/张永枫/">张永枫</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/彭连/">彭连</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/方振养/">方振养</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/李志丹/">李志丹</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/杨新才/">杨新才</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/洪宇杰/">洪宇杰</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/甘明阳/">甘明阳</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/童长钱/">童长钱</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/蔡向炜/">蔡向炜</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/薛玉博/">薛玉博</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/赖钧/">赖钧</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/黄涛/">黄涛</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/okhttp/" style="font-size: 15px;">okhttp</a> <a href="/tags/Rss/" style="font-size: 15px;">Rss</a> <a href="/tags/hexo/" style="font-size: 15px;">hexo</a> <a href="/tags/js，定时器/" style="font-size: 15px;">js，定时器</a> <a href="/tags/Java/" style="font-size: 15px;">Java</a> <a href="/tags/string/" style="font-size: 15px;">string</a> <a href="/tags/Mybatis/" style="font-size: 15px;">Mybatis</a> <a href="/tags/Nodejs/" style="font-size: 15px;">Nodejs</a> <a href="/tags/react/" style="font-size: 15px;">react</a> <a href="/tags/Android/" style="font-size: 15px;">Android</a> <a href="/tags/Activity/" style="font-size: 15px;">Activity</a> <a href="/tags/Jenkins/" style="font-size: 15px;">Jenkins</a> <a href="/tags/MVP/" style="font-size: 15px;">MVP</a> <a href="/tags/设计架构/" style="font-size: 15px;">设计架构</a> <a href="/tags/rxjava/" style="font-size: 15px;">rxjava</a> <a href="/tags/retrofit/" style="font-size: 15px;">retrofit</a> <a href="/tags/HTML5/" style="font-size: 15px;">HTML5</a> <a href="/tags/css，布局/" style="font-size: 15px;">css，布局</a> <a href="/tags/css3，flexbox/" style="font-size: 15px;">css3，flexbox</a> <a href="/tags/form表单，html5/" style="font-size: 15px;">form表单，html5</a> <a href="/tags/iOS/" style="font-size: 15px;">iOS</a> <a href="/tags/linux/" style="font-size: 15px;">linux</a> <a href="/tags/mysql/" style="font-size: 15px;">mysql</a> <a href="/tags/vi的编辑/" style="font-size: 15px;">vi的编辑</a> <a href="/tags/lua/" style="font-size: 15px;">lua</a> <a href="/tags/node/" style="font-size: 15px;">node</a> <a href="/tags/Mysql/" style="font-size: 15px;">Mysql</a> <a href="/tags/nodejs/" style="font-size: 15px;">nodejs</a> <a href="/tags/photoshop/" style="font-size: 15px;">photoshop</a> <a href="/tags/3种定位的使用/" style="font-size: 15px;">3种定位的使用</a> <a href="/tags/yaws/" style="font-size: 15px;">yaws</a> <a href="/tags/erlang/" style="font-size: 15px;">erlang</a> <a href="/tags/web/" style="font-size: 15px;">web</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最近文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2018/05/18/node-mysql/">node连接MySql操作数据库</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/17/JS-timer/">JS-timer</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/15/iOS-runtime-weak-reference/">runtime的weak属性现实</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/10/Lua-string/">Lua strings</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/09/Java_Reference/">Java中的四种引用</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/08/Mybatis-Project/">Mybatis</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/07/three_location/">相对、绝对与固定定位</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/06/photoshop_start/">关于ps的一些经验</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/04/nodejs_modeule_buffer_fileSystem/">nodejs-module-buffer-fileSystem</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/03/iOS_App_StartLaunchAD/">iOS App启动广告思路</a></li></ul></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2018 <a href="/." rel="nofollow">融易通兴业团队.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//cdn.bootcss.com/fancybox/3.2.5/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/fancybox/3.2.5/jquery.fancybox.min.css"><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>
