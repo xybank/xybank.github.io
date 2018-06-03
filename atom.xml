@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://xybank.github.io/"/>
-  <updated>2018-06-02T14:38:05.986Z</updated>
+  <updated>2018-06-03T13:26:10.515Z</updated>
   <id>https://xybank.github.io/</id>
   
   <author>
@@ -17,11 +17,40 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>ewp中模拟报文的使用</title>
+    <link href="https://xybank.github.io/2018/06/03/ewp%E6%A8%A1%E6%8B%9F%E6%8A%A5%E6%96%87/"/>
+    <id>https://xybank.github.io/2018/06/03/ewp模拟报文/</id>
+    <published>2018-06-03T13:46:55.000Z</published>
+    <updated>2018-06-03T13:26:10.515Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;​    &lt;strong&gt;ewp项目中开发页面时是不是有遇到以下问题：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;项目中想要模拟各种业务场景是不是很麻烦&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;接口有时候会报错导致无法进行联调&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;…&lt;/p&gt;
+&lt;p&gt;现在我给大家提供一个小工具，可以解决上面说的一些问题，有助于提高开发效率。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="方振养" scheme="https://xybank.github.io/categories/%E6%96%B9%E6%8C%AF%E5%85%BB/"/>
+    
+    
+      <category term="ewp中模拟报文的使用" scheme="https://xybank.github.io/tags/ewp%E4%B8%AD%E6%A8%A1%E6%8B%9F%E6%8A%A5%E6%96%87%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
+    
+  </entry>
+  
+  <entry>
     <title>个人心得</title>
     <link href="https://xybank.github.io/2018/06/01/requirement%20analysis/"/>
     <id>https://xybank.github.io/2018/06/01/requirement analysis/</id>
     <published>2018-06-01T05:14:15.000Z</published>
-    <updated>2018-06-02T14:38:05.986Z</updated>
+    <updated>2018-06-03T13:26:10.516Z</updated>
     
     <summary type="html">
     
@@ -41,7 +70,7 @@
     <link href="https://xybank.github.io/2018/06/01/blog_Android%20P_Github/"/>
     <id>https://xybank.github.io/2018/06/01/blog_Android P_Github/</id>
     <published>2018-06-01T05:00:00.000Z</published>
-    <updated>2018-06-02T14:38:05.987Z</updated>
+    <updated>2018-06-03T13:26:10.516Z</updated>
     
     <summary type="html">
     
@@ -63,7 +92,7 @@
     <link href="https://xybank.github.io/2018/05/31/menhu/"/>
     <id>https://xybank.github.io/2018/05/31/menhu/</id>
     <published>2018-05-31T07:30:00.000Z</published>
-    <updated>2018-06-02T14:38:05.986Z</updated>
+    <updated>2018-06-03T13:26:10.516Z</updated>
     
     <summary type="html">
     
@@ -83,7 +112,7 @@
     <link href="https://xybank.github.io/2018/05/31/java_model_proxypattern/"/>
     <id>https://xybank.github.io/2018/05/31/java_model_proxypattern/</id>
     <published>2018-05-30T16:00:00.000Z</published>
-    <updated>2018-06-02T14:38:05.986Z</updated>
+    <updated>2018-06-03T13:26:10.516Z</updated>
     
     <summary type="html">
     
@@ -105,7 +134,7 @@
     <link href="https://xybank.github.io/2018/05/25/iOS-something-about-network/"/>
     <id>https://xybank.github.io/2018/05/25/iOS-something-about-network/</id>
     <published>2018-05-25T08:00:00.000Z</published>
-    <updated>2018-06-02T14:38:05.987Z</updated>
+    <updated>2018-06-03T13:26:10.516Z</updated>
     
     <summary type="html">
     
@@ -125,7 +154,7 @@
     <link href="https://xybank.github.io/2018/05/25/android_store1/"/>
     <id>https://xybank.github.io/2018/05/25/android_store1/</id>
     <published>2018-05-25T04:27:25.000Z</published>
-    <updated>2018-06-02T14:38:05.986Z</updated>
+    <updated>2018-06-03T13:26:10.516Z</updated>
     
     <summary type="html">
     
@@ -147,7 +176,7 @@
     <link href="https://xybank.github.io/2018/05/25/JS-closure/"/>
     <id>https://xybank.github.io/2018/05/25/JS-closure/</id>
     <published>2018-05-25T01:35:06.000Z</published>
-    <updated>2018-06-02T14:38:05.986Z</updated>
+    <updated>2018-06-03T13:26:10.516Z</updated>
     
     <summary type="html">
     
@@ -167,7 +196,7 @@
     <link href="https://xybank.github.io/2018/05/20/aly_start/"/>
     <id>https://xybank.github.io/2018/05/20/aly_start/</id>
     <published>2018-05-20T13:54:00.000Z</published>
-    <updated>2018-06-02T14:38:05.986Z</updated>
+    <updated>2018-06-03T13:26:10.515Z</updated>
     
     <summary type="html">
     
@@ -187,7 +216,7 @@
     <link href="https://xybank.github.io/2018/05/18/node-mysql/"/>
     <id>https://xybank.github.io/2018/05/18/node-mysql/</id>
     <published>2018-05-18T05:15:12.000Z</published>
-    <updated>2018-06-02T14:38:05.986Z</updated>
+    <updated>2018-06-03T13:26:10.516Z</updated>
     
     <summary type="html">
     
@@ -209,7 +238,7 @@
     <link href="https://xybank.github.io/2018/05/17/Fiddler_start/"/>
     <id>https://xybank.github.io/2018/05/17/Fiddler_start/</id>
     <published>2018-05-17T15:10:23.000Z</published>
-    <updated>2018-06-02T14:38:05.986Z</updated>
+    <updated>2018-06-03T13:26:10.516Z</updated>
     
     <summary type="html">
     
@@ -229,7 +258,7 @@
     <link href="https://xybank.github.io/2018/05/17/JS-timer/"/>
     <id>https://xybank.github.io/2018/05/17/JS-timer/</id>
     <published>2018-05-17T07:12:04.000Z</published>
-    <updated>2018-06-02T14:38:05.986Z</updated>
+    <updated>2018-06-03T13:26:10.516Z</updated>
     
     <summary type="html">
     
@@ -249,7 +278,7 @@
     <link href="https://xybank.github.io/2018/05/15/iOS-runtime-weak-reference/"/>
     <id>https://xybank.github.io/2018/05/15/iOS-runtime-weak-reference/</id>
     <published>2018-05-15T08:31:12.000Z</published>
-    <updated>2018-06-02T14:38:05.986Z</updated>
+    <updated>2018-06-03T13:26:10.516Z</updated>
     
     <summary type="html">
     
@@ -269,7 +298,7 @@
     <link href="https://xybank.github.io/2018/05/10/Lua-string/"/>
     <id>https://xybank.github.io/2018/05/10/Lua-string/</id>
     <published>2018-05-10T08:27:00.000Z</published>
-    <updated>2018-06-02T14:38:05.986Z</updated>
+    <updated>2018-06-03T13:26:10.516Z</updated>
     
     <summary type="html">
     
@@ -289,7 +318,7 @@
     <link href="https://xybank.github.io/2018/05/09/Java_Reference/"/>
     <id>https://xybank.github.io/2018/05/09/Java_Reference/</id>
     <published>2018-05-09T02:00:00.000Z</published>
-    <updated>2018-06-02T14:38:05.986Z</updated>
+    <updated>2018-06-03T13:26:10.516Z</updated>
     
     <summary type="html">
     
@@ -309,7 +338,7 @@
     <link href="https://xybank.github.io/2018/05/08/Mybatis-Project/"/>
     <id>https://xybank.github.io/2018/05/08/Mybatis-Project/</id>
     <published>2018-05-08T04:00:00.000Z</published>
-    <updated>2018-06-02T14:38:05.987Z</updated>
+    <updated>2018-06-03T13:26:10.516Z</updated>
     
     <summary type="html">
     
@@ -329,7 +358,7 @@
     <link href="https://xybank.github.io/2018/05/07/three_location/"/>
     <id>https://xybank.github.io/2018/05/07/three_location/</id>
     <published>2018-05-07T08:05:48.000Z</published>
-    <updated>2018-06-02T14:38:05.987Z</updated>
+    <updated>2018-06-03T13:26:10.517Z</updated>
     
     <summary type="html">
     
@@ -349,7 +378,7 @@
     <link href="https://xybank.github.io/2018/05/06/photoshop_start/"/>
     <id>https://xybank.github.io/2018/05/06/photoshop_start/</id>
     <published>2018-05-06T05:42:00.000Z</published>
-    <updated>2018-06-02T14:38:05.987Z</updated>
+    <updated>2018-06-03T13:26:10.516Z</updated>
     
     <summary type="html">
     
@@ -369,7 +398,7 @@
     <link href="https://xybank.github.io/2018/05/04/nodejs_modeule_buffer_fileSystem/"/>
     <id>https://xybank.github.io/2018/05/04/nodejs_modeule_buffer_fileSystem/</id>
     <published>2018-05-03T16:00:00.000Z</published>
-    <updated>2018-06-02T14:38:05.986Z</updated>
+    <updated>2018-06-03T13:26:10.516Z</updated>
     
     <summary type="html">
     
@@ -389,7 +418,7 @@
     <link href="https://xybank.github.io/2018/05/03/iOS_App_StartLaunchAD/"/>
     <id>https://xybank.github.io/2018/05/03/iOS_App_StartLaunchAD/</id>
     <published>2018-05-03T08:00:00.000Z</published>
-    <updated>2018-06-02T14:38:05.987Z</updated>
+    <updated>2018-06-03T13:26:10.516Z</updated>
     
     <summary type="html">
     
@@ -403,26 +432,6 @@
     
     
       <category term="iOS" scheme="https://xybank.github.io/tags/iOS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>html5 弹性布局</title>
-    <link href="https://xybank.github.io/2018/04/30/html5%E5%B8%83%E5%B1%80/"/>
-    <id>https://xybank.github.io/2018/04/30/html5布局/</id>
-    <published>2018-04-30T07:10:23.000Z</published>
-    <updated>2018-06-02T14:38:05.986Z</updated>
-    
-    <summary type="html">
-    
-      html5 弹性布局
-    
-    </summary>
-    
-      <category term="杨新才" scheme="https://xybank.github.io/categories/%E6%9D%A8%E6%96%B0%E6%89%8D/"/>
-    
-    
-      <category term="HTML5" scheme="https://xybank.github.io/tags/HTML5/"/>
     
   </entry>
   
