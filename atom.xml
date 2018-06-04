@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://xybank.github.io/"/>
-  <updated>2018-06-03T13:26:10.515Z</updated>
+  <updated>2018-06-04T08:56:30.767Z</updated>
   <id>https://xybank.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://xybank.github.io/2018/06/03/ewp%E6%A8%A1%E6%8B%9F%E6%8A%A5%E6%96%87/"/>
     <id>https://xybank.github.io/2018/06/03/ewp模拟报文/</id>
     <published>2018-06-03T13:46:55.000Z</published>
-    <updated>2018-06-03T13:26:10.515Z</updated>
+    <updated>2018-06-04T08:56:30.767Z</updated>
     
     <summary type="html">
     
@@ -50,7 +50,7 @@
     <link href="https://xybank.github.io/2018/06/01/requirement%20analysis/"/>
     <id>https://xybank.github.io/2018/06/01/requirement analysis/</id>
     <published>2018-06-01T05:14:15.000Z</published>
-    <updated>2018-06-03T13:26:10.516Z</updated>
+    <updated>2018-06-04T08:56:30.768Z</updated>
     
     <summary type="html">
     
@@ -70,7 +70,7 @@
     <link href="https://xybank.github.io/2018/06/01/blog_Android%20P_Github/"/>
     <id>https://xybank.github.io/2018/06/01/blog_Android P_Github/</id>
     <published>2018-06-01T05:00:00.000Z</published>
-    <updated>2018-06-03T13:26:10.516Z</updated>
+    <updated>2018-06-04T08:56:30.769Z</updated>
     
     <summary type="html">
     
@@ -92,7 +92,7 @@
     <link href="https://xybank.github.io/2018/05/31/menhu/"/>
     <id>https://xybank.github.io/2018/05/31/menhu/</id>
     <published>2018-05-31T07:30:00.000Z</published>
-    <updated>2018-06-03T13:26:10.516Z</updated>
+    <updated>2018-06-04T08:56:30.768Z</updated>
     
     <summary type="html">
     
@@ -112,7 +112,7 @@
     <link href="https://xybank.github.io/2018/05/31/java_model_proxypattern/"/>
     <id>https://xybank.github.io/2018/05/31/java_model_proxypattern/</id>
     <published>2018-05-30T16:00:00.000Z</published>
-    <updated>2018-06-03T13:26:10.516Z</updated>
+    <updated>2018-06-04T08:56:30.768Z</updated>
     
     <summary type="html">
     
@@ -130,11 +130,31 @@
   </entry>
   
   <entry>
+    <title>bootstrap使用总结</title>
+    <link href="https://xybank.github.io/2018/05/26/bootstrap_summed/"/>
+    <id>https://xybank.github.io/2018/05/26/bootstrap_summed/</id>
+    <published>2018-05-26T14:05:00.000Z</published>
+    <updated>2018-06-04T08:56:30.768Z</updated>
+    
+    <summary type="html">
+    
+      记录bootstrap的一些常用内容使用
+    
+    </summary>
+    
+      <category term="甘明阳" scheme="https://xybank.github.io/categories/%E7%94%98%E6%98%8E%E9%98%B3/"/>
+    
+    
+      <category term="bootstrap" scheme="https://xybank.github.io/tags/bootstrap/"/>
+    
+  </entry>
+  
+  <entry>
     <title>iOS 网络请求时的一些小套路</title>
     <link href="https://xybank.github.io/2018/05/25/iOS-something-about-network/"/>
     <id>https://xybank.github.io/2018/05/25/iOS-something-about-network/</id>
     <published>2018-05-25T08:00:00.000Z</published>
-    <updated>2018-06-03T13:26:10.516Z</updated>
+    <updated>2018-06-04T08:56:30.768Z</updated>
     
     <summary type="html">
     
@@ -154,7 +174,7 @@
     <link href="https://xybank.github.io/2018/05/25/android_store1/"/>
     <id>https://xybank.github.io/2018/05/25/android_store1/</id>
     <published>2018-05-25T04:27:25.000Z</published>
-    <updated>2018-06-03T13:26:10.516Z</updated>
+    <updated>2018-06-04T08:56:30.768Z</updated>
     
     <summary type="html">
     
@@ -176,7 +196,7 @@
     <link href="https://xybank.github.io/2018/05/25/JS-closure/"/>
     <id>https://xybank.github.io/2018/05/25/JS-closure/</id>
     <published>2018-05-25T01:35:06.000Z</published>
-    <updated>2018-06-03T13:26:10.516Z</updated>
+    <updated>2018-06-04T08:56:30.768Z</updated>
     
     <summary type="html">
     
@@ -196,7 +216,7 @@
     <link href="https://xybank.github.io/2018/05/20/aly_start/"/>
     <id>https://xybank.github.io/2018/05/20/aly_start/</id>
     <published>2018-05-20T13:54:00.000Z</published>
-    <updated>2018-06-03T13:26:10.515Z</updated>
+    <updated>2018-06-04T08:56:30.767Z</updated>
     
     <summary type="html">
     
@@ -216,7 +236,7 @@
     <link href="https://xybank.github.io/2018/05/18/node-mysql/"/>
     <id>https://xybank.github.io/2018/05/18/node-mysql/</id>
     <published>2018-05-18T05:15:12.000Z</published>
-    <updated>2018-06-03T13:26:10.516Z</updated>
+    <updated>2018-06-04T08:56:30.768Z</updated>
     
     <summary type="html">
     
@@ -238,7 +258,7 @@
     <link href="https://xybank.github.io/2018/05/17/Fiddler_start/"/>
     <id>https://xybank.github.io/2018/05/17/Fiddler_start/</id>
     <published>2018-05-17T15:10:23.000Z</published>
-    <updated>2018-06-03T13:26:10.516Z</updated>
+    <updated>2018-06-04T08:56:30.768Z</updated>
     
     <summary type="html">
     
@@ -258,7 +278,7 @@
     <link href="https://xybank.github.io/2018/05/17/JS-timer/"/>
     <id>https://xybank.github.io/2018/05/17/JS-timer/</id>
     <published>2018-05-17T07:12:04.000Z</published>
-    <updated>2018-06-03T13:26:10.516Z</updated>
+    <updated>2018-06-04T08:56:30.768Z</updated>
     
     <summary type="html">
     
@@ -278,7 +298,7 @@
     <link href="https://xybank.github.io/2018/05/15/iOS-runtime-weak-reference/"/>
     <id>https://xybank.github.io/2018/05/15/iOS-runtime-weak-reference/</id>
     <published>2018-05-15T08:31:12.000Z</published>
-    <updated>2018-06-03T13:26:10.516Z</updated>
+    <updated>2018-06-04T08:56:30.768Z</updated>
     
     <summary type="html">
     
@@ -298,7 +318,7 @@
     <link href="https://xybank.github.io/2018/05/10/Lua-string/"/>
     <id>https://xybank.github.io/2018/05/10/Lua-string/</id>
     <published>2018-05-10T08:27:00.000Z</published>
-    <updated>2018-06-03T13:26:10.516Z</updated>
+    <updated>2018-06-04T08:56:30.768Z</updated>
     
     <summary type="html">
     
@@ -318,7 +338,7 @@
     <link href="https://xybank.github.io/2018/05/09/Java_Reference/"/>
     <id>https://xybank.github.io/2018/05/09/Java_Reference/</id>
     <published>2018-05-09T02:00:00.000Z</published>
-    <updated>2018-06-03T13:26:10.516Z</updated>
+    <updated>2018-06-04T08:56:30.768Z</updated>
     
     <summary type="html">
     
@@ -338,7 +358,7 @@
     <link href="https://xybank.github.io/2018/05/08/Mybatis-Project/"/>
     <id>https://xybank.github.io/2018/05/08/Mybatis-Project/</id>
     <published>2018-05-08T04:00:00.000Z</published>
-    <updated>2018-06-03T13:26:10.516Z</updated>
+    <updated>2018-06-04T08:56:30.768Z</updated>
     
     <summary type="html">
     
@@ -358,7 +378,7 @@
     <link href="https://xybank.github.io/2018/05/07/three_location/"/>
     <id>https://xybank.github.io/2018/05/07/three_location/</id>
     <published>2018-05-07T08:05:48.000Z</published>
-    <updated>2018-06-03T13:26:10.517Z</updated>
+    <updated>2018-06-04T08:56:30.769Z</updated>
     
     <summary type="html">
     
@@ -378,7 +398,7 @@
     <link href="https://xybank.github.io/2018/05/06/photoshop_start/"/>
     <id>https://xybank.github.io/2018/05/06/photoshop_start/</id>
     <published>2018-05-06T05:42:00.000Z</published>
-    <updated>2018-06-03T13:26:10.516Z</updated>
+    <updated>2018-06-04T08:56:30.768Z</updated>
     
     <summary type="html">
     
@@ -398,7 +418,7 @@
     <link href="https://xybank.github.io/2018/05/04/nodejs_modeule_buffer_fileSystem/"/>
     <id>https://xybank.github.io/2018/05/04/nodejs_modeule_buffer_fileSystem/</id>
     <published>2018-05-03T16:00:00.000Z</published>
-    <updated>2018-06-03T13:26:10.516Z</updated>
+    <updated>2018-06-04T08:56:30.768Z</updated>
     
     <summary type="html">
     
@@ -410,28 +430,6 @@
     
     
       <category term="nodejs" scheme="https://xybank.github.io/tags/nodejs/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>iOS App启动广告思路</title>
-    <link href="https://xybank.github.io/2018/05/03/iOS_App_StartLaunchAD/"/>
-    <id>https://xybank.github.io/2018/05/03/iOS_App_StartLaunchAD/</id>
-    <published>2018-05-03T08:00:00.000Z</published>
-    <updated>2018-06-03T13:26:10.516Z</updated>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;很多app(如淘宝、美团等)在启动图加载完毕后，还会显示几秒的广告，一般都有个跳过按钮可以跳过这个广告，有的app在点击广告页之后还会进入一个广告页面，点击返回进入首页。&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-      <category term="洪宇杰" scheme="https://xybank.github.io/categories/%E6%B4%AA%E5%AE%87%E6%9D%B0/"/>
-    
-    
-      <category term="iOS" scheme="https://xybank.github.io/tags/iOS/"/>
     
   </entry>
   
