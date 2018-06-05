@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://xybank.github.io/"/>
-  <updated>2018-06-05T06:19:52.162Z</updated>
+  <updated>2018-06-05T08:10:18.272Z</updated>
   <id>https://xybank.github.io/</id>
   
   <author>
@@ -17,11 +17,31 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>bootstrap使用总结</title>
+    <link href="https://xybank.github.io/2018/06/04/bootstrap_summed/"/>
+    <id>https://xybank.github.io/2018/06/04/bootstrap_summed/</id>
+    <published>2018-06-04T14:05:00.000Z</published>
+    <updated>2018-06-05T08:10:18.272Z</updated>
+    
+    <summary type="html">
+    
+      记录bootstrap的一些常用内容使用
+    
+    </summary>
+    
+      <category term="甘明阳" scheme="https://xybank.github.io/categories/%E7%94%98%E6%98%8E%E9%98%B3/"/>
+    
+    
+      <category term="bootstrap" scheme="https://xybank.github.io/tags/bootstrap/"/>
+    
+  </entry>
+  
+  <entry>
     <title>html简述及html5新特性</title>
     <link href="https://xybank.github.io/2018/06/04/html5%E7%AE%80%E8%BF%B0/"/>
     <id>https://xybank.github.io/2018/06/04/html5简述/</id>
     <published>2018-06-04T02:23:43.000Z</published>
-    <updated>2018-06-05T06:19:52.162Z</updated>
+    <updated>2018-06-05T08:10:18.271Z</updated>
     
     <summary type="html">
     
@@ -41,7 +61,7 @@
     <link href="https://xybank.github.io/2018/06/03/ewp%E6%A8%A1%E6%8B%9F%E6%8A%A5%E6%96%87/"/>
     <id>https://xybank.github.io/2018/06/03/ewp模拟报文/</id>
     <published>2018-06-03T13:46:55.000Z</published>
-    <updated>2018-06-05T06:19:52.162Z</updated>
+    <updated>2018-06-05T08:10:18.271Z</updated>
     
     <summary type="html">
     
@@ -70,7 +90,7 @@
     <link href="https://xybank.github.io/2018/06/01/requirement%20analysis/"/>
     <id>https://xybank.github.io/2018/06/01/requirement analysis/</id>
     <published>2018-06-01T05:14:15.000Z</published>
-    <updated>2018-06-05T06:19:52.162Z</updated>
+    <updated>2018-06-05T08:10:18.271Z</updated>
     
     <summary type="html">
     
@@ -90,7 +110,7 @@
     <link href="https://xybank.github.io/2018/06/01/blog_Android%20P_Github/"/>
     <id>https://xybank.github.io/2018/06/01/blog_Android P_Github/</id>
     <published>2018-06-01T05:00:00.000Z</published>
-    <updated>2018-06-05T06:19:52.163Z</updated>
+    <updated>2018-06-05T08:10:18.272Z</updated>
     
     <summary type="html">
     
@@ -112,7 +132,7 @@
     <link href="https://xybank.github.io/2018/05/31/menhu/"/>
     <id>https://xybank.github.io/2018/05/31/menhu/</id>
     <published>2018-05-31T07:30:00.000Z</published>
-    <updated>2018-06-05T06:19:52.162Z</updated>
+    <updated>2018-06-05T08:10:18.271Z</updated>
     
     <summary type="html">
     
@@ -132,7 +152,7 @@
     <link href="https://xybank.github.io/2018/05/31/java_model_proxypattern/"/>
     <id>https://xybank.github.io/2018/05/31/java_model_proxypattern/</id>
     <published>2018-05-30T16:00:00.000Z</published>
-    <updated>2018-06-05T06:19:52.163Z</updated>
+    <updated>2018-06-05T08:10:18.271Z</updated>
     
     <summary type="html">
     
@@ -150,31 +170,11 @@
   </entry>
   
   <entry>
-    <title>bootstrap使用总结</title>
-    <link href="https://xybank.github.io/2018/05/26/bootstrap_summed/"/>
-    <id>https://xybank.github.io/2018/05/26/bootstrap_summed/</id>
-    <published>2018-05-26T14:05:00.000Z</published>
-    <updated>2018-06-05T06:19:52.163Z</updated>
-    
-    <summary type="html">
-    
-      记录bootstrap的一些常用内容使用
-    
-    </summary>
-    
-      <category term="甘明阳" scheme="https://xybank.github.io/categories/%E7%94%98%E6%98%8E%E9%98%B3/"/>
-    
-    
-      <category term="bootstrap" scheme="https://xybank.github.io/tags/bootstrap/"/>
-    
-  </entry>
-  
-  <entry>
     <title>iOS 网络请求时的一些小套路</title>
     <link href="https://xybank.github.io/2018/05/25/iOS-something-about-network/"/>
     <id>https://xybank.github.io/2018/05/25/iOS-something-about-network/</id>
     <published>2018-05-25T08:00:00.000Z</published>
-    <updated>2018-06-05T06:19:52.163Z</updated>
+    <updated>2018-06-05T08:10:18.271Z</updated>
     
     <summary type="html">
     
@@ -194,7 +194,7 @@
     <link href="https://xybank.github.io/2018/05/25/android_store1/"/>
     <id>https://xybank.github.io/2018/05/25/android_store1/</id>
     <published>2018-05-25T04:27:25.000Z</published>
-    <updated>2018-06-05T06:19:52.163Z</updated>
+    <updated>2018-06-05T08:10:18.271Z</updated>
     
     <summary type="html">
     
@@ -216,7 +216,7 @@
     <link href="https://xybank.github.io/2018/05/25/JS-closure/"/>
     <id>https://xybank.github.io/2018/05/25/JS-closure/</id>
     <published>2018-05-25T01:35:06.000Z</published>
-    <updated>2018-06-05T06:19:52.162Z</updated>
+    <updated>2018-06-05T08:10:18.271Z</updated>
     
     <summary type="html">
     
@@ -236,7 +236,7 @@
     <link href="https://xybank.github.io/2018/05/20/aly_start/"/>
     <id>https://xybank.github.io/2018/05/20/aly_start/</id>
     <published>2018-05-20T13:54:00.000Z</published>
-    <updated>2018-06-05T06:19:52.162Z</updated>
+    <updated>2018-06-05T08:10:18.271Z</updated>
     
     <summary type="html">
     
@@ -256,7 +256,7 @@
     <link href="https://xybank.github.io/2018/05/18/node-mysql/"/>
     <id>https://xybank.github.io/2018/05/18/node-mysql/</id>
     <published>2018-05-18T05:15:12.000Z</published>
-    <updated>2018-06-05T06:19:52.163Z</updated>
+    <updated>2018-06-05T08:10:18.271Z</updated>
     
     <summary type="html">
     
@@ -278,7 +278,7 @@
     <link href="https://xybank.github.io/2018/05/17/Fiddler_start/"/>
     <id>https://xybank.github.io/2018/05/17/Fiddler_start/</id>
     <published>2018-05-17T15:10:23.000Z</published>
-    <updated>2018-06-05T06:19:52.163Z</updated>
+    <updated>2018-06-05T08:10:18.271Z</updated>
     
     <summary type="html">
     
@@ -298,7 +298,7 @@
     <link href="https://xybank.github.io/2018/05/17/JS-timer/"/>
     <id>https://xybank.github.io/2018/05/17/JS-timer/</id>
     <published>2018-05-17T07:12:04.000Z</published>
-    <updated>2018-06-05T06:19:52.163Z</updated>
+    <updated>2018-06-05T08:10:18.271Z</updated>
     
     <summary type="html">
     
@@ -318,7 +318,7 @@
     <link href="https://xybank.github.io/2018/05/15/iOS-runtime-weak-reference/"/>
     <id>https://xybank.github.io/2018/05/15/iOS-runtime-weak-reference/</id>
     <published>2018-05-15T08:31:12.000Z</published>
-    <updated>2018-06-05T06:19:52.162Z</updated>
+    <updated>2018-06-05T08:10:18.271Z</updated>
     
     <summary type="html">
     
@@ -338,7 +338,7 @@
     <link href="https://xybank.github.io/2018/05/10/Lua-string/"/>
     <id>https://xybank.github.io/2018/05/10/Lua-string/</id>
     <published>2018-05-10T08:27:00.000Z</published>
-    <updated>2018-06-05T06:19:52.162Z</updated>
+    <updated>2018-06-05T08:10:18.271Z</updated>
     
     <summary type="html">
     
@@ -358,7 +358,7 @@
     <link href="https://xybank.github.io/2018/05/09/Java_Reference/"/>
     <id>https://xybank.github.io/2018/05/09/Java_Reference/</id>
     <published>2018-05-09T02:00:00.000Z</published>
-    <updated>2018-06-05T06:19:52.163Z</updated>
+    <updated>2018-06-05T08:10:18.271Z</updated>
     
     <summary type="html">
     
@@ -378,7 +378,7 @@
     <link href="https://xybank.github.io/2018/05/08/Mybatis-Project/"/>
     <id>https://xybank.github.io/2018/05/08/Mybatis-Project/</id>
     <published>2018-05-08T04:00:00.000Z</published>
-    <updated>2018-06-05T06:19:52.163Z</updated>
+    <updated>2018-06-05T08:10:18.272Z</updated>
     
     <summary type="html">
     
@@ -398,7 +398,7 @@
     <link href="https://xybank.github.io/2018/05/07/three_location/"/>
     <id>https://xybank.github.io/2018/05/07/three_location/</id>
     <published>2018-05-07T08:05:48.000Z</published>
-    <updated>2018-06-05T06:19:52.163Z</updated>
+    <updated>2018-06-05T08:10:18.272Z</updated>
     
     <summary type="html">
     
@@ -418,7 +418,7 @@
     <link href="https://xybank.github.io/2018/05/06/photoshop_start/"/>
     <id>https://xybank.github.io/2018/05/06/photoshop_start/</id>
     <published>2018-05-06T05:42:00.000Z</published>
-    <updated>2018-06-05T06:19:52.163Z</updated>
+    <updated>2018-06-05T08:10:18.272Z</updated>
     
     <summary type="html">
     
