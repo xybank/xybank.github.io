@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://xybank.github.io/"/>
-  <updated>2018-06-13T06:14:58.234Z</updated>
+  <updated>2018-06-13T07:19:57.317Z</updated>
   <id>https://xybank.github.io/</id>
   
   <author>
@@ -17,11 +17,27 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>关于ios指纹登陆功能ewp部分简单描述</title>
+    <link href="https://xybank.github.io/2018/06/13/about%20_ios_touch/"/>
+    <id>https://xybank.github.io/2018/06/13/about _ios_touch/</id>
+    <published>2018-06-13T06:50:52.000Z</published>
+    <updated>2018-06-13T07:19:57.317Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;设置指纹：&quot;&gt;&lt;a href=&quot;#设置指纹：&quot; class=&quot;headerlink&quot; title=&quot;设置指纹：&quot;&gt;&lt;/a&gt;设置指纹：&lt;/h3&gt;&lt;p&gt;要使用指纹登陆必须得先开通指纹登陆功能，所以我们需要先设置指纹开通，调用客户端给的bol,ecode=native：canAuthenticate（）方法检测系统是否有设置指纹密码，该方法会返回两个值，当bol=false，ecode=-7时会提示用户尚未设置Touch iD，需要先在手机上设置touch id。bol=true时表示可以开通指纹功能。&lt;br&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>Android的IPC机制</title>
     <link href="https://xybank.github.io/2018/06/13/blog_ipc_GitHub/"/>
     <id>https://xybank.github.io/2018/06/13/blog_ipc_GitHub/</id>
     <published>2018-06-13T04:00:00.000Z</published>
-    <updated>2018-06-13T06:14:58.234Z</updated>
+    <updated>2018-06-13T07:19:57.317Z</updated>
     
     <summary type="html">
     
@@ -49,7 +65,7 @@
     <link href="https://xybank.github.io/2018/06/10/ajax/"/>
     <id>https://xybank.github.io/2018/06/10/ajax/</id>
     <published>2018-06-10T12:02:48.000Z</published>
-    <updated>2018-06-13T06:14:58.234Z</updated>
+    <updated>2018-06-13T07:19:57.317Z</updated>
     
     <summary type="html">
     
@@ -73,7 +89,7 @@
     <link href="https://xybank.github.io/2018/06/06/blog_serialization_GitHub/"/>
     <id>https://xybank.github.io/2018/06/06/blog_serialization_GitHub/</id>
     <published>2018-06-06T04:00:00.000Z</published>
-    <updated>2018-06-13T06:14:58.234Z</updated>
+    <updated>2018-06-13T07:19:57.317Z</updated>
     
     <summary type="html">
     
@@ -97,7 +113,7 @@
     <link href="https://xybank.github.io/2018/06/05/letter-sort/"/>
     <id>https://xybank.github.io/2018/06/05/letter-sort/</id>
     <published>2018-06-05T05:15:12.000Z</published>
-    <updated>2018-06-13T06:14:58.235Z</updated>
+    <updated>2018-06-13T07:19:57.317Z</updated>
     
     <summary type="html">
     
@@ -117,7 +133,7 @@
     <link href="https://xybank.github.io/2018/06/04/bootstrap_summed/"/>
     <id>https://xybank.github.io/2018/06/04/bootstrap_summed/</id>
     <published>2018-06-04T14:05:00.000Z</published>
-    <updated>2018-06-13T06:14:58.234Z</updated>
+    <updated>2018-06-13T07:19:57.317Z</updated>
     
     <summary type="html">
     
@@ -137,7 +153,7 @@
     <link href="https://xybank.github.io/2018/06/04/html5%E7%AE%80%E8%BF%B0/"/>
     <id>https://xybank.github.io/2018/06/04/html5简述/</id>
     <published>2018-06-04T02:23:43.000Z</published>
-    <updated>2018-06-13T06:14:58.233Z</updated>
+    <updated>2018-06-13T07:19:57.316Z</updated>
     
     <summary type="html">
     
@@ -157,7 +173,7 @@
     <link href="https://xybank.github.io/2018/06/03/ewp%E6%A8%A1%E6%8B%9F%E6%8A%A5%E6%96%87/"/>
     <id>https://xybank.github.io/2018/06/03/ewp模拟报文/</id>
     <published>2018-06-03T13:46:55.000Z</published>
-    <updated>2018-06-13T06:14:58.233Z</updated>
+    <updated>2018-06-13T07:19:57.316Z</updated>
     
     <summary type="html">
     
@@ -186,7 +202,7 @@
     <link href="https://xybank.github.io/2018/06/01/requirement%20analysis/"/>
     <id>https://xybank.github.io/2018/06/01/requirement analysis/</id>
     <published>2018-06-01T05:14:15.000Z</published>
-    <updated>2018-06-13T06:14:58.234Z</updated>
+    <updated>2018-06-13T07:19:57.317Z</updated>
     
     <summary type="html">
     
@@ -206,7 +222,7 @@
     <link href="https://xybank.github.io/2018/06/01/blog_Android%20P_Github/"/>
     <id>https://xybank.github.io/2018/06/01/blog_Android P_Github/</id>
     <published>2018-06-01T05:00:00.000Z</published>
-    <updated>2018-06-13T06:14:58.235Z</updated>
+    <updated>2018-06-13T07:19:57.317Z</updated>
     
     <summary type="html">
     
@@ -228,7 +244,7 @@
     <link href="https://xybank.github.io/2018/05/31/menhu/"/>
     <id>https://xybank.github.io/2018/05/31/menhu/</id>
     <published>2018-05-31T07:30:00.000Z</published>
-    <updated>2018-06-13T06:14:58.233Z</updated>
+    <updated>2018-06-13T07:19:57.316Z</updated>
     
     <summary type="html">
     
@@ -248,7 +264,7 @@
     <link href="https://xybank.github.io/2018/05/31/java_model_proxypattern/"/>
     <id>https://xybank.github.io/2018/05/31/java_model_proxypattern/</id>
     <published>2018-05-30T16:00:00.000Z</published>
-    <updated>2018-06-13T06:14:58.234Z</updated>
+    <updated>2018-06-13T07:19:57.317Z</updated>
     
     <summary type="html">
     
@@ -270,7 +286,7 @@
     <link href="https://xybank.github.io/2018/05/25/iOS-something-about-network/"/>
     <id>https://xybank.github.io/2018/05/25/iOS-something-about-network/</id>
     <published>2018-05-25T08:00:00.000Z</published>
-    <updated>2018-06-13T06:14:58.234Z</updated>
+    <updated>2018-06-13T07:19:57.317Z</updated>
     
     <summary type="html">
     
@@ -290,7 +306,7 @@
     <link href="https://xybank.github.io/2018/05/25/android_store1/"/>
     <id>https://xybank.github.io/2018/05/25/android_store1/</id>
     <published>2018-05-25T04:27:25.000Z</published>
-    <updated>2018-06-13T06:14:58.234Z</updated>
+    <updated>2018-06-13T07:19:57.317Z</updated>
     
     <summary type="html">
     
@@ -312,7 +328,7 @@
     <link href="https://xybank.github.io/2018/05/25/JS-closure/"/>
     <id>https://xybank.github.io/2018/05/25/JS-closure/</id>
     <published>2018-05-25T01:35:06.000Z</published>
-    <updated>2018-06-13T06:14:58.234Z</updated>
+    <updated>2018-06-13T07:19:57.317Z</updated>
     
     <summary type="html">
     
@@ -332,7 +348,7 @@
     <link href="https://xybank.github.io/2018/05/20/aly_start/"/>
     <id>https://xybank.github.io/2018/05/20/aly_start/</id>
     <published>2018-05-20T13:54:00.000Z</published>
-    <updated>2018-06-13T06:14:58.233Z</updated>
+    <updated>2018-06-13T07:19:57.316Z</updated>
     
     <summary type="html">
     
@@ -352,7 +368,7 @@
     <link href="https://xybank.github.io/2018/05/18/node-mysql/"/>
     <id>https://xybank.github.io/2018/05/18/node-mysql/</id>
     <published>2018-05-18T05:15:12.000Z</published>
-    <updated>2018-06-13T06:14:58.234Z</updated>
+    <updated>2018-06-13T07:19:57.317Z</updated>
     
     <summary type="html">
     
@@ -374,7 +390,7 @@
     <link href="https://xybank.github.io/2018/05/17/Fiddler_start/"/>
     <id>https://xybank.github.io/2018/05/17/Fiddler_start/</id>
     <published>2018-05-17T15:10:23.000Z</published>
-    <updated>2018-06-13T06:14:58.234Z</updated>
+    <updated>2018-06-13T07:19:57.317Z</updated>
     
     <summary type="html">
     
@@ -394,7 +410,7 @@
     <link href="https://xybank.github.io/2018/05/17/JS-timer/"/>
     <id>https://xybank.github.io/2018/05/17/JS-timer/</id>
     <published>2018-05-17T07:12:04.000Z</published>
-    <updated>2018-06-13T06:14:58.234Z</updated>
+    <updated>2018-06-13T07:19:57.317Z</updated>
     
     <summary type="html">
     
@@ -414,7 +430,7 @@
     <link href="https://xybank.github.io/2018/05/15/iOS-runtime-weak-reference/"/>
     <id>https://xybank.github.io/2018/05/15/iOS-runtime-weak-reference/</id>
     <published>2018-05-15T08:31:12.000Z</published>
-    <updated>2018-06-13T06:14:58.234Z</updated>
+    <updated>2018-06-13T07:19:57.316Z</updated>
     
     <summary type="html">
     
@@ -426,26 +442,6 @@
     
     
       <category term="iOS" scheme="https://xybank.github.io/tags/iOS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Lua strings</title>
-    <link href="https://xybank.github.io/2018/05/10/Lua-string/"/>
-    <id>https://xybank.github.io/2018/05/10/Lua-string/</id>
-    <published>2018-05-10T08:27:00.000Z</published>
-    <updated>2018-06-13T06:14:58.234Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;字符串或串(String)是由数字、字母、下划线组成的一串字符。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="李志丹" scheme="https://xybank.github.io/categories/%E6%9D%8E%E5%BF%97%E4%B8%B9/"/>
-    
-    
-      <category term="string" scheme="https://xybank.github.io/tags/string/"/>
     
   </entry>
   
