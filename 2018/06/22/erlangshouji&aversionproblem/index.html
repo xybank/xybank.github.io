@@ -1,0 +1,182 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description"><title>erlang手记 &amp; 一个版本问题 | 融易通兴业团队</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/normalize/8.0.0/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/1.0.0/pure-min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/1.0.0/grids-responsive-min.css"><link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">erlang手记 &amp; 一个版本问题</h1><a id="logo" href="/.">融易通兴业团队</a><p class="description"></p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/atom.xml"><i class="fa fa-rss"> 订阅</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">erlang手记 &amp; 一个版本问题</h1><div class="post-meta">Jun 22, 2018<span> | </span><span class="category"><a href="/categories/余声赞/">余声赞</a></span></div><div class="post-content"><h2 id="1-前言"><a href="#1-前言" class="headerlink" title="1.前言"></a>1.前言</h2><p>重温erlang基础，把一些常用以及牛逼哄哄的知识点记录下来。当然了，重温的内容包括却不止于下面的内容。   </p>
+<a id="more"></a>
+<h2 id="2-知识点列表"><a href="#2-知识点列表" class="headerlink" title="2.知识点列表"></a>2.知识点列表</h2><ul>
+<li><strong>查看自己的pid</strong><br>  self()  </li>
+<li><strong>查看已经启动的进程</strong><br>  i()  </li>
+<li><strong>-module(person)</strong><br>  person应该和文件夹名一致，是原子  </li>
+<li><strong>进程间发送消息格式</strong><br>  Pid ! Msg  </li>
+<li><strong>接收进程代码</strong>  <pre><code class="erlang"><span class="keyword">receive</span>  
+    {From,Message}-&gt;  
+    ...  
+<span class="keyword">end</span>
+</code></pre>
+  如在erlang shell中：receive X -&gt; X end. %打印接收的消息</li>
+<li><strong>spawn</strong>  <pre><code class="erlang">Pid = spawn(io,format,[<span class="string">"danz=====~n~p~n"</span>,[<span class="string">"is very good"</span>]])  
+</code></pre>
+</li>
+<li><p><strong>并发</strong><br>  并发的好处：<br>  1.性能：性能能够得到很好的提升，现在多核cpu已经普及，成本更低了；<br>  2.可拓展性：erlang的拓展性天生就很好；<br>  3.容错：进程间互不干扰，所以一个进程崩溃了不会影响其他进程  </p>
+<p>  并发和并行：<br>  并发和软件有关，如erlang是并发编程语言，有描述并发的语言结构，能够编写并发的程序<br>  并行和硬件有关，如并行计算机是一种有多个处理单元（cpu或核心）运行的计算机  </p>
+<p>  基于操作系统的并发和基于语言的并发：<br>  基于操作系统的并发，程序在不同操作系统上会有不同的工作方式；erlang的并发在所有操作系统有相同的工作方式，是基于语言的并发    </p>
+</li>
+<li><strong>官网</strong><br>  <a href="http://www.erlang.org/" target="_blank" rel="noopener">http://www.erlang.org/</a>  </li>
+<li><strong>打开erlang shell</strong><br>  cmd或者linux中：<br>  erl  </li>
+<li><strong>清除shell绑定的变量</strong><br>  f()  </li>
+<li><strong>停止erl shell</strong><br>  q()是init:stop()别名<br>  erlang:halt()  </li>
+<li><strong>erlang shell查看目录</strong>  <pre><code class="erlang"><span class="function"><span class="title">pwd</span><span class="params">()</span>  </span>
+<span class="function"><span class="title">ls</span><span class="params">()</span>   </span>
+<span class="function"><span class="title">cd</span><span class="params">(Dir)</span>  </span>
+</code></pre>
+</li>
+<li><strong>Windows环境下查看erlang的源码</strong><br>  Windows环境下查看erlang的源码：C:\Program Files (x86)\erl5.9.3.1\lib\stdlib-1.18.3\src<br>  然还有很多其它的模块  </li>
+<li><strong>lists模块</strong>  <pre><code class="erlang">lists:map(F,List)  
+lists:filter()  
+lists:seq(<span class="number">1</span>,N)   
+lists:reverse([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>])   
+... 
+</code></pre>
+</li>
+<li><p><strong>小程序</strong>  </p>
+<p>排序：  </p>
+<pre><code class="erlang"><span class="function"><span class="title">qsort</span><span class="params">([])</span>-&gt;</span>[];  
+<span class="function"><span class="title">qsort</span><span class="params">([Pivot|T])</span>-&gt;</span>  
+  qsort([X || X &lt;- T,X &lt; Pivot])  
+  ++ [Pivot] ++  
+  qsort([X || X &lt;- T,X &gt;= Pivot]).
+</code></pre>
+<p>勾股定理数：  </p>
+<pre><code class="erlang"><span class="function"><span class="title">ggdl</span><span class="params">(N)</span>-&gt;</span>
+  [{A,B,C} || 
+  A &lt;- lists:seq(<span class="number">1</span>,N),
+  B &lt;- lists:seq(<span class="number">1</span>,N),
+  C &lt;- lists:seq(<span class="number">1</span>,N),
+  A*A+B*B=:=C*C
+  ].
+</code></pre>
+<p>回文构词：  </p>
+<pre><code class="erlang"><span class="function"><span class="title">perms</span><span class="params">([])</span>-&gt;</span>[[]];
+<span class="function"><span class="title">perms</span><span class="params">([L])</span>-&gt;</span>[[H|T] || H &lt;- L, T &lt;- perms(L -- [H])].
+</code></pre>
+</li>
+<li><p><strong>打印</strong>  </p>
+<pre><code class="erlang">io:format(<span class="string">"~n~p~n"</span>,[Paras]).    
+io:format(<span class="string">"~n~w~n"</span>,[Paras]).    
+io:format(<span class="string">"~n~t~n"</span>,[Paras]).      <span class="comment">%可以打印中文</span>
+</code></pre>
+</li>
+<li><p><strong>记录 &amp; 映射组</strong><br>  记录：</p>
+<p>定义：<code>-record{todo,{status=reminder,who=joe,text}}.</code></p>
+<p>记录本质就是元组。</p>
+<p>shell里面读取记录命令：<code>rr(&quot;todo.hrl&quot;)</code><br>shell忘记记录命令：<code>rf(todo)</code>      %忘记记录定义后，输出已经定义的记录，发现本质就是元组</p>
+<p>%判断X是否是todo类型记录</p>
+<pre><code class="erlang"><span class="function"><span class="title">do_something</span><span class="params">(X)</span> <span class="title">when</span> <span class="title">is_record</span><span class="params">(X, todo)</span>-&gt;</span>
+</code></pre>
+<p>映射组：</p>
+<p>定义：<code>#{a =&gt; 1,b =&gt; 2}   #{a := 1,b := 2}</code></p>
+<p>统计字符出现次数：<font color="red">(注意要在R17版本以及以后版本才能使用此功能)</font></p>
+<pre><code class="erlang"><span class="function"><span class="title">count_chars</span><span class="params">(Str)</span>-&gt;</span>
+  count_chars(Str,#{}).
+<span class="function"><span class="title">count_chars</span><span class="params">([H|T],#{H =&gt; N}=X)</span> -&gt;</span>
+  count_chars(T,X#{H := N+<span class="number">1</span>});
+<span class="function"><span class="title">count_chars</span><span class="params">([H|T],X)</span> -&gt;</span>
+  count_chars(T,X#{H =&gt; <span class="number">1</span>});
+<span class="function"><span class="title">count_chars</span><span class="params">([],X)</span> -&gt;</span>
+  X. 
+</code></pre>
+</li>
+<li><p><strong>异常</strong><br>  ①：try … catch … after … end<br>②：catch </p>
+<p>主动抛出：</p>
+<pre><code class="erlang"><span class="function"><span class="title">throw</span><span class="params">(Exception)</span>    </span>
+<span class="function"><span class="title">exit</span><span class="params">(Exception)</span>    </span>
+<span class="function"><span class="title">error</span><span class="params">(Exception)</span>    </span>
+</code></pre>
+<p>得到栈信息：</p>
+<pre><code class="erlang">erlang:get_stacktrace()  
+</code></pre>
+</li>
+<li><strong>二进制型(binary)和位串(bitstring)</strong><br>  例子1：<pre><code class="erlang">Red=<span class="number">2</span>
+Green=<span class="number">61</span>
+Blue=<span class="number">20</span>
+M = &lt;&lt;Red:<span class="number">5</span>,Green:<span class="number">6</span>,Blue:<span class="number">5</span>&gt;&gt;.  <span class="comment">%%&lt;&lt;23,180&gt;&gt;</span>
+</code></pre>
+例子2：<pre><code class="erlang">B1 = &lt;&lt;<span class="number">1</span>:<span class="number">8</span>&gt;&gt;
+<span class="function"><span class="title">byte_size</span><span class="params">(B1)</span>  %% 1</span>
+<span class="function"><span class="title">is_binary</span><span class="params">(B1)</span>  %% <span class="title">true</span></span>
+<span class="function"><span class="title">is_bitstring</span><span class="params">(B1)</span>  %% <span class="title">true</span></span>
+B2 = &lt;&lt;1:17&gt;&gt;  %%&lt;&lt;0,0,1:1&gt;&gt;
+<span class="function"><span class="title">is_binary</span><span class="params">(B2)</span> %%<span class="title">false</span></span>
+<span class="function"><span class="title">is_bitstring</span><span class="params">(B2)</span>  %% <span class="title">true</span></span>
+<span class="function"><span class="title">byte_size</span><span class="params">(B2)</span> %%3</span>
+<span class="function"><span class="title">bit_sise</span><span class="params">(B2)</span> %% 17  </span>
+</code></pre>
+</li>
+<li><strong>提取模块信息方式</strong><br>  ModuleNmae:module_info()  %如：lists:module_info()  </li>
+</ul>
+<h2 id="3-erlang版本问题"><a href="#3-erlang版本问题" class="headerlink" title="3.erlang版本问题"></a>3.erlang版本问题</h2><p>在《Programming Erlang》第2版第5章有个例子，计算字符出现次数，代码如下：</p>
+<pre><code class="erlang"><span class="keyword">-module</span><span class="params">(countChar)</span>.  
+<span class="keyword">-export</span><span class="params">([count_characters/<span class="number">1</span>])</span>.  
+<span class="function"><span class="title">count_characters</span><span class="params">(Str)</span> -&gt;</span>  
+    count_characters(Str, #{}).  
+<span class="function"><span class="title">count_characters</span><span class="params">([H|T],  #{ H =&gt; N } = X)</span> -&gt;</span>  
+    count_characters(T, X#{ H := N+<span class="number">1</span> });  
+<span class="function"><span class="title">count_characters</span><span class="params">([H|T], X)</span> -&gt;</span>  
+    count_characters(T, X#{ H =&gt; <span class="number">1</span> });  
+<span class="function"><span class="title">count_characters</span><span class="params">([], X)</span> -&gt;</span>   
+    X.  
+</code></pre>
+<p>在Windows环境中的cmd下编译出错：</p>
+<pre><code class="bash">C:\Users\danz\erl&gt;erlc lib_misc.erl
+c:/Users/danz/erl/lib_misc.erl:31: syntax error before: <span class="string">'{'</span>
+c:/Users/danz/erl/lib_misc.erl:34: syntax error before: <span class="string">'{'</span>
+c:/Users/danz/erl/lib_misc.erl:2: <span class="keyword">function</span> count_characters/1 undefined
+</code></pre>
+<p>编译其它erl文件，得到正确的执行：</p>
+<pre><code class="erlang">C:\Users\danz\erl&gt;erlc helloworld.erl
+
+C:\Users\danz\erl&gt;erl -noshell -s helloworld start -s init stop
+helloworld2
+C:\Users\danz\erl&gt;
+</code></pre>
+<p>搜索相关错误，如搜索：count_characters.erl，得到以下文章：<a href="https://blog.csdn.net/hzhsan/article/details/50197815" target="_blank" rel="noopener">https://blog.csdn.net/hzhsan/article/details/50197815</a><br>文章中说的很明白，原因：</p>
+<p>在 Erlang/opt 17中</p>
+<ul>
+<li>No variable keys (key中不能含变量) </li>
+<li>No single value access (不支持取单个value，即不支持#{Key}操作) </li>
+<li>No map comprehensions (不支持map推导，例如 #{X =&gt; foggy || X &lt;- [london,boston]}.)</li>
+</ul>
+<p>18 中仅得到部分支持<br>如果我们要使用上述功能，应该运用 Erlang 提供给我们的 maps 模块。</p>
+<pre><code class="erlang">maps:new() 
+erlang:is_map(M) 
+maps:is_key(Key, Map) 
+maps:get(Key, Map) 
+...
+</code></pre>
+<p>知道是因为erlang版本的原因，故在上提到的文章中下载OTP 18版本（或者去官网下载），安装到本机中，那么此时本机上有两个版本的erlang了，分别是：<br>Erlang/OTP R15B03；<br>Erlang/OTP 18<br>（</p>
+<p><font color="BlueViolet">在Windows中查看erlang的安装的版本方法</font>：<br>①找到对应的安装路径，如：C:\Program Files (x86)\erl7.1，打开里面doc文档的index.html，文档头部有标明版本信息；<br>②打开erlang shell，注意不是在cmd环境中打开，是erlang自带的shell；</p>
+<p><font color="BlueViolet">如果是在linux系统中</font>，当输入erl时，就把对于的版本信息都打印出来了。在Windows下cmd输入erl，没有打印全部版本信息<br>）<br>本机Windows环境下，我想在cmd中使用OTP 18版本，原来配置了OTP R15B03的环境变量，可以手动配置OTP 18环境变量，或者暂时在一个cmd中测试，步骤：<br>cmd中，临时加入路径：</p>
+<pre><code class="erlang">C:\Users\danz\erl&gt;set PATH=<span class="string">"C:\Program Files (x86)\erl7.1\bin"</span>;<span class="comment">%PATH%</span>
+</code></pre>
+<p>C:\Program Files (x86)\erl7.1\bin是OTP 18安装路径；<br>继续操作：</p>
+<pre><code class="erlang">C:\Users\danz\erl&gt;erl
+Eshell V7.<span class="number">1</span>  (abort with ^G)
+<span class="number">1</span>&gt; c(lib_misc).
+{ok,lib_misc}
+<span class="number">2</span>&gt; lib_misc:count_characters(<span class="string">"helloworld"</span>).
+#{<span class="number">100</span> =&gt; <span class="number">1</span>,<span class="number">101</span> =&gt; <span class="number">1</span>,<span class="number">104</span> =&gt; <span class="number">1</span>,<span class="number">108</span> =&gt; <span class="number">3</span>,<span class="number">111</span> =&gt; <span class="number">2</span>,<span class="number">114</span> =&gt; <span class="number">1</span>,<span class="number">119</span> =&gt; <span class="number">1</span>}
+</code></pre>
+<p>得到正确执行！<br>打开另外一个cmd，查看版本：</p>
+<pre><code class="erlang">C:\Users\danz\erl&gt;erl
+Eshell V5.<span class="number">9.3</span>.<span class="number">1</span>  (abort with ^G)
+<span class="number">1</span>&gt; c(lib_misc).
+lib_misc.erl:<span class="number">31</span>: syntax error before: '{'
+lib_misc.erl:<span class="number">34</span>: syntax error before: '{'
+lib_misc.erl:<span class="number">2</span>: function count_characters/<span class="number">1</span> undefined
+error
+</code></pre>
+<p>是原来版本，编译错误。 </p>
+<h2 id="4-erlang自带shell编译问题"><a href="#4-erlang自带shell编译问题" class="headerlink" title="4.erlang自带shell编译问题"></a>4.erlang自带shell编译问题</h2><p>问题表现：  </p>
+<p><img src="/img/yushengzan/erlang-shouji1.png" alt="">  </p>
+<p>搜索错误信息：lib_misc.bea#: error writing file，得到文章：<a href="https://stackoverflow.com/questions/5495756/how-to-use-erlang-examples" target="_blank" rel="noopener">https://stackoverflow.com/questions/5495756/how-to-use-erlang-examples</a><br>里面提到：<font color="red">To compile a .erl file, the compiler needs to be able to write out the compiled .beam file.</font><br>换句话说就是没有创建文件的权限，就是权限问题，故使用管理员身份运行erlang shell：</p>
+<p><img src="/img/yushengzan/erlang-shouji2.png" alt="">  </p>
+<p>问题解决。</p>
+<p>遗留问题：<br>   怎么改变erlang自带shell的工作目录？</p>
+</div><div class="tags"><a href="/tags/erlang/">erlang</a></div><div class="post-nav"><a class="next" href="/2018/06/22/erlang_note_taking/">erlang随手记</a></div></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><form class="search-form" action="//www.baidu.com/baidu" method="get" accept-charset="utf-8" target="_blank"><input type="search" name="word" maxlength="20" placeholder="Search"/><input type="hidden" name="si" value="https://xybank.github.io"/><input name="tn" type="hidden" value="bds"/><input name="cl" type="hidden" value="3"/><input name="ct" type="hidden" value="2097152"/><input name="s" type="hidden" value="on"/></form></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/余声赞/">余声赞</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/余硕/">余硕</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/匡利金/">匡利金</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/卓平/">卓平</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/卢文才/">卢文才</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/张杨/">张杨</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/张永枫/">张永枫</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/彭连/">彭连</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/方振养/">方振养</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/李关浩/">李关浩</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/李志丹/">李志丹</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/杨新才/">杨新才</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/洪宇杰/">洪宇杰</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/甘明阳/">甘明阳</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/甘潇敏/">甘潇敏</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/童长钱/">童长钱</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/蔡向炜/">蔡向炜</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/薛玉博/">薛玉博</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/赖钧/">赖钧</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/高兰花/">高兰花</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/黄涛/">黄涛</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/retrofit/" style="font-size: 15px;">retrofit</a> <a href="/tags/设计模式/" style="font-size: 15px;">设计模式</a> <a href="/tags/Rss/" style="font-size: 15px;">Rss</a> <a href="/tags/HTML5/" style="font-size: 15px;">HTML5</a> <a href="/tags/hexo/" style="font-size: 15px;">hexo</a> <a href="/tags/JavaScript，closure/" style="font-size: 15px;">JavaScript，closure</a> <a href="/tags/js，定时器/" style="font-size: 15px;">js，定时器</a> <a href="/tags/Java/" style="font-size: 15px;">Java</a> <a href="/tags/string/" style="font-size: 15px;">string</a> <a href="/tags/Mybatis/" style="font-size: 15px;">Mybatis</a> <a href="/tags/Nodejs/" style="font-size: 15px;">Nodejs</a> <a href="/tags/react/" style="font-size: 15px;">react</a> <a href="/tags/java/" style="font-size: 15px;">java</a> <a href="/tags/阿里云/" style="font-size: 15px;">阿里云</a> <a href="/tags/Android/" style="font-size: 15px;">Android</a> <a href="/tags/Activity/" style="font-size: 15px;">Activity</a> <a href="/tags/android/" style="font-size: 15px;">android</a> <a href="/tags/file/" style="font-size: 15px;">file</a> <a href="/tags/Android-P/" style="font-size: 15px;">Android P</a> <a href="/tags/兼容适配/" style="font-size: 15px;">兼容适配</a> <a href="/tags/Jenkins/" style="font-size: 15px;">Jenkins</a> <a href="/tags/IPC/" style="font-size: 15px;">IPC</a> <a href="/tags/Binder/" style="font-size: 15px;">Binder</a> <a href="/tags/AIDL/" style="font-size: 15px;">AIDL</a> <a href="/tags/Messenger/" style="font-size: 15px;">Messenger</a> <a href="/tags/MVP/" style="font-size: 15px;">MVP</a> <a href="/tags/设计架构/" style="font-size: 15px;">设计架构</a> <a href="/tags/rxjava/" style="font-size: 15px;">rxjava</a> <a href="/tags/Fiddler/" style="font-size: 15px;">Fiddler</a> <a href="/tags/okhttp/" style="font-size: 15px;">okhttp</a> <a href="/tags/Serializable/" style="font-size: 15px;">Serializable</a> <a href="/tags/Parcelable/" style="font-size: 15px;">Parcelable</a> <a href="/tags/bootstrap/" style="font-size: 15px;">bootstrap</a> <a href="/tags/css，布局/" style="font-size: 15px;">css，布局</a> <a href="/tags/css3，flexbox/" style="font-size: 15px;">css3，flexbox</a> <a href="/tags/CSS的字体适配/" style="font-size: 15px;">CSS的字体适配</a> <a href="/tags/erlang/" style="font-size: 15px;">erlang</a> <a href="/tags/ewp中模拟报文的使用/" style="font-size: 15px;">ewp中模拟报文的使用</a> <a href="/tags/form表单，html5/" style="font-size: 15px;">form表单，html5</a> <a href="/tags/iOS/" style="font-size: 15px;">iOS</a> <a href="/tags/java，集合/" style="font-size: 15px;">java，集合</a> <a href="/tags/js，with/" style="font-size: 15px;">js，with</a> <a href="/tags/xhtml-lua/" style="font-size: 15px;">xhtml+lua</a> <a href="/tags/linux/" style="font-size: 15px;">linux</a> <a href="/tags/mysql/" style="font-size: 15px;">mysql</a> <a href="/tags/vi的编辑/" style="font-size: 15px;">vi的编辑</a> <a href="/tags/lua/" style="font-size: 15px;">lua</a> <a href="/tags/app/" style="font-size: 15px;">app</a> <a href="/tags/node/" style="font-size: 15px;">node</a> <a href="/tags/Mysql/" style="font-size: 15px;">Mysql</a> <a href="/tags/nodejs/" style="font-size: 15px;">nodejs</a> <a href="/tags/photoshop/" style="font-size: 15px;">photoshop</a> <a href="/tags/xq/" style="font-size: 15px;">xq</a> <a href="/tags/3种定位的使用/" style="font-size: 15px;">3种定位的使用</a> <a href="/tags/yaws/" style="font-size: 15px;">yaws</a> <a href="/tags/web/" style="font-size: 15px;">web</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最近文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2018/06/22/erlangshouji&aversionproblem/">erlang手记 & 一个版本问题</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/06/22/erlang_note_taking/">erlang随手记</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/06/22/Design_Mode_8_Adapter/">设计模式学习系列（8）--适配器模式</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/06/20/aly_java_tomcat/">云服务器ECS建站攻略</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/06/15/javaCollectionSummary/">java集合汇总</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/06/13/css的字体适配/">CSS的字体适配</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/06/13/js-with/">js-with</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/06/13/about _ios_touch/">关于ios指纹登陆功能ewp部分简单描述</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/06/13/blog_ipc_GitHub/">Android的IPC机制</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/06/10/ajax/">ajax同步与异步的区别</a></li></ul></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2018 <a href="/." rel="nofollow">融易通兴业团队.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//cdn.bootcss.com/fancybox/3.2.5/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/fancybox/3.2.5/jquery.fancybox.min.css"><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>
