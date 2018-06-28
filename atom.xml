@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://xybank.github.io/"/>
-  <updated>2018-06-28T02:40:27.408Z</updated>
+  <updated>2018-06-28T02:46:15.300Z</updated>
   <id>https://xybank.github.io/</id>
   
   <author>
@@ -17,22 +17,22 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Nodejs入门</title>
-    <link href="https://xybank.github.io/2018/06/28/Nodejs_start/"/>
-    <id>https://xybank.github.io/2018/06/28/Nodejs_start/</id>
-    <published>2018-06-28T06:10:23.000Z</published>
-    <updated>2018-06-28T02:40:27.408Z</updated>
+    <title>Navicate for Mysql的破解</title>
+    <link href="https://xybank.github.io/2018/06/28/Navicate_Mysql/"/>
+    <id>https://xybank.github.io/2018/06/28/Navicate_Mysql/</id>
+    <published>2018-06-28T12:05:00.000Z</published>
+    <updated>2018-06-28T02:46:15.300Z</updated>
     
     <summary type="html">
     
-      Nodejs简单入门
+      navcate从安装到使用一套讲解
     
     </summary>
     
-      <category term="余声赞" scheme="https://xybank.github.io/categories/%E4%BD%99%E5%A3%B0%E8%B5%9E/"/>
+      <category term="甘明阳" scheme="https://xybank.github.io/categories/%E7%94%98%E6%98%8E%E9%98%B3/"/>
     
     
-      <category term="Nodejs" scheme="https://xybank.github.io/tags/Nodejs/"/>
+      <category term="mysql" scheme="https://xybank.github.io/tags/mysql/"/>
     
   </entry>
   
@@ -41,7 +41,7 @@
     <link href="https://xybank.github.io/2018/06/22/erlangshouji&amp;aversionproblem/"/>
     <id>https://xybank.github.io/2018/06/22/erlangshouji&amp;aversionproblem/</id>
     <published>2018-06-22T15:07:43.000Z</published>
-    <updated>2018-06-28T02:40:27.407Z</updated>
+    <updated>2018-06-28T02:46:15.300Z</updated>
     
     <summary type="html">
     
@@ -61,7 +61,7 @@
     <link href="https://xybank.github.io/2018/06/22/erlang_note_taking/"/>
     <id>https://xybank.github.io/2018/06/22/erlang_note_taking/</id>
     <published>2018-06-22T08:39:28.000Z</published>
-    <updated>2018-06-28T02:40:27.408Z</updated>
+    <updated>2018-06-28T02:46:15.301Z</updated>
     
     <summary type="html">
     
@@ -88,7 +88,7 @@
     <link href="https://xybank.github.io/2018/06/22/Design_Mode_8_Adapter/"/>
     <id>https://xybank.github.io/2018/06/22/Design_Mode_8_Adapter/</id>
     <published>2018-06-22T02:30:00.000Z</published>
-    <updated>2018-06-28T02:40:27.407Z</updated>
+    <updated>2018-06-28T02:46:15.300Z</updated>
     
     <summary type="html">
     
@@ -108,7 +108,7 @@
     <link href="https://xybank.github.io/2018/06/20/aly_java_tomcat/"/>
     <id>https://xybank.github.io/2018/06/20/aly_java_tomcat/</id>
     <published>2018-06-20T13:54:00.000Z</published>
-    <updated>2018-06-28T02:40:27.407Z</updated>
+    <updated>2018-06-28T02:46:15.299Z</updated>
     
     <summary type="html">
     
@@ -128,7 +128,7 @@
     <link href="https://xybank.github.io/2018/06/15/javaCollectionSummary/"/>
     <id>https://xybank.github.io/2018/06/15/javaCollectionSummary/</id>
     <published>2018-06-15T02:07:33.000Z</published>
-    <updated>2018-06-28T02:40:27.407Z</updated>
+    <updated>2018-06-28T02:46:15.299Z</updated>
     
     <summary type="html">
     
@@ -148,7 +148,7 @@
     <link href="https://xybank.github.io/2018/06/13/css%E7%9A%84%E5%AD%97%E4%BD%93%E9%80%82%E9%85%8D/"/>
     <id>https://xybank.github.io/2018/06/13/css的字体适配/</id>
     <published>2018-06-13T10:46:55.000Z</published>
-    <updated>2018-06-28T02:40:27.407Z</updated>
+    <updated>2018-06-28T02:46:15.299Z</updated>
     
     <summary type="html">
     
@@ -174,7 +174,7 @@
     <link href="https://xybank.github.io/2018/06/13/js-with/"/>
     <id>https://xybank.github.io/2018/06/13/js-with/</id>
     <published>2018-06-13T07:05:33.000Z</published>
-    <updated>2018-06-28T02:40:27.407Z</updated>
+    <updated>2018-06-28T02:46:15.300Z</updated>
     
     <summary type="html">
     
@@ -194,7 +194,7 @@
     <link href="https://xybank.github.io/2018/06/13/about%20_ios_touch/"/>
     <id>https://xybank.github.io/2018/06/13/about _ios_touch/</id>
     <published>2018-06-13T06:50:52.000Z</published>
-    <updated>2018-06-28T02:40:27.408Z</updated>
+    <updated>2018-06-28T02:46:15.301Z</updated>
     
     <summary type="html">
     
@@ -212,7 +212,7 @@
     <link href="https://xybank.github.io/2018/06/13/blog_ipc_GitHub/"/>
     <id>https://xybank.github.io/2018/06/13/blog_ipc_GitHub/</id>
     <published>2018-06-13T04:00:00.000Z</published>
-    <updated>2018-06-28T02:40:27.408Z</updated>
+    <updated>2018-06-28T02:46:15.301Z</updated>
     
     <summary type="html">
     
@@ -240,7 +240,7 @@
     <link href="https://xybank.github.io/2018/06/10/ajax/"/>
     <id>https://xybank.github.io/2018/06/10/ajax/</id>
     <published>2018-06-10T12:02:48.000Z</published>
-    <updated>2018-06-28T02:40:27.408Z</updated>
+    <updated>2018-06-28T02:46:15.300Z</updated>
     
     <summary type="html">
     
@@ -264,7 +264,7 @@
     <link href="https://xybank.github.io/2018/06/06/blog_serialization_GitHub/"/>
     <id>https://xybank.github.io/2018/06/06/blog_serialization_GitHub/</id>
     <published>2018-06-06T04:00:00.000Z</published>
-    <updated>2018-06-28T02:40:27.408Z</updated>
+    <updated>2018-06-28T02:46:15.300Z</updated>
     
     <summary type="html">
     
@@ -288,7 +288,7 @@
     <link href="https://xybank.github.io/2018/06/05/letter-sort/"/>
     <id>https://xybank.github.io/2018/06/05/letter-sort/</id>
     <published>2018-06-05T05:15:12.000Z</published>
-    <updated>2018-06-28T02:40:27.408Z</updated>
+    <updated>2018-06-28T02:46:15.301Z</updated>
     
     <summary type="html">
     
@@ -308,7 +308,7 @@
     <link href="https://xybank.github.io/2018/06/04/bootstrap_summed/"/>
     <id>https://xybank.github.io/2018/06/04/bootstrap_summed/</id>
     <published>2018-06-04T14:05:00.000Z</published>
-    <updated>2018-06-28T02:40:27.408Z</updated>
+    <updated>2018-06-28T02:46:15.300Z</updated>
     
     <summary type="html">
     
@@ -328,7 +328,7 @@
     <link href="https://xybank.github.io/2018/06/04/html5%E7%AE%80%E8%BF%B0/"/>
     <id>https://xybank.github.io/2018/06/04/html5简述/</id>
     <published>2018-06-04T02:23:43.000Z</published>
-    <updated>2018-06-28T02:40:27.407Z</updated>
+    <updated>2018-06-28T02:46:15.299Z</updated>
     
     <summary type="html">
     
@@ -348,7 +348,7 @@
     <link href="https://xybank.github.io/2018/06/03/ewp%E6%A8%A1%E6%8B%9F%E6%8A%A5%E6%96%87/"/>
     <id>https://xybank.github.io/2018/06/03/ewp模拟报文/</id>
     <published>2018-06-03T13:46:55.000Z</published>
-    <updated>2018-06-28T02:40:27.407Z</updated>
+    <updated>2018-06-28T02:46:15.299Z</updated>
     
     <summary type="html">
     
@@ -377,7 +377,7 @@
     <link href="https://xybank.github.io/2018/06/01/requirement%20analysis/"/>
     <id>https://xybank.github.io/2018/06/01/requirement analysis/</id>
     <published>2018-06-01T05:14:15.000Z</published>
-    <updated>2018-06-28T02:40:27.407Z</updated>
+    <updated>2018-06-28T02:46:15.300Z</updated>
     
     <summary type="html">
     
@@ -397,7 +397,7 @@
     <link href="https://xybank.github.io/2018/06/01/blog_Android%20P_Github/"/>
     <id>https://xybank.github.io/2018/06/01/blog_Android P_Github/</id>
     <published>2018-06-01T05:00:00.000Z</published>
-    <updated>2018-06-28T02:40:27.408Z</updated>
+    <updated>2018-06-28T02:46:15.301Z</updated>
     
     <summary type="html">
     
@@ -419,7 +419,7 @@
     <link href="https://xybank.github.io/2018/05/31/menhu/"/>
     <id>https://xybank.github.io/2018/05/31/menhu/</id>
     <published>2018-05-31T07:30:00.000Z</published>
-    <updated>2018-06-28T02:40:27.407Z</updated>
+    <updated>2018-06-28T02:46:15.300Z</updated>
     
     <summary type="html">
     
@@ -439,7 +439,7 @@
     <link href="https://xybank.github.io/2018/05/31/java_model_proxypattern/"/>
     <id>https://xybank.github.io/2018/05/31/java_model_proxypattern/</id>
     <published>2018-05-30T16:00:00.000Z</published>
-    <updated>2018-06-28T02:40:27.407Z</updated>
+    <updated>2018-06-28T02:46:15.300Z</updated>
     
     <summary type="html">
     
