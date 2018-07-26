@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://xybank.github.io/"/>
-  <updated>2018-07-18T08:21:02.460Z</updated>
+  <updated>2018-07-26T05:31:00.944Z</updated>
   <id>https://xybank.github.io/</id>
   
   <author>
@@ -17,11 +17,33 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Mini Program初探</title>
+    <link href="https://xybank.github.io/2018/07/26/Mini_Program/"/>
+    <id>https://xybank.github.io/2018/07/26/Mini_Program/</id>
+    <published>2018-07-26T03:00:00.000Z</published>
+    <updated>2018-07-26T05:31:00.944Z</updated>
+    
+    <summary type="html">
+    
+      闲暇之余研究下微信小程序开发
+    
+    </summary>
+    
+      <category term="黄涛" scheme="https://xybank.github.io/categories/%E9%BB%84%E6%B6%9B/"/>
+    
+    
+      <category term="微信小程序" scheme="https://xybank.github.io/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    
+      <category term="学习" scheme="https://xybank.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Rxjava2学习总结</title>
     <link href="https://xybank.github.io/2018/07/18/blog_rxjava2_github/"/>
     <id>https://xybank.github.io/2018/07/18/blog_rxjava2_github/</id>
     <published>2018-07-18T08:00:00.000Z</published>
-    <updated>2018-07-18T08:21:02.460Z</updated>
+    <updated>2018-07-26T05:31:00.943Z</updated>
     
     <summary type="html">
     
@@ -47,7 +69,7 @@
     <link href="https://xybank.github.io/2018/07/16/javascript_start/"/>
     <id>https://xybank.github.io/2018/07/16/javascript_start/</id>
     <published>2018-07-16T13:54:00.000Z</published>
-    <updated>2018-07-18T08:21:02.460Z</updated>
+    <updated>2018-07-26T05:31:00.943Z</updated>
     
     <summary type="html">
     
@@ -67,7 +89,7 @@
     <link href="https://xybank.github.io/2018/07/11/Git_filter_branch/"/>
     <id>https://xybank.github.io/2018/07/11/Git_filter_branch/</id>
     <published>2018-07-11T03:00:00.000Z</published>
-    <updated>2018-07-18T08:21:02.461Z</updated>
+    <updated>2018-07-26T05:31:00.944Z</updated>
     
     <summary type="html">
     
@@ -87,7 +109,7 @@
     <link href="https://xybank.github.io/2018/07/06/blog_combine_bitmap/"/>
     <id>https://xybank.github.io/2018/07/06/blog_combine_bitmap/</id>
     <published>2018-07-06T04:00:00.000Z</published>
-    <updated>2018-07-18T08:21:02.460Z</updated>
+    <updated>2018-07-26T05:31:00.943Z</updated>
     
     <summary type="html">
     
@@ -113,7 +135,7 @@
     <link href="https://xybank.github.io/2018/07/05/java_yzm/"/>
     <id>https://xybank.github.io/2018/07/05/java_yzm/</id>
     <published>2018-07-05T12:05:00.000Z</published>
-    <updated>2018-07-18T08:21:02.461Z</updated>
+    <updated>2018-07-26T05:31:00.944Z</updated>
     
     <summary type="html">
     
@@ -133,7 +155,7 @@
     <link href="https://xybank.github.io/2018/07/05/Bootstrap%20Carousel/"/>
     <id>https://xybank.github.io/2018/07/05/Bootstrap Carousel/</id>
     <published>2018-07-05T08:10:00.000Z</published>
-    <updated>2018-07-18T08:21:02.461Z</updated>
+    <updated>2018-07-26T05:31:00.944Z</updated>
     
     <summary type="html">
     
@@ -151,7 +173,7 @@
     <link href="https://xybank.github.io/2018/07/05/css-my%20experience/"/>
     <id>https://xybank.github.io/2018/07/05/css-my experience/</id>
     <published>2018-07-05T02:40:34.000Z</published>
-    <updated>2018-07-18T08:21:02.461Z</updated>
+    <updated>2018-07-26T05:31:00.945Z</updated>
     
     <summary type="html">
     
@@ -171,7 +193,7 @@
     <link href="https://xybank.github.io/2018/06/29/blog_deviceId_GitHub/"/>
     <id>https://xybank.github.io/2018/06/29/blog_deviceId_GitHub/</id>
     <published>2018-06-29T04:00:00.000Z</published>
-    <updated>2018-07-18T08:21:02.460Z</updated>
+    <updated>2018-07-26T05:31:00.943Z</updated>
     
     <summary type="html">
     
@@ -197,7 +219,7 @@
     <link href="https://xybank.github.io/2018/06/28/Navicate_Mysql/"/>
     <id>https://xybank.github.io/2018/06/28/Navicate_Mysql/</id>
     <published>2018-06-28T12:05:00.000Z</published>
-    <updated>2018-07-18T08:21:02.461Z</updated>
+    <updated>2018-07-26T05:31:00.944Z</updated>
     
     <summary type="html">
     
@@ -217,7 +239,7 @@
     <link href="https://xybank.github.io/2018/06/28/timeout_interval/"/>
     <id>https://xybank.github.io/2018/06/28/timeout_interval/</id>
     <published>2018-06-28T06:30:55.000Z</published>
-    <updated>2018-07-18T08:21:02.461Z</updated>
+    <updated>2018-07-26T05:31:00.944Z</updated>
     
     <summary type="html">
     
@@ -244,7 +266,7 @@
     <link href="https://xybank.github.io/2018/06/28/iOS%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/"/>
     <id>https://xybank.github.io/2018/06/28/iOS内存管理/</id>
     <published>2018-06-27T16:00:00.000Z</published>
-    <updated>2018-07-18T08:21:02.460Z</updated>
+    <updated>2018-07-26T05:31:00.943Z</updated>
     
     <summary type="html">
     
@@ -264,7 +286,7 @@
     <link href="https://xybank.github.io/2018/06/22/erlangshouji&amp;aversionproblem/"/>
     <id>https://xybank.github.io/2018/06/22/erlangshouji&amp;aversionproblem/</id>
     <published>2018-06-22T15:07:43.000Z</published>
-    <updated>2018-07-18T08:21:02.460Z</updated>
+    <updated>2018-07-26T05:31:00.943Z</updated>
     
     <summary type="html">
     
@@ -284,7 +306,7 @@
     <link href="https://xybank.github.io/2018/06/22/erlang_note_taking/"/>
     <id>https://xybank.github.io/2018/06/22/erlang_note_taking/</id>
     <published>2018-06-22T08:39:28.000Z</published>
-    <updated>2018-07-18T08:21:02.461Z</updated>
+    <updated>2018-07-26T05:31:00.944Z</updated>
     
     <summary type="html">
     
@@ -311,7 +333,7 @@
     <link href="https://xybank.github.io/2018/06/22/Design_Mode_8_Adapter/"/>
     <id>https://xybank.github.io/2018/06/22/Design_Mode_8_Adapter/</id>
     <published>2018-06-22T02:30:00.000Z</published>
-    <updated>2018-07-18T08:21:02.460Z</updated>
+    <updated>2018-07-26T05:31:00.943Z</updated>
     
     <summary type="html">
     
@@ -331,7 +353,7 @@
     <link href="https://xybank.github.io/2018/06/20/aly_java_tomcat/"/>
     <id>https://xybank.github.io/2018/06/20/aly_java_tomcat/</id>
     <published>2018-06-20T13:54:00.000Z</published>
-    <updated>2018-07-18T08:21:02.459Z</updated>
+    <updated>2018-07-26T05:31:00.942Z</updated>
     
     <summary type="html">
     
@@ -351,7 +373,7 @@
     <link href="https://xybank.github.io/2018/06/15/javaCollectionSummary/"/>
     <id>https://xybank.github.io/2018/06/15/javaCollectionSummary/</id>
     <published>2018-06-15T02:07:33.000Z</published>
-    <updated>2018-07-18T08:21:02.459Z</updated>
+    <updated>2018-07-26T05:31:00.942Z</updated>
     
     <summary type="html">
     
@@ -371,7 +393,7 @@
     <link href="https://xybank.github.io/2018/06/13/css%E7%9A%84%E5%AD%97%E4%BD%93%E9%80%82%E9%85%8D/"/>
     <id>https://xybank.github.io/2018/06/13/css的字体适配/</id>
     <published>2018-06-13T10:46:55.000Z</published>
-    <updated>2018-07-18T08:21:02.460Z</updated>
+    <updated>2018-07-26T05:31:00.943Z</updated>
     
     <summary type="html">
     
@@ -397,7 +419,7 @@
     <link href="https://xybank.github.io/2018/06/13/js-with/"/>
     <id>https://xybank.github.io/2018/06/13/js-with/</id>
     <published>2018-06-13T07:05:33.000Z</published>
-    <updated>2018-07-18T08:21:02.461Z</updated>
+    <updated>2018-07-26T05:31:00.944Z</updated>
     
     <summary type="html">
     
@@ -417,7 +439,7 @@
     <link href="https://xybank.github.io/2018/06/13/about%20_ios_touch/"/>
     <id>https://xybank.github.io/2018/06/13/about _ios_touch/</id>
     <published>2018-06-13T06:50:52.000Z</published>
-    <updated>2018-07-18T08:21:02.461Z</updated>
+    <updated>2018-07-26T05:31:00.944Z</updated>
     
     <summary type="html">
     
@@ -427,34 +449,6 @@
     
       <category term="李志丹" scheme="https://xybank.github.io/categories/%E6%9D%8E%E5%BF%97%E4%B8%B9/"/>
     
-    
-  </entry>
-  
-  <entry>
-    <title>Android的IPC机制</title>
-    <link href="https://xybank.github.io/2018/06/13/blog_ipc_GitHub/"/>
-    <id>https://xybank.github.io/2018/06/13/blog_ipc_GitHub/</id>
-    <published>2018-06-13T04:00:00.000Z</published>
-    <updated>2018-07-18T08:21:02.461Z</updated>
-    
-    <summary type="html">
-    
-      简要介绍Android IPC和多进程的运行模式以及常见的几种IPC方式。
-    
-    </summary>
-    
-      <category term="彭连" scheme="https://xybank.github.io/categories/%E5%BD%AD%E8%BF%9E/"/>
-    
-    
-      <category term="Android" scheme="https://xybank.github.io/tags/Android/"/>
-    
-      <category term="IPC" scheme="https://xybank.github.io/tags/IPC/"/>
-    
-      <category term="Binder" scheme="https://xybank.github.io/tags/Binder/"/>
-    
-      <category term="AIDL" scheme="https://xybank.github.io/tags/AIDL/"/>
-    
-      <category term="Messenger" scheme="https://xybank.github.io/tags/Messenger/"/>
     
   </entry>
   
