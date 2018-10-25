@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://xybank.github.io/"/>
-  <updated>2018-10-19T02:33:48.534Z</updated>
+  <updated>2018-10-25T08:37:47.825Z</updated>
   <id>https://xybank.github.io/</id>
   
   <author>
@@ -17,11 +17,31 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>XLForm实现</title>
+    <link href="https://xybank.github.io/2018/10/25/iOS_%20XLForm/"/>
+    <id>https://xybank.github.io/2018/10/25/iOS_ XLForm/</id>
+    <published>2018-10-25T08:37:47.825Z</published>
+    <updated>2018-10-25T08:37:47.825Z</updated>
+    
+    <summary type="html">
+    
+      本文主要介绍XLForm的使用
+    
+    </summary>
+    
+      <category term="常志杰" scheme="https://xybank.github.io/categories/%E5%B8%B8%E5%BF%97%E6%9D%B0/"/>
+    
+    
+      <category term="ios" scheme="https://xybank.github.io/tags/ios/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Android项目产品源码集成</title>
     <link href="https://xybank.github.io/2018/10/19/SourceCodeIntegrated/"/>
     <id>https://xybank.github.io/2018/10/19/SourceCodeIntegrated/</id>
     <published>2018-10-19T02:30:58.000Z</published>
-    <updated>2018-10-19T02:33:48.534Z</updated>
+    <updated>2018-10-25T08:37:47.824Z</updated>
     
     <summary type="html">
     
@@ -43,7 +63,7 @@
     <link href="https://xybank.github.io/2018/10/06/spring_start/"/>
     <id>https://xybank.github.io/2018/10/06/spring_start/</id>
     <published>2018-10-06T08:54:00.000Z</published>
-    <updated>2018-10-19T02:33:48.537Z</updated>
+    <updated>2018-10-25T08:37:47.826Z</updated>
     
     <summary type="html">
     
@@ -63,7 +83,7 @@
     <link href="https://xybank.github.io/2018/09/28/iOS%20GCD/"/>
     <id>https://xybank.github.io/2018/09/28/iOS GCD/</id>
     <published>2018-09-27T16:00:00.000Z</published>
-    <updated>2018-10-19T02:33:48.536Z</updated>
+    <updated>2018-10-25T08:37:47.825Z</updated>
     
     <summary type="html">
     
@@ -83,7 +103,7 @@
     <link href="https://xybank.github.io/2018/09/18/hibernate_hql/"/>
     <id>https://xybank.github.io/2018/09/18/hibernate_hql/</id>
     <published>2018-09-18T08:54:00.000Z</published>
-    <updated>2018-10-19T02:33:48.537Z</updated>
+    <updated>2018-10-25T08:37:47.826Z</updated>
     
     <summary type="html">
     
@@ -99,31 +119,11 @@
   </entry>
   
   <entry>
-    <title>iOS内存管理补充</title>
-    <link href="https://xybank.github.io/2018/09/16/iOS%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86(%E8%A1%A5%E5%85%85)/"/>
-    <id>https://xybank.github.io/2018/09/16/iOS内存管理(补充)/</id>
-    <published>2018-09-15T16:00:00.000Z</published>
-    <updated>2018-10-19T02:33:48.535Z</updated>
-    
-    <summary type="html">
-    
-      本文主要描述iOS内存管理的基础知识
-    
-    </summary>
-    
-      <category term="卓平" scheme="https://xybank.github.io/categories/%E5%8D%93%E5%B9%B3/"/>
-    
-    
-      <category term="iOS" scheme="https://xybank.github.io/tags/iOS/"/>
-    
-  </entry>
-  
-  <entry>
     <title>mysql基本操作</title>
     <link href="https://xybank.github.io/2018/09/16/mysql_cmd/"/>
     <id>https://xybank.github.io/2018/09/16/mysql_cmd/</id>
     <published>2018-09-15T16:00:00.000Z</published>
-    <updated>2018-10-19T02:33:48.537Z</updated>
+    <updated>2018-10-25T08:37:47.825Z</updated>
     
     <summary type="html">
     
@@ -139,11 +139,31 @@
   </entry>
   
   <entry>
+    <title>iOS内存管理补充</title>
+    <link href="https://xybank.github.io/2018/09/16/iOS%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86(%E8%A1%A5%E5%85%85)/"/>
+    <id>https://xybank.github.io/2018/09/16/iOS内存管理(补充)/</id>
+    <published>2018-09-15T16:00:00.000Z</published>
+    <updated>2018-10-25T08:37:47.825Z</updated>
+    
+    <summary type="html">
+    
+      本文主要描述iOS内存管理的基础知识
+    
+    </summary>
+    
+      <category term="卓平" scheme="https://xybank.github.io/categories/%E5%8D%93%E5%B9%B3/"/>
+    
+    
+      <category term="iOS" scheme="https://xybank.github.io/tags/iOS/"/>
+    
+  </entry>
+  
+  <entry>
     <title>View的过度绘制简述</title>
     <link href="https://xybank.github.io/2018/09/03/blog_view_overdraw/"/>
     <id>https://xybank.github.io/2018/09/03/blog_view_overdraw/</id>
     <published>2018-09-03T04:00:00.000Z</published>
-    <updated>2018-10-19T02:33:48.537Z</updated>
+    <updated>2018-10-25T08:37:47.826Z</updated>
     
     <summary type="html">
     
@@ -163,7 +183,7 @@
     <link href="https://xybank.github.io/2018/08/29/ITPMP/"/>
     <id>https://xybank.github.io/2018/08/29/ITPMP/</id>
     <published>2018-08-29T05:28:00.000Z</published>
-    <updated>2018-10-19T02:33:48.534Z</updated>
+    <updated>2018-10-25T08:37:47.824Z</updated>
     
     <summary type="html">
     
@@ -185,7 +205,7 @@
     <link href="https://xybank.github.io/2018/08/28/Hibernate_sum/"/>
     <id>https://xybank.github.io/2018/08/28/Hibernate_sum/</id>
     <published>2018-08-28T08:54:00.000Z</published>
-    <updated>2018-10-19T02:33:48.537Z</updated>
+    <updated>2018-10-25T08:37:47.826Z</updated>
     
     <summary type="html">
     
@@ -205,7 +225,7 @@
     <link href="https://xybank.github.io/2018/08/22/radio_sum/"/>
     <id>https://xybank.github.io/2018/08/22/radio_sum/</id>
     <published>2018-08-22T02:54:00.000Z</published>
-    <updated>2018-10-19T02:33:48.536Z</updated>
+    <updated>2018-10-25T08:37:47.825Z</updated>
     
     <summary type="html">
     
@@ -229,7 +249,7 @@
     <link href="https://xybank.github.io/2018/08/20/java_project/"/>
     <id>https://xybank.github.io/2018/08/20/java_project/</id>
     <published>2018-08-20T01:54:00.000Z</published>
-    <updated>2018-10-19T02:33:48.537Z</updated>
+    <updated>2018-10-25T08:37:47.826Z</updated>
     
     <summary type="html">
     
@@ -249,7 +269,7 @@
     <link href="https://xybank.github.io/2018/08/18/blog_view_distribute/"/>
     <id>https://xybank.github.io/2018/08/18/blog_view_distribute/</id>
     <published>2018-08-18T04:00:00.000Z</published>
-    <updated>2018-10-19T02:33:48.535Z</updated>
+    <updated>2018-10-25T08:37:47.824Z</updated>
     
     <summary type="html">
     
@@ -273,7 +293,7 @@
     <link href="https://xybank.github.io/2018/08/18/iOS%20Runtime%E6%9C%BA%E5%88%B6/"/>
     <id>https://xybank.github.io/2018/08/18/iOS Runtime机制/</id>
     <published>2018-08-17T16:00:00.000Z</published>
-    <updated>2018-10-19T02:33:48.534Z</updated>
+    <updated>2018-10-25T08:37:47.824Z</updated>
     
     <summary type="html">
     
@@ -293,7 +313,7 @@
     <link href="https://xybank.github.io/2018/08/07/blog_code_readability_Github/"/>
     <id>https://xybank.github.io/2018/08/07/blog_code_readability_Github/</id>
     <published>2018-08-07T04:00:00.000Z</published>
-    <updated>2018-10-19T02:33:48.535Z</updated>
+    <updated>2018-10-25T08:37:47.824Z</updated>
     
     <summary type="html">
     
@@ -315,7 +335,7 @@
     <link href="https://xybank.github.io/2018/07/26/Mini_Program/"/>
     <id>https://xybank.github.io/2018/07/26/Mini_Program/</id>
     <published>2018-07-26T03:00:00.000Z</published>
-    <updated>2018-10-19T02:33:48.537Z</updated>
+    <updated>2018-10-25T08:37:47.826Z</updated>
     
     <summary type="html">
     
@@ -337,7 +357,7 @@
     <link href="https://xybank.github.io/2018/07/18/blog_rxjava2_github/"/>
     <id>https://xybank.github.io/2018/07/18/blog_rxjava2_github/</id>
     <published>2018-07-18T08:00:00.000Z</published>
-    <updated>2018-10-19T02:33:48.534Z</updated>
+    <updated>2018-10-25T08:37:47.824Z</updated>
     
     <summary type="html">
     
@@ -363,7 +383,7 @@
     <link href="https://xybank.github.io/2018/07/16/javascript_start/"/>
     <id>https://xybank.github.io/2018/07/16/javascript_start/</id>
     <published>2018-07-16T13:54:00.000Z</published>
-    <updated>2018-10-19T02:33:48.535Z</updated>
+    <updated>2018-10-25T08:37:47.824Z</updated>
     
     <summary type="html">
     
@@ -383,7 +403,7 @@
     <link href="https://xybank.github.io/2018/07/11/Git_filter_branch/"/>
     <id>https://xybank.github.io/2018/07/11/Git_filter_branch/</id>
     <published>2018-07-11T03:00:00.000Z</published>
-    <updated>2018-10-19T02:33:48.537Z</updated>
+    <updated>2018-10-25T08:37:47.826Z</updated>
     
     <summary type="html">
     
@@ -403,7 +423,7 @@
     <link href="https://xybank.github.io/2018/07/06/blog_combine_bitmap/"/>
     <id>https://xybank.github.io/2018/07/06/blog_combine_bitmap/</id>
     <published>2018-07-06T04:00:00.000Z</published>
-    <updated>2018-10-19T02:33:48.535Z</updated>
+    <updated>2018-10-25T08:37:47.824Z</updated>
     
     <summary type="html">
     
@@ -421,26 +441,6 @@
       <category term="WeChat" scheme="https://xybank.github.io/tags/WeChat/"/>
     
       <category term="DingDing" scheme="https://xybank.github.io/tags/DingDing/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>java发送手机短信认证码</title>
-    <link href="https://xybank.github.io/2018/07/05/java_yzm/"/>
-    <id>https://xybank.github.io/2018/07/05/java_yzm/</id>
-    <published>2018-07-05T12:05:00.000Z</published>
-    <updated>2018-10-19T02:33:48.536Z</updated>
-    
-    <summary type="html">
-    
-      java调用ECS短信服务api发送手机认证码
-    
-    </summary>
-    
-      <category term="甘明阳" scheme="https://xybank.github.io/categories/%E7%94%98%E6%98%8E%E9%98%B3/"/>
-    
-    
-      <category term="java" scheme="https://xybank.github.io/tags/java/"/>
     
   </entry>
   
